@@ -1,9 +1,9 @@
 *{
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-
+    
 }
 .container{
     height: 100%;
@@ -26,13 +26,6 @@ body {
     display: flex;
 }
 
-/* .caja1 {
-    border: solid black 1px;
-    width: 100%;
-    height: 60px;
-    background-color: #694872;
-    
-} */
 
 
 /* Ranking*/
@@ -94,18 +87,21 @@ body {
 .usuario {
     font-size: 30px;
     color: #D85F75;
-   
-
+    
+    
 }
 .puntos {
     font-size: 30px;
     color: #D88E4E;
-
+    
 }
 .puesto {
     font-size: 30px;
     color: #A0D8C8;
+    
+}
 
+<<<<<<< HEAD
 }
 /* REGISTRO.php ESTILOS */
 .registro{
@@ -161,3 +157,24 @@ body {
 
 }
 
+=======
+/* Footer */
+footer {
+    color: white;
+}
+
+.copy {
+    color: white;
+}
+.ul--footer {
+    display: flex;
+}
+.li--footer {
+     justify-content: center
+
+
+    }
+.icono--footer {
+    font-size: 30px;
+}
+>>>>>>> a9f593fe9f2efee051ed04e3481fca5cc5772319
