@@ -101,8 +101,7 @@ body {
     
 }
 
-<<<<<<< HEAD
-}
+
 /* REGISTRO.php ESTILOS */
 .registro{
     display: flex;
@@ -112,6 +111,7 @@ body {
 
 }
 .formulario{
+    margin: 0 auto;
     border: solid white;
     border-radius: 10px;
     width: 40%;
@@ -139,6 +139,7 @@ body {
     margin-bottom: -10px;
 }
 .boton{
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -150,6 +151,7 @@ body {
 }
 /* LOGIN*/
 .login{
+    margin: 0 auto;
     display: flex;
     overflow: hidden;
     flex-direction: column;
@@ -157,7 +159,6 @@ body {
 
 }
 
-=======
 /* Footer */
 footer {
     color: white;
@@ -177,4 +178,3 @@ footer {
 .icono--footer {
     font-size: 30px;
 }
->>>>>>> a9f593fe9f2efee051ed04e3481fca5cc5772319
