@@ -10,7 +10,7 @@
             ?>
         </header>
         <section class="registro">
-        <form class="formulario">
+        <form  action="#" method="POST" class="formulario">
              <div class="form">
                  <label  for="text"><h2 class="texto">Usuario</h2></label>
                  <br>
