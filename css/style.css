@@ -103,6 +103,12 @@ body {
 
 /* F.a.Q  Mauri*/
 
+.FAQ--grilla{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
 .FAQ--titulo{
     color: #D88E4E;
     margin-top: 2em;
@@ -126,6 +132,21 @@ body {
 .FAQ--juego{
     color: #D88E4E;
 }
+.FAQ--Info{
+    color: white;
+}
+.FAQ--tema{
+    color: #D85F75;
+}
+.FAQ--ahorcado{
+    color: #A0D8C8;
+}
+.FAQ--muerte{
+    color: #D88E4E;
+}
+
+
+
 
 @media (max-width: 768px){
 
