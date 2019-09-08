@@ -98,3 +98,39 @@ body {
     color: #D85F75;
 
 }
+
+/* F.a.Q  Mauri*/
+
+.FAQ--titulo{
+    color: #D88E4E;
+    margin-top: 2em;
+    font-size: 3.12em;
+}
+.FAQ--du{
+    color:#D85F75;
+}
+.FAQ--bi{
+    color:#A0D8C8;
+}
+.FAQ--um{
+    color:#D88E4E;
+}
+.FAQ--reglas{
+    color:#D85F75;
+}
+.FAQ--del{
+    color: #A0D8C8;
+}
+.FAQ--juego{
+    color: #D88E4E;
+}
+
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 600px){
+    
+}
+    
+    
