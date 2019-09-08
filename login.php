@@ -24,4 +24,8 @@
             <center><button class="boton"><h4>Login</h4></button></center>
 
         </section>
+        <?php 
+         include_once ("footer.php");
+
+         ?>
         

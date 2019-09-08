@@ -31,14 +31,15 @@
 
            <center><button class="boton" type="submit"><h4>Registrarse</h4></button></center> 
          </form>
-         <center><button class="boton" type="submit"><h4>Login</h4></button></center> 
+         <center><button class="b--login" type="submit"><h4>Login</h4></button></center> 
 
           
          </section>
 
-         <footer>
+         <?php 
+         include_once ("footer.php");
 
-         </footer>
+         ?>
 
 </body>
 

@@ -176,12 +176,24 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 50%;
     background-color: #694872;
     border: solid white;
     color: white;
     margin-top:1em;
     border-radius: 10px;
+}
+.b--login{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    background-color: #694872;
+    border: solid white;
+    color: white;
+    margin-top:1em;
+    border-radius: 10px;
+    
 }
 /* LOGIN*/
 .login{
