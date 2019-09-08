@@ -44,12 +44,13 @@ body {
     margin: 40px;
     background-color: #694872;
 }
-.titulo {
+.titulo--ranking {
     font-size: 50px;
     color: #D88E4E;
     text-align: left;
     margin-left: 50px;
     margin-bottom: 0;
+    margin-top: 2em;
 }
 .ranking--usuario {
     margin-top: 70px;
@@ -78,24 +79,32 @@ body {
 /* Usuario */
 .caja3 {
     border-left: solid white 1px;
-    /* background-color:  #694872; */
     width: 40%;
     height: 500px;
-    margin: 50px;
+    margin-bottom: 200px;
+    margin-left: 50px;
+}
+.img--usuario {
+    border: solid black 2px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #7F7D7C;
+    margin-bottom: 30px;
 }
 .usuario {
     font-size: 30px;
     color: #D85F75;
+   
 
 }
 .puntos {
     font-size: 30px;
-    color: #D85F75;
+    color: #D88E4E;
 
 }
 .puesto {
     font-size: 30px;
-    color: #D85F75;
+    color: #A0D8C8;
 
 }
 /* REGISTRO.php ESTILOS */
