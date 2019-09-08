@@ -99,6 +99,64 @@ body {
     
 }
 
+
+/* REGISTRO.php ESTILOS */
+.registro{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    margin-top: 2em;
+
+}
+.formulario{
+    margin: 0 auto;
+    border: solid white;
+    border-radius: 10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #694872;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+} 
+.input{
+    width: 140%;
+    border-radius: 10px;
+    text-align: center;
+
+
+}
+.texto {
+    color: white;
+    margin-top: 1em;
+    margin-bottom: -10px;
+}
+.boton{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #694872;
+    border: solid white;
+    color: white;
+    margin-top:1em;
+    border-radius: 10px;
+}
+/* LOGIN*/
+.login{
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    margin-top: 2em;
+
+}
+
 /* Footer */
 footer {
     color: white;

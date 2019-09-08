@@ -10,7 +10,7 @@
             <a class="nav-link rounded-pill " href="f.a.q.html">F.A.Q</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link rounded-pill disabled active" href="registro.html">Registro</a>
+            <a class="nav-link rounded-pill " href="registro.html">Registro</a>
         </li>
         <li class="nav-item">
             <a class="nav-link rounded-pill" href="login.html">Iniciar secion</a>
