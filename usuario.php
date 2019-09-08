@@ -1,6 +1,7 @@
-<?php 
- include_once('head.php');
+<?php
+include_once('head.php');
 ?>
+
 <body>
     <section class="container">
         <header>
@@ -26,17 +27,13 @@
             </div>
 
             <div class="caja3">
-            <img src="img/user.jpg" width="200px" height="200px" class="img--usuario">
-            <p class="usuario"> Chirimbolito </p>
+                <img src="img/user.jpg" width="200px" height="200px" class="img--usuario">
+                <p class="usuario"> Chirimbolito </p>
                 <p class="puntos"> 87</p>
                 <p class="puesto"> Puesto 6</p>
             </div>
-
         </article>
-        <footer>
 
-        </footer>
-    </section>
-</body>
-
-</html>
+        <?php 
+         include_once('footer.php');
+        ?>
