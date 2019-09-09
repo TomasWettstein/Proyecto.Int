@@ -137,25 +137,14 @@ body {
 }
     
     
-<<<<<<< HEAD
-/* REGISTRO.php ESTILOS */
-.sec-regis{
-=======
 /* ---------------Registro----------------- */
 .registro{
->>>>>>> 3261eaef9e1336b3423c9da915bf331be5ee5c2f
     display: flex;
     overflow: hidden;
     flex-direction: column;
     margin-top: 2em;
 }
-.p--registro {
-    font-size: 3em;
-    margin-bottom: 1em;
-    color: white;
-
-}
-.form--regis{
+.formulario{
     margin: 0 auto;
     border: solid white;
     border-radius: 10px;
@@ -164,7 +153,6 @@ body {
     flex-direction: column;
     overflow: hidden;
     background-color: #694872;
-    margin: 3em auto;
 }
 .form{
     display: flex;
@@ -172,38 +160,28 @@ body {
     align-items: center;
 
 } 
-.in--regis{
-    width: 70%;
+.input{
+    width: 80%;
     border-radius: 10px;
     text-align: center;
     
 }
-.sub--texto{
+.texto {
     color: white;
     margin-top: 1em;
     margin-bottom: 10px;
-<<<<<<< HEAD
-    font-size: 1.7em;
-=======
     
->>>>>>> 3261eaef9e1336b3423c9da915bf331be5ee5c2f
 }
 .boton{
     margin: 0 auto;
     display: flex;
     justify-content: center;
     width: 50%;
-    background-color: #A0D8C8 ;
+    background-color: #694872;
     border: solid white;
     color: white;
     margin-top:1em;
     border-radius: 10px;
-    margin-bottom: 1em;
-}
-.p--boton{
-    font-size: 1em;
-    width: 40%;
-
 }
 .b--login{
    margin: 0 auto;
@@ -213,9 +191,8 @@ body {
     background-color: #694872;
     border: solid white;
     color: white;
-    margin: 10em auto;
+    margin-top:1em;
     border-radius: 10px;
-    font-size: 1.2em;
     
 }
 /* LOGIN*/
