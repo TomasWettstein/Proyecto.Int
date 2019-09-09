@@ -40,7 +40,7 @@ include_once('head.php');
             <button class="boton--crea"> Guardar </button>
         </article>
     </section>
-<?php 
-include_once('footer.php');
-?>
+    <?php
+    include_once('footer.php');
+    ?>
 </body>
