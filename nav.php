@@ -1,7 +1,7 @@
 <nav class="rounded-pill navbar">
     <ul class="nav nav-pills nav-fill">
         <li class="nav-item col-lg-2">
-            <img class="d-block  w-100" src="img\Iconos y cosas varias\Logo mini.png" alt="logo">
+            <img class="d-block  w-50" src="img\Iconos y cosas varias\Logo mini.png" alt="logo">
         </li>
         <li class="nav-item">
             <a class="nav-link rounded-pill " href="index.html" tabindex="-1" aria-disabled="true">Home </a>

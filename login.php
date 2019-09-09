@@ -9,23 +9,23 @@ include_once('head.php');
             include_once('nav.php');
             ?>
         </header>
+        <p class="titulo--login"> Inicia Sesión </p>
         <section class="login">
-            <form action="#" method="POST" class="formulario">
-                <div class="form">
+            <form action="#" method="POST" class="login--form">
+                <div class="form--caja">
                     <label for="text">
-                        <h2 class="texto">Usuario</h2>
+                        <h2 class="texto--login">Usuario</h2>
                     </label>
-                    <br>
-                    <input class="input" type="text" id="usuario" placeholder="Ingrese nombre de usuario">
+                    <input class="in--login" type="text" id="usuario" placeholder="Ingrese nombre de usuario">
                 </div>
 
-                <div class="form">
+                <div class="form--caja">
                     <label class="texto" for="Password">
-                        <h2 class="texto">Contraseña</h2>
-                    </label><br>
-                    <input class="input" type="password" id="password" placeholder="Intruduzca una contraseña">
+                        <h2 class="texto--login">Contraseña</h2>
+                    </label>
+                    <input class="in--login" type="password" id="password" placeholder="Intruduzca una contraseña">
                 </div>
-                <center><button class="boton">
+                <center><button class="boton--login">
                         <h4>Login</h4>
                     </button></center>
 

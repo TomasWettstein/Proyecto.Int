@@ -166,7 +166,8 @@ body {
 .p--registro {
     font-size: 3em;
     margin-bottom: 1em;
-    color: white;
+    margin-top: 1em;
+    color: #D88E4E;
 }
 .form--regis{
     margin: 0 auto;
@@ -183,13 +184,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 } 
 .in--regis{
     width: 70%;
     border-radius: 10px;
-    text-align: center;
-    
+    text-align: center;  
 }
 .sub--texto{
     color: white;
@@ -230,13 +229,58 @@ body {
     font-size: 1.2em;
     
 }
-/* LOGIN*/
-.login{
-    margin: 0 auto;
+/* ---------Login------------- */
+.titulo--login {
+    font-size: 3em;
+    margin-top: 1em;
+    color: #D88E4E;
+}
+.login{ 
     display: flex;
     overflow: hidden;
     flex-direction: column;
-    margin-top: 2em;
+    margin-top: 1em;
+    margin-bottom: 10em;
+}
+.texto--login{
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 10px;
+    font-size: 1.7em;
+}
+.form--caja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.login--form{
+    /* margin: 0 auto; */
+    border: solid white;
+    border-radius: 10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #694872;
+    margin: 3em auto;
+    /* margin-bottom: 10em; */
+}
+.in--login{
+    width: 70%;
+    border-radius: 10px;
+    text-align: center;  
+}
+.boton--login{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: #A0D8C8 ;
+    border: solid white;
+    color: white;
+    margin-top:1em;
+    border-radius: 10px;
+    margin-bottom: 1em;
 }
 /* ---------------Crea tus preguntas----------------- */
 .titulo--crea {
