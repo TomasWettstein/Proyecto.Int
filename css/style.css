@@ -137,13 +137,8 @@ body {
 }
     
     
-<<<<<<< HEAD
-/* REGISTRO.php ESTILOS */
-.sec-regis{
-=======
 /* ---------------Registro----------------- */
 .registro{
->>>>>>> 3261eaef9e1336b3423c9da915bf331be5ee5c2f
     display: flex;
     overflow: hidden;
     flex-direction: column;
@@ -182,11 +177,7 @@ body {
     color: white;
     margin-top: 1em;
     margin-bottom: 10px;
-<<<<<<< HEAD
-    font-size: 1.7em;
-=======
     
->>>>>>> 3261eaef9e1336b3423c9da915bf331be5ee5c2f
 }
 .boton{
     margin: 0 auto;
