@@ -8,6 +8,8 @@
     height: 100%;
     background-color: #2C263F;
 }
+/* ---------------Navbar---------------- */
+
 .navbar{
     background-color: #694872;
 }
@@ -24,16 +26,16 @@ body {
 .cajamadre {
     display: flex;
 }
+/* --------------Ranking----------------- */
 
-
-/* Ranking*/
 .caja2 {
     border: solid white 1px;
-    border-radius: 10%;
-    width: 60%;
+    border-radius: 8px;
+    width: 50%;
     height: 400px;
     margin: 40px;
     background-color: #694872;
+    padding: 0;
 }
 .titulo--ranking {
     font-size: 3em;
@@ -66,8 +68,8 @@ body {
     margin-left: 9em;
     color: white;
 }
+/* ---------------Usuario----------------- */
 
-/* Usuario */
 .caja3 {
     border-left: solid white 1px;
     width: 40%;
@@ -96,8 +98,7 @@ body {
     color: #A0D8C8;
     
 }
-
-/* F.a.Q  Mauri*/
+/* --------------FAQ----------------- */
 
 .FAQ--titulo{
     color: #D88E4E;
@@ -132,13 +133,12 @@ body {
 }
     
     
-/* REGISTRO.php ESTILOS */
+/* ---------------Registro----------------- */
 .registro{
     display: flex;
     overflow: hidden;
     flex-direction: column;
     margin-top: 2em;
-
 }
 .formulario{
     margin: 0 auto;
@@ -154,19 +154,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 } 
 .input{
     width: 80%;
     border-radius: 10px;
     text-align: center;
-
-
 }
 .texto {
     color: white;
     margin-top: 1em;
     margin-bottom: 10px;
+    
 }
 .boton{
     margin: 0 auto;
@@ -179,17 +178,70 @@ body {
     margin-top:1em;
     border-radius: 10px;
 }
-/* LOGIN*/
+
+/* ---------------Login----------------- */
 .login{
     margin: 0 auto;
     display: flex;
     overflow: hidden;
     flex-direction: column;
     margin-top: 2em;
-
 }
-
-/* Footer */
+/* ---------------Crea tus preguntas----------------- */
+.titulo--crea {
+    margin-top: 1em;
+    color:#D88E4E;
+    font-size: 3em;
+}
+.contenedor--form {
+    display: flex;
+    margin: 4em auto;
+    justify-content: center;
+    border: solid white 1px;
+    border-radius: 8px;
+    padding: 1em;
+    width: 80%;
+    background-color: #694872;
+}
+.subtitulos--crea {
+    color: white;
+    font-size: 1.7em;
+    margin-top: 1em;
+}
+.cajas--form:first-of-type {
+    margin-left: 0;
+}
+.cajas--form {
+    margin-left: 4em;
+    margin-bottom: 1em;
+}
+.preguntainput--crea {
+    width: 110%;
+    margin-top: 2em;
+    border-radius: 8px;
+}
+.respuesta--crea {
+    margin-top: 2em;
+    width: 110%;
+    border-radius: 8px;
+}
+.tematica--crea {
+    color: white;
+    margin-top: 2em;
+    margin-right: 1em;
+}
+.boton--crea {
+    width: 10%;
+    padding: 0.5em;
+    border-radius: 15px;
+    background-color: #D85F75;
+    margin-bottom: 10em;
+}
+.boton--crea:hover {
+    background-color: #A0D8C8;
+    color: white;
+}
+/* ---------------Footer----------------- */
 footer {
     color: white;
 }
@@ -205,5 +257,5 @@ footer {
     margin-left: 3em;
 }
 .icono--footer {
-    font-size: 2em;
+    font-size: 1.5em;
 }
