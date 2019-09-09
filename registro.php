@@ -9,29 +9,30 @@
             include_once('nav.php');
             ?>
         </header>
-        <section class="registro">
-        <form  action="#" method="POST" class="formulario">
+        <section class="sec--regis">
+            <p class = "p--registro">Registro</p>
+        <form  action="#" method="POST" class="form--regis">
              <div class="form">
-                 <label  for="text"><h2 class="texto">Usuario</h2></label>
-                 <br>
-                  <input class="input" type="text" id="usuario"  placeholder="Ingrese nombre de usuario">
+                 <label  for="text"><p class="sub--texto">Usuario</p></label>
+                 
+                  <input class="in--regis" type="text" id="usuario"  placeholder="Ingrese nombre de usuario">
             </div>
             <div class="form">
-                <label  for="email"><h2 class="texto">Email</h2></label><br>
-                <input class="input"  type="email"  id="email" placeholder= "Introducir Email">
+                <label  for="email"><p class="sub--texto">Email</p></label>
+                <input class="in--regis"  type="email"  id="email" placeholder= "Introducir Email">
              </div>
              <div class="form">
-                 <label class="texto" for="Password"><h2 class="texto">Contraseña</h2></label><br>
-                 <input class="input"  type="password" id= "password" placeholder="Intruduzca una contraseña">
+                 <label  for="Password"><p class="sub--texto">Contraseña</p></label>
+                 <input class="in--regis"  type="password" id= "password" placeholder="Intruduzca una contraseña">
             </div>
             <div class="form">
-                <label   for="Password"><h2 class="texto">Repetir contraseña</h2></label><br>
-                <input class="input"  type="password" class="form-control" id= "password" placeholder="Repita la contraseña">
+                <label   for="Password"><p class="sub--texto">Repetir contraseña</p></label>
+                <input class="in--regis"  type="password" class="form-control" id= "password" placeholder="Repita la contraseña">
             </div>
 
-           <center><button class="boton" type="submit"><h4>Registrarse</h4></button></center> 
+           <center><button class="boton" type="submit"><p class = "p--boton"> Registrarse</p></button></center> 
          </form>
-         <center><button class="b--login" type="submit"><h4>Login</h4></button></center> 
+         <center><button class="b--login" type="submit"><p>Login</p></button></center> 
 
           
          </section>
