@@ -104,12 +104,6 @@ body {
 }
 /* --------------FAQ----------------- */
 
-.FAQ--grilla{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-
 .FAQ--titulo{
     color: #D88E4E;
     margin-top: 2em;
@@ -133,21 +127,6 @@ body {
 .FAQ--juego{
     color: #D88E4E;
 }
-.FAQ--Info{
-    color: white;
-}
-.FAQ--tema{
-    color: #D85F75;
-}
-.FAQ--ahorcado{
-    color: #A0D8C8;
-}
-.FAQ--muerte{
-    color: #D88E4E;
-}
-
-
-
 
 @media (max-width: 768px){
 
@@ -156,19 +135,16 @@ body {
 @media (max-width: 600px){
     
 }
-/* REGISTRO.php ESTILOS */
-.sec-regis{
+    
+    
+/* ---------------Registro----------------- */
+.registro{
     display: flex;
     overflow: hidden;
     flex-direction: column;
     margin-top: 2em;
 }
-.p--registro {
-    font-size: 3em;
-    margin-bottom: 1em;
-    color: white;
-}
-.form--regis{
+.formulario{
     margin: 0 auto;
     border: solid white;
     border-radius: 10px;
@@ -177,7 +153,6 @@ body {
     flex-direction: column;
     overflow: hidden;
     background-color: #694872;
-    margin: 3em auto;
 }
 .form{
     display: flex;
@@ -185,49 +160,39 @@ body {
     align-items: center;
 
 } 
-.in--regis{
-    width: 70%;
+.input{
+    width: 80%;
     border-radius: 10px;
     text-align: center;
     
 }
-.sub--texto{
+.texto {
     color: white;
     margin-top: 1em;
     margin-bottom: 10px;
-    font-size: 1.7em;
+    
 }
 .boton{
     margin: 0 auto;
     display: flex;
     justify-content: center;
     width: 50%;
-    background-color: #A0D8C8 ;
+    background-color: #694872;
     border: solid white;
     color: white;
     margin-top:1em;
     border-radius: 10px;
-    margin-bottom: 1em;
-}
-.p--boton{
-    font-size: 1.2em;
-    width: 40%;
-    margin: 0;
-}
-.p--registrarse {
-    margin-bottom: 0;
-    font-size: 1.2em;
 }
 .b--login{
+   margin: 0 auto;
     display: flex;
     justify-content: center;
     width: 20%;
     background-color: #694872;
     border: solid white;
     color: white;
-    margin-bottom: 10em;
+    margin-top:1em;
     border-radius: 10px;
-    font-size: 1.2em;
     
 }
 /* LOGIN*/
