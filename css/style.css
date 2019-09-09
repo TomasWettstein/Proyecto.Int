@@ -135,8 +135,6 @@ body {
 @media (max-width: 600px){
     
 }
-    
-    
 /* REGISTRO.php ESTILOS */
 .sec-regis{
     display: flex;
@@ -148,7 +146,6 @@ body {
     font-size: 3em;
     margin-bottom: 1em;
     color: white;
-
 }
 .form--regis{
     margin: 0 auto;
@@ -192,19 +189,22 @@ body {
     margin-bottom: 1em;
 }
 .p--boton{
-    font-size: 1em;
+    font-size: 1.2em;
     width: 40%;
-
+    margin: 0;
+}
+.p--registrarse {
+    margin-bottom: 0;
+    font-size: 1.2em;
 }
 .b--login{
-   margin: 0 auto;
     display: flex;
     justify-content: center;
     width: 20%;
     background-color: #694872;
     border: solid white;
     color: white;
-    margin: 10em auto;
+    margin-bottom: 10em;
     border-radius: 10px;
     font-size: 1.2em;
     

@@ -14,7 +14,6 @@ include_once('head.php');
         <form  action="#" method="POST" class="form--regis">
              <div class="form">
                  <label  for="text"><p class="sub--texto">Usuario</p></label>
-                 
                   <input class="in--regis" type="text" id="usuario"  placeholder="Ingrese nombre de usuario">
             </div>
             <div class="form">
@@ -32,7 +31,7 @@ include_once('head.php');
 
            <center><button class="boton" type="submit"><p class = "p--boton"> Registrarse</p></button></center> 
          </form>
-         <center><button class="b--login" type="submit"><p>Login</p></button></center> 
+         <center><button class="b--login" type="submit"><p class="p--registrarse">Login</p></button></center> 
 
           
          </section>
