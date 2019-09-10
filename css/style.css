@@ -102,7 +102,7 @@ body {
     color: #A0D8C8;
     
 }
-/* --------------FAQ----------------- */
+/* --------------FAQ MAURI----------------- */
 
 .FAQ--grilla{
     display: grid;
@@ -190,10 +190,27 @@ body {
     margin: 0 auto;
     padding: 0.5em;
 }
+/*-------HOME MAURI-------*/
+.HOME--titulo{
+    margin-top: 2em;
+}
+.HOME--titulo h2{
+    color: white;
+    font-size: 3em;
+}
 
-
-
-
+.HOME--juegos ul li{
+    list-style-type: none;
+    display: inline;
+}
+.HOME--juegos ul li img{
+    width: 25%;
+    margin: 2em 1em;
+}
+.HOME--footer{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.5em;
+}
 
 @media (max-width: 768px){
 

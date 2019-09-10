@@ -15,6 +15,7 @@
             <?php 
                 include_once 'nav.php';
             ?>
+        </header>
 
         <article class="FAQ--titulo">
             <h1>PREGUNTAS <br> FRECUENTES</h1>
