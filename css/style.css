@@ -101,16 +101,58 @@ body {
     color: #A0D8C8;
     
 }
-/* --------------FAQ----------------- */
+/* --------------FAQ MAURI----------------- */
 
 .FAQ--grilla{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 3em; 
 }
-.FAQ--titulo{
+
+.FAQ--titulo h1{
     color: #D88E4E;
-    margin-top: 2em;
-    /* font-size: 3.12em; */
+    margin: 1em 0;
+    font-size: 3em;
+}
+.FAQ--1erPregunta{
+    font-size: 1.7em;
+    background: #694872;
+    width: 60%;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+}
+.FAQ--2doInfo{
+    font-size: 1.7em;
+    background: #694872;
+    width: 60%;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+}
+.FAQ--3erInfo{
+    font-size: 1.7em;
+    background: #694872;
+    width: 60%;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+}
+.FAQ--4toInfo{
+    font-size: 1.7em;
+    background: #694872;
+    width: 60%;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+}
+.FAQ--5toinfo{
+    font-size: 1.7em;
+    background: #694872;
+    width: 60%;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
 }
 .FAQ--du{
     color:#D85F75;
@@ -130,9 +172,6 @@ body {
 .FAQ--juego{
     color: #D88E4E;
 }
-.FAQ--Info{
-    color: white;
-}
 .FAQ--tema{
     color: #D85F75;
 }
@@ -141,6 +180,35 @@ body {
 }
 .FAQ--muerte{
     color: #D88E4E;
+}
+.FAQ--Info{
+    color: white;
+    background: #694872;
+    border-radius: 30px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0.5em;
+}
+/*-------HOME MAURI-------*/
+.HOME--titulo{
+    margin-top: 2em;
+}
+.HOME--titulo h2{
+    color: white;
+    font-size: 3em;
+}
+
+.HOME--juegos ul li{
+    list-style-type: none;
+    display: inline;
+}
+.HOME--juegos ul li img{
+    width: 25%;
+    margin: 2em 1em;
+}
+.HOME--footer{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.5em;
 }
 
 @media (max-width: 768px){
