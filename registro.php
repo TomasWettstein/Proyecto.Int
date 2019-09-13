@@ -1,4 +1,5 @@
 <?php
+$titulo = "Registro";
 include_once('head.php');
 ?>
 
