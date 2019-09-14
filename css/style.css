@@ -400,6 +400,58 @@ body {
     background-color: #A0D8C8;
     color: white;
 }
+/*----------------CONTACTO----------------*/ 
+.sec--contacto{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    margin-top: 2em;
+
+}
+.p--contacto{
+    font-size: 3em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: #D88E4E;
+}
+.caja--contacto{
+    margin: 0 auto;
+    border: solid white;
+    border-radius: 10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #694872;
+    margin: 3em auto;
+
+}
+.p--caja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 1.7em;
+
+}
+.caja--contactenos{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 3em auto;
+}
+.p_contactenos{
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: #D85F75;
+
+}
+.p--contactenos{
+    color: white;
+}
+
 /* ---------------Footer----------------- */
 footer {
     color: white;
