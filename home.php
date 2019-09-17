@@ -8,7 +8,7 @@ require_once 'head.php'; ?>
 
         <article class = HOME--titulo>
             <h2>Pon a prueba tus conocimientos.</h2>
-            <p><img src="img\Iconos y cosas varias\Titulo Recto.png" alt="Logo de Dubium"></p>    
+            <p><img src="img\Iconos y cosas varias\Titulo Recto.png" alt="Dubium logo"></p>    
         </article>
 
         <article class="HOME--juegos">
