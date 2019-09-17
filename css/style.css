@@ -421,19 +421,19 @@ body {
 .p--contacto{
     font-size: 3em;
     margin-bottom: 1em;
-    margin-top: 1em;
     color: #D88E4E;
 }
 .caja--contacto{
     margin: 0 auto;
-    border: solid white;
-    border-radius: 10px;
+    border-left: white solid 1px;
+    border-right: white solid 1px;
     width: 40%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background-color: #694872;
-    margin: 3em auto;
+    padding-left: 1em;
+    padding-right: 1em;
+
 
 }
 .p--caja{
@@ -441,7 +441,7 @@ body {
     flex-direction: column;
     align-items: center;
     color: white;
-    font-size: 1.7em;
+    font-size: 1.4em;
 
 }
 .caja--contactenos{
@@ -451,15 +451,15 @@ body {
     overflow: hidden;
     margin: 3em auto;
 }
-.p_contactenos{
-    font-size: 2.5em;
+.b_contactenos{
+    font-size: 2em;
+    padding: 1px;
     margin-bottom: 1em;
     margin-top: 1em;
-    color: #D85F75;
-
-}
-.p--contactenos{
+    background-color: #694872;
     color: white;
+    border-radius: 8px;
+
 }
 
 /* ---------------Footer----------------- */
@@ -481,6 +481,59 @@ footer {
 .icono--footer {
     font-size: 1.5em;
 }
+
+
+
+
+
+/*Nosotros formulario*/
+.formulario--nosotros{
+    margin: 0 auto;
+    border: solid white;
+    border-radius: 10px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #694872;
+    margin: 3em auto;
+}
+.form--nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p--nosotros{
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 10px;
+    font-size: 1.7em;
+
+}
+.in--nosotros{
+    width: 70%;
+    border-radius: 10px;
+    text-align: center; 
+
+}
+.b_nosotros{
+    font-size: 1.5em;
+    padding: 1px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: #D85F75;
+    background-color: #A0D8C8 ;
+    border-radius: 8px;
+    width: 5em;
+    height: 2em;
+
+}
+
+
+
+
+
+
 
 /* MEDIA QUERy*/
 
@@ -517,3 +570,71 @@ footer {
         margin: 2em 0;
     }
 }
+
+/*Media queries registro */
+@media (max-width: 768px){
+    .container{
+        max-width: 95%;
+        height: 100vh;
+        padding: 10px;
+    }
+    .form--regis{
+        width: 90vw;
+    }
+    .boton{
+        width: 45vw;
+        
+    }
+    .p--boton{
+        margin-right: 40px;
+    }
+    .b--login{
+    width: 45vw;
+    }
+    
+    
+}
+
+/*Media queries login */
+@media (max-width:768px){
+    .container{
+        max-width: 95%;
+        height: 100vh;
+        padding: 10px;
+    }
+    .login--form{
+        width: 90vw;
+    }
+}
+
+/*media queries contacto */
+@media (max-width: 768px){
+    .container{
+        max-width: 95%;
+        height: 100vh;
+        padding: 10px;
+    }
+    .caja--contacto{
+        width: 85vw;
+    }
+    .p--caja{
+        width: 80vw;
+    }
+
+}
+
+/*media queries nosotros*/
+@media (max-width: 768px){
+    .container{
+        max-width: 95%;
+        height: 100vh;
+        padding: 10px;
+    }
+    .formulario--nosotros{
+        width: 90vw;
+    }
+
+
+}
+
+

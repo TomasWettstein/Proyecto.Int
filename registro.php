@@ -12,7 +12,7 @@ include_once('head.php');
         </header>
         <section class="sec--regis">
             <p class = "p--registro">Registro</p>
-        <form  action="#" method="POST" class="form--regis">
+        <form  action="login.php" method="POST" class="form--regis">
              <div class="form">
                  <label  for="text"><p class="sub--texto">Usuario</p></label>
                   <input class="in--regis" type="text" id="usuario"  placeholder="Ingrese nombre de usuario">
@@ -30,9 +30,9 @@ include_once('head.php');
                 <input class="in--regis"  type="password" class="form-control" id= "password" placeholder="Repita la contraseña">
             </div>
 
-           <center><button class="boton" type="submit"><p class = "p--boton"> Registrarse</p></button></center> 
+           <center><button  class="boton" type="submit"><p class = "p--boton"> Registrarse</p></button></center> 
          </form>
-         <center><button class="b--login" type="submit"><p class="p--registrarse">Login</p></button></center> 
+         <center><button onclick="location.href='login.php'" class="b--login" type="submit"><p class="p--registrarse">Login</p></button></center> 
 
           
          </section>

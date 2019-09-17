@@ -1,4 +1,5 @@
 <?php
+$titulo = "Login";
 include_once('head.php');
 ?>
 
@@ -11,7 +12,7 @@ include_once('head.php');
         </header>
         <p class="titulo--login"> Inicia Sesión </p>
         <section class="login">
-            <form action="#" method="POST" class="login--form">
+            <form action="home.php" method="POST" class="login--form">
                 <div class="form--caja">
                     <label for="text">
                         <h2 class="texto--login">Usuario</h2>
@@ -28,6 +29,7 @@ include_once('head.php');
                 <center><button class="boton--login">
                         <h4>Login</h4>
                     </button></center>
+            </form>
 
         </section>
         <?php
