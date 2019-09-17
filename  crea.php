@@ -10,7 +10,7 @@ include_once('head.php');
             ?>
         </header>
         <article>
-            <h1 class="titulo--crea"> Creá tus propias preguntas! </h1>
+            <p class="titulo--crea"> Creá tus propias preguntas! </p>
             <form action="#" method="post" class="contenedor--form">
                 <div class="cajas--form">
                     <h3 class="subtitulos--crea"> Escribi tu pregunta: </h3>

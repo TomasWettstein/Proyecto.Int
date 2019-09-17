@@ -13,19 +13,23 @@ include_once('head.php');
                 ?>
             </header>
             <section class="sec--contacto">
-                <p class="p--contacto">Nosotros
+                <p class="p--contacto">
+                    Nosotros
                 </p>
                 <div class="caja--contacto">
-                    <p class="p--caja">Somos un grupo formado en Digital House, en el curso presencial de desarrollo web full stack, turno tarde. <br>
-                        Información del Scrum Team: <br> Agustina = Scrum Master <br> Mauricio = Parte del scrum team <br> Tomas Wettstein = Parte del scrum team. <br> Desde ya pueden dirigirse al pie de nuestra página y contactarnos atraves de la redes sociales, Facebook, Twitter o Instagram</p>
-
-
-
+                    <p class="p--caja">
+                        Somos un grupo formado en Digital House, en el curso presencial de desarrollo web full stack, turno tarde. <br>
+                        Información del Scrum Team: <br> Agustina = Scrum Master <br> Mauricio = Parte del scrum team <br> Tomas Wettstein =
+                        Parte del scrum team. <br> Desde ya pueden dirigirse al pie de nuestra página y contactarnos atraves de la redes sociales,
+                        Facebook, Twitter o Instagram
+                    </p>
                 </div>
                 <div class="caja--contactenos">
                     <button onclick="location.href='nosotros.php'" class="b_contactenos"> Contactenos </button>
-
+                    <p class="p--contactenos"> Email </p>
+                    <p class="p--contactenos"> Dudibum@gmail.com </p>
                 </div>
+
                 <div class="c--iconos">
                     <article class="art--redes">
                         <ul>
@@ -37,6 +41,7 @@ include_once('head.php');
                     </article>
                 </div>
             </section>
+            
             <?php
             include_once("footer.php");
             ?>
