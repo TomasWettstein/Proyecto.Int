@@ -101,7 +101,7 @@ body {
     color: #A0D8C8;
     
 }
-/* --------------FAQ MAURI----------------- */
+/* --------------FAQ----------------- */
 
 .FAQ--grilla{
     display: grid;
@@ -109,27 +109,44 @@ body {
     grid-row-gap: 3em; 
 }
 
-.FAQ--titulo h1{
+.titulo--frecuentes{
     color: #D88E4E;
-    margin: 1em 0;
+    margin-top: 1em;
     font-size: 3em;
 }
-.FAQ--1erPregunta{
-    font-size: 1.7em;
+.Primer--div{
     background: #694872;
     width: 60%;
     border-radius: 30px;
     margin: 0 auto;
-    margin-bottom: 0.5em;
+    padding: 0.2em;
 }
-.FAQ--2doInfo{
-    font-size: 1.7em;
+.p--dubium{
+    font-size: 1.9em;
+    color: #D85F75;
+    text-decoration: underline;
+}
+.primera--info {
+    font-size: 1.2em;
+    color: white;
+}
+.Segundo--div{
     background: #694872;
     width: 60%;
     border-radius: 30px;
     margin: 0 auto;
-    margin-bottom: 0.5em;
+    padding: 0.2em;
 }
+.p-info {
+    font-size: 1.9em;
+    color: #A0D8C8;
+    text-decoration: underline;
+}
+.segunda--info {
+    font-size: 1.2em;
+    color: white;
+}
+
 .FAQ--3erInfo{
     font-size: 1.7em;
     background: #694872;
@@ -194,7 +211,7 @@ body {
     padding: 0.5em;
     margin-top: 1em;
 }
-/*-------HOME MAURI-------*/
+/*----------Home----------*/
 .HOME--titulo{
     margin-top: 2em;
 }
@@ -228,7 +245,7 @@ body {
     padding: 0.5em;
 }
 
-/* REGISTRO.php ESTILOS */
+/*---------- registro.php --------- */
 .sec-regis{
     display: flex;
     overflow: hidden;
@@ -482,10 +499,6 @@ footer {
     font-size: 1.5em;
 }
 
-/* MEDIA QUERy*/
-
-
-@media (max-width: 768px){
 
 /*-----------HOME MAURI-----------*/
 
@@ -500,12 +513,9 @@ footer {
     font-size: 2em;
 }
 
-/* --------------FAQ MAURI----------------- */
+/* -------------Media query FAQs----------------- */
 
 
-
-
-}
 @media (max-width: 600px){
     .HOME--juegos ul{
         display: grid;
@@ -517,3 +527,7 @@ footer {
         margin: 2em 0;
     }
 }
+
+/* --Footer-- */
+
+@media (max-width: 768px)
