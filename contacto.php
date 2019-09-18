@@ -26,8 +26,6 @@ include_once('head.php');
                 </div>
                 <div class="caja--contactenos">
                     <button onclick="location.href='nosotros.php'" class="b_contactenos"> Contactenos </button>
-                    <p class="p--contactenos"> Email </p>
-                    <p class="p--contactenos"> Dudibum@gmail.com </p>
                 </div>
 
                 <div class="c--iconos">

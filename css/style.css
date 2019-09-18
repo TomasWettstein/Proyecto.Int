@@ -569,11 +569,8 @@ footer {
     color: white;
     font-size: 2em;
 }
-}
+
 /* -------------Media query FAQs----------------- */
-
-
-@media (max-width: 600px){
     .HOME--juegos ul{
         display: grid;
         grid-template-rows: 1fr 1fr;
@@ -583,10 +580,7 @@ footer {
         width: 50%;
         margin: 2em 0;
     }
-}
-
 /*Media queries registro */
-@media (max-width: 768px){
     .container{
         max-width: 95%;
         height: 100vh;
@@ -606,11 +600,7 @@ footer {
     width: 45vw;
     }
     
-    
-}
-
 /*Media queries login */
-@media (max-width:768px){
     .container{
         max-width: 95%;
         height: 100vh;
@@ -619,10 +609,8 @@ footer {
     .login--form{
         width: 90vw;
     }
-}
 
 /*media queries contacto */
-@media (max-width: 768px){
     .container{
         max-width: 95%;
         height: 100vh;
@@ -635,10 +623,7 @@ footer {
         width: 80vw;
     }
 
-}
-
 /*media queries nosotros*/
-@media (max-width: 768px){
     .container{
         max-width: 95%;
         height: 100vh;
@@ -647,8 +632,9 @@ footer {
     .formulario--nosotros{
         width: 90vw;
     }
-
-
 }
+
+
+
 
 
