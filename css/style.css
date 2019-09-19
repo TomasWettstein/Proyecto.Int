@@ -18,7 +18,7 @@
 }
 .nav-link{
     background-color: #A0D8C8 ;
-
+    
 }
 
 body {
@@ -233,7 +233,7 @@ body {
     display: inline;
 }
 .HOME--juegos ul li a:hover{
-   color: #2C263F;
+    color: #2C263F;
 }
 .HOME--juegos ul li img{
     width: 100%;
@@ -433,7 +433,7 @@ body {
     overflow: hidden;
     flex-direction: column;
     margin-top: 2em;
-
+    
 }
 .p--contacto{
     font-size: 3em;
@@ -450,8 +450,8 @@ body {
     overflow: hidden;
     padding-left: 1em;
     padding-right: 1em;
-
-
+    
+    
 }
 .p--caja{
     display: flex;
@@ -459,7 +459,7 @@ body {
     align-items: center;
     color: white;
     font-size: 1.4em;
-
+    
 }
 .caja--contactenos{
     margin: 0 auto;
@@ -476,7 +476,7 @@ body {
     background-color: #694872;
     color: white;
     border-radius: 8px;
-
+    
 }
 
 /* ---------------Footer----------------- */
@@ -525,13 +525,13 @@ footer {
     margin-top: 1em;
     margin-bottom: 10px;
     font-size: 1.7em;
-
+    
 }
 .in--nosotros{
     width: 70%;
     border-radius: 10px;
     text-align: center; 
-
+    
 }
 .b_nosotros{
     font-size: 1.5em;
@@ -543,7 +543,7 @@ footer {
     border-radius: 8px;
     width: 5em;
     height: 2em;
-
+    
 }
 
 
@@ -556,21 +556,21 @@ footer {
 
 
 @media (max-width: 768px){
-/*Comentario*/
-/*-----------HOME MAURI-----------*/
-
-.HOME--juegos ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 2em;
-
-}
-.HOME--titulo h2{
-    color: white;
-    font-size: 2em;
-}
-
-/* -------------Media query FAQs----------------- */
+    /*Comentario*/
+    /*-----------HOME MAURI-----------*/
+    
+    .HOME--juegos ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2em;
+        
+    }
+    .HOME--titulo h2{
+        color: white;
+        font-size: 2em;
+    }
+    
+    /* -------------Media query FAQs----------------- */
     .HOME--juegos ul{
         display: grid;
         grid-template-rows: 1fr 1fr;
@@ -580,7 +580,7 @@ footer {
         width: 50%;
         margin: 2em 0;
     }
-/*Media queries registro */
+    /*Media queries registro */
     .container{
         max-width: 95%;
         height: 100vh;
@@ -591,16 +591,15 @@ footer {
     }
     .boton{
         width: 45vw;
-        
     }
     .p--boton{
         margin-right: 40px;
     }
     .b--login{
-    width: 45vw;
+        width: 45vw;
     }
     
-/*Media queries login */
+    /*Media queries login */
     .container{
         max-width: 95%;
         height: 100vh;
@@ -609,8 +608,8 @@ footer {
     .login--form{
         width: 90vw;
     }
-
-/*media queries contacto */
+    
+    /*media queries contacto */
     .container{
         max-width: 95%;
         height: 100vh;
@@ -622,8 +621,8 @@ footer {
     .p--caja{
         width: 80vw;
     }
-
-/*media queries nosotros*/
+    
+    /*media queries nosotros*/
     .container{
         max-width: 95%;
         height: 100vh;
