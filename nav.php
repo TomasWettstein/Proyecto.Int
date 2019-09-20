@@ -10,7 +10,7 @@
                 <img class="d-block  w-50" src="img\Iconos y cosas varias\Logo mini.png" alt="logo">
             </li>
             <li class="nav-item">
-                <a class="nav-link rounded-pill " href="home.php" tabindex="-1" aria-disabled="true">Home </a>
+                <a class="nav-link rounded-pill " href="juegos.php" tabindex="-1" aria-disabled="true">Home </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link rounded-pill " href="faq.php">F.A.Q</a>
