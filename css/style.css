@@ -208,12 +208,12 @@ body {
 
 /* ---------- Index.php ------------ */
 #logo{
-position: absolute;
-top: 40%;
-left: 50%;
-transform: translate(-50%, -50%);
-width: 90%;
-animation: fill 4s ease forwards;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    animation: fill 4s ease forwards;
 }
 #logo path{
     stroke-dasharray: 6354.38232421875;
@@ -221,17 +221,17 @@ animation: fill 4s ease forwards;
     animation: line-anim 8s ease forwards;
 }
 .btn--index{
-background: #2C263F;
-border-radius: 30px;
-border:  solid white 3px;
-width: 150px;
-height: 75px;
-color: white;
-font-size: 2em;
-position: absolute;
-left: 50%;
-top: 70%;
-transform: translate(-50%, -50%);
+    background: #2C263F;
+    border-radius: 30px;
+    border:  solid white 3px;
+    width: 150px;
+    height: 75px;
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
 }
 @keyframes line-anim{
     to{
@@ -393,8 +393,7 @@ transform: translate(-50%, -50%);
     display: flex;
     margin: 4em auto;
     justify-content: center;
-    border: solid white 1px;
-    border-radius: 8px;
+    border-radius: 30px;
     padding: 1em;
     width: 80%;
     background-color: #694872;
@@ -452,9 +451,6 @@ transform: translate(-50%, -50%);
     display: flex;
     overflow: hidden;
     flex-direction: column;
-}
-.img--contacto{
-    margin-left: 6em;
 }
 .p--contacto{
     font-size: 3em;
@@ -522,7 +518,6 @@ transform: translate(-50%, -50%);
     margin-top: 1em;
     margin-bottom: 10px;
     font-size: 1.7em;
-    
 }
 .in--nosotros{
     width: 70%;
@@ -565,25 +560,24 @@ footer {
 
 
 @media (max-width: 768px){
-/*Comentario*/
-/*-----------Home-----------*/
-
-.HOME--juegos ul{
-    display: inline-flex;
-    flex-direction: column;
-}
-.HOME--titulo h2{
-    color: white;
-    font-size: 2em;
-}
-.HOME--juegos ul li img{
-    width: 70%;
-    margin: 2em 0;
-}
-
-/* -------------Media query FAQs----------------- */
-
-/*Media queries registro */
+    /*-----------Home-----------*/
+    
+    .HOME--juegos ul{
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .HOME--titulo h2{
+        color: white;
+        font-size: 2em;
+    }
+    .HOME--juegos ul li img{
+        width: 70%;
+        margin: 2em 0;
+    }
+    
+    /* -------------Media query FAQs----------------- */
+    
+    /*Media queries registro */
     .container{
         max-width: 95%;
         height: 100vh;
@@ -612,7 +606,10 @@ footer {
     .p--caja{
         width: 80vw;
     }
-/* --------------media queries nosotros ------*/
+    /* --------------media queries nosotros ------*/
+    .caja--contacto{
+        padding-left: 10px; 
+    }
     .container{
         max-width: 95%;
         height: 100%;
@@ -636,6 +633,10 @@ footer {
         margin-left: 4em;
     }
 }
+/* ----Nosotros--- */
+/* .img--contacto{
+    margin-left: 3em;
+} */
 
 @media (max-width: 768px){
     .numeros {

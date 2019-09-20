@@ -17,7 +17,7 @@ include_once('head.php');
                     Nosotros
                 </p>
                 <div class="caja--contacto">
-                    <img src="img/Iconos-Cosas-Varias/Titulo recto.png" width="200px" class="img--contacto">
+                   <center> <img src="img/Iconos-Cosas-Varias/Titulo recto.png" width="200px" class="img--contacto"></center>
                     <p class="p--caja">
                        <br> Es un juego creado por un grupo de estudiantes de Digital House.<br>
                         Lo forman: Agustina quien es Scrum master junto con Mauricio y Tomas que son parte del Scrum Team.
