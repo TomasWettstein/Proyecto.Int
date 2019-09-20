@@ -1,4 +1,5 @@
 <?php
+$titulo = "Usuario";
 include_once('head.php');
 ?>
 
@@ -10,26 +11,26 @@ include_once('head.php');
             ?>
         </header>
         <h1 class="titulo--ranking"> Ranking </h1>
-        <article class="cajamadre">
-            <div class="caja2">
-                <ul type="none" class="caja-ranking">
+        <article class="cajamadre--ranking">
+            <div class="caja1--ranking">
+                <ul type="none">
                     <li class="ranking--usuario">
-                        <p class="nombres--ranking user1"> Usuario <span class="numeros"> 1898 pts</span> </p>
+                        <p class="nombres--ranking user1"> Usuario <span class="numeros--ranking"> 1898 pts</span> </p>
                     </li>
 
                     <li class="ranking--usuario">
-                        <p class="nombres--ranking user2"> Usuario <span class="numeros"> 1898 pts</span> </p>
+                        <p class="nombres--ranking user2"> Usuario <span class="numeros--ranking"> 1898 pts</span> </p>
                     </li>
                     <li class="ranking--usuario">
-                        <p class="nombres--ranking user3"> Usuario <span class="numeros"> 1898 pts</span> </p>
+                        <p class="nombres--ranking user3"> Usuario <span class="numeros--ranking"> 1898 pts</span> </p>
                     </li>
                 </ul>
             </div>
-            <div class="caja3">
+            <div class="caja2--usuario">
                 <img src="img/user.jpg" width="200px" height="200px" class="img--usuario">
                 <p class="nombre--usuario"> Chirimbolito </p>
-                <p class="puntos"> 87</p>
-                <p class="puesto"> Puesto 6</p>
+                <p class="puntos--usuario"> 87</p>
+                <p class="puesto--usuario"> Puesto 6</p>
             </div>
         </article>
 

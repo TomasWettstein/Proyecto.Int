@@ -3,7 +3,7 @@ $titulo = "Nosotros";
 include_once('head.php');
 ?>
 
-<body>
+
 
     <body>
         <section class="container">
@@ -17,27 +17,19 @@ include_once('head.php');
                     Nosotros
                 </p>
                 <div class="caja--contacto">
+                    <img src="img/Iconos y cosas varias/Titulo recto.png" width="200px" class="img--contacto">
                     <p class="p--caja">
-                        Somos un grupo formado en Digital House, en el curso presencial de desarrollo web full stack, turno tarde. <br>
-                        Información del Scrum Team: <br> Agustina = Scrum Master <br> Mauricio = Parte del scrum team <br> Tomas Wettstein =
-                        Parte del scrum team. <br> Desde ya pueden dirigirse al pie de nuestra página y contactarnos atraves de la redes sociales,
-                        Facebook, Twitter o Instagram
+                       <br> Es un juego creado por un grupo de estudiantes de Digital House.<br>
+                        Lo forman: Agustina quien es Scrum master junto con Mauricio y Tomas que son parte del Scrum Team.
+                       <br> Esperamos que puedan acceder a nuestro juegos con facilidad y que puedan disfrutarlos, si necesitan contactarse 
+                        con nosotross pueden presionar el boton de abajo o tambien pueden seguirnos en nuestras redes sociales.
                     </p>
                 </div>
                 <div class="caja--contactenos">
-                    <button onclick="location.href='nosotros.php'" class="b_contactenos"> Contactenos </button>
+                    <button onclick="location.href='contacto.php'" class="b_contactenos"> Contactenos </button>
                 </div>
 
-                <div class="c--iconos">
-                    <article class="art--redes">
-                        <ul>
-                            <li><a href="#" target="_blank"><img src="img\Iconos y cosas varias/c-facebook" alt=""></a></li>
-                            <li><a href="#" target="_blank"><img src="img\Iconos y cosas varias/c-twitter" alt=""></a></li>
-                            <li><a href="#" target="_blank"><img src="img\Iconos y cosas varias/c-insta" alt=""></a></li>
-                            <li><a href="#" target="_blank"><img src="img\Iconos y cosas varias/c-mensaje" alt=""></a></li>
-                        </ul>
-                    </article>
-                </div>
+                -->
             </section>
             
             <?php

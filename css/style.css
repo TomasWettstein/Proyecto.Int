@@ -14,11 +14,9 @@
 }
 .navbar{
     background-color: #694872;
-    
 }
 .nav-link{
     background-color: #A0D8C8 ;
-    
 }
 
 body {
@@ -28,12 +26,11 @@ body {
 }
 
 /* --------------Ranking----------------- */
-.cajamadre {
+.cajamadre--ranking {
     display: flex;
 }
-.caja2 {
-    border: solid white 1px;
-    border-radius: 8px;
+.caja1--ranking{
+    border-radius: 30px;
     width: 50%;
     height: 400px;
     margin: 40px;
@@ -68,13 +65,13 @@ body {
 .user3 {
     color: #D88E4E;
 }
-.numeros {
+.numeros--ranking {
     margin-left: 9em;
     color: white;
 }
 /* ---------------Usuario----------------- */
 
-.caja3 {
+.caja2--usuario {
     border-left: solid white 1px;
     width: 40%;
     height: 500px;
@@ -92,12 +89,12 @@ body {
     font-size: 2em;
     color: #D85F75;
 }
-.puntos {
+.puntos--usuario {
     font-size: 2em;
     color: #D88E4E;
     
 }
-.puesto {
+.puesto--usuario {
     font-size: 2em;
     color: #A0D8C8;
     
@@ -209,50 +206,10 @@ body {
     padding: 0.5em;
 }
 
-/*---------- Index.php ------------*/
-
+/* ---------- Index.php ------------ */
 #logo{
-    width: 90%;
-    position: absolute;
-    left: 50%;
-    top:40%;
-    transform: translate(-50%, -50%);
-    animation: fill 4s ease forwards; 
-}
-#logo path{
-    stroke-dasharray: 6354.38232421875;
-    stroke-dashoffset: 6354.38232421875;
-    animation: line-anim 8s ease forwards;
-}
-.btn--index{
-    background: #2C263F;
-    border-radius: 30px;
-    border: solid white 3px;
-    width: 150px;
-    height: 75x;
-    color: white;
-    font-size: 2em;
-    position: absolute;
-    left: 50%;
-    top:70%;
-    transform: translate(-50%, -50%);
 
 }
-
-@keyframes line-anim{
-    to{
-        stroke-dashoffset: 0; 
-    }
-}
-@keyframes fill{
-    from{
-        fill: transparent;
-    }
-    to{
-        fill: white;
-    }
-}
-
 
 /*---------- registro.php --------- */
 .sec-regis{
@@ -269,8 +226,7 @@ body {
 }
 .form--regis{
     margin: 0 auto;
-    border: solid white;
-    border-radius: 10px;
+    border-radius: 30px;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -287,40 +243,47 @@ body {
     width: 70%;
     border-radius: 10px;
     text-align: center;  
+    margin-bottom: 1.5em;
 }
 .sub--texto{
     color: white;
-    margin-top: 1em;
+    margin-top: 15px;
     margin-bottom: 10px;
     font-size: 1.7em;
 }
 .boton{
     margin: 0 auto;
+    margin-bottom: 1em;
+    margin-top:1em;
     display: flex;
     justify-content: center;
     width: 50%;
     background-color: #A0D8C8 ;
-    border: solid white;
+    border: solid white 2px;
     color: white;
-    margin-top:1em;
     border-radius: 10px;
-    margin-bottom: 1em;
 }
+
 .p--boton{
-    font-size: 1.2em;
-    width: 40%;
+    font-size: 1.4em;
+    padding: 2px;
+    width: 50%;
     margin: 0;
 }
 .p--registrarse {
     margin-bottom: 0;
     font-size: 1.2em;
 }
+.p--usuario {
+    color: white;
+    font-size: 1.5em;
+}
 .b--login{
     display: flex;
     justify-content: center;
-    width: 20%;
+    width: 10%;
     background-color: #694872;
-    border: solid white;
+    border: solid white 2px;
     color: white;
     margin-bottom: 10em;
     border-radius: 10px;
@@ -352,21 +315,20 @@ body {
     align-items: center;
 } 
 .login--form{
-    /* margin: 0 auto; */
-    border: solid white;
-    border-radius: 10px;
+    border-radius: 30px;
     width: 40%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     background-color: #694872;
     margin: 3em auto;
-    /* margin-bottom: 10em; */
 }
+
 .in--login{
     width: 70%;
     border-radius: 10px;
     text-align: center;  
+    margin-bottom: 1em;
 }
 .boton--login{
     margin: 0 auto;
@@ -374,11 +336,17 @@ body {
     justify-content: center;
     width: 50%;
     background-color: #A0D8C8 ;
-    border: solid white;
+    border: solid white 2px;
     color: white;
     margin-top:1em;
     border-radius: 10px;
     margin-bottom: 1em;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+.boton--login:hover {
+    color: white;
+    text-decoration: none;
 }
 /* ---------------Crea tus preguntas----------------- */
 .titulo--crea {
@@ -396,16 +364,24 @@ body {
     width: 80%;
     background-color: #694872;
 }
-.subtitulos--crea {
-    color: white;
+.subtitulos--crea1 {
+    color: #A0D8C8;
     font-size: 1.7em;
     margin-top: 1em;
 }
-.cajas--form:first-of-type {
-    margin-left: 0;
+.subtitulos--crea2 {
+    color: #D85F75;
+    font-size: 1.7em;
+    margin-top: 1em;
 }
+.subtitulos--crea3 {
+    color: #A0D8C8;
+    font-size: 1.7em;
+    margin-top: 1em;
+}
+
 .cajas--form {
-    margin-left: 4em;
+    margin-left: 3em;
     margin-bottom: 1em;
 }
 .preguntainput--crea {
@@ -420,7 +396,7 @@ body {
 }
 .tematica--crea {
     color: white;
-    margin-top: 2em;
+    margin-top: 1.5em;
     margin-right: 1em;
 }
 .boton--crea {
@@ -428,12 +404,12 @@ body {
     width: 10%;
     padding: 0.5em;
     border-radius: 15px;
-    background-color: #D85F75;
+    background-color: #A0D8C8;
     margin-bottom: 10em;
     
 }
 .boton--crea:hover {
-    background-color: #A0D8C8;
+    background-color: #D85F75;
     color: white;
 }
 /*----------------CONTACTO----------------*/ 
@@ -441,35 +417,35 @@ body {
     display: flex;
     overflow: hidden;
     flex-direction: column;
-    margin-top: 2em;
-    
+}
+.img--contacto{
+    margin-left: 6em;
 }
 .p--contacto{
     font-size: 3em;
     margin-bottom: 1em;
+    margin-top: 1em;
     color: #D88E4E;
 }
 .caja--contacto{
     margin: 0 auto;
-    border-left: white solid 1px;
-    border-right: white solid 1px;
+    background-color: #694872;
+    border-radius: 30px;
     width: 40%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    padding-left: 1em;
-    padding-right: 1em;
-    
-    
+    padding: 2em;
 }
+
 .p--caja{
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
-    font-size: 1.4em;
-    
+    font-size: 1.3em;
 }
+
 .caja--contactenos{
     margin: 0 auto;
     display: flex;
@@ -477,41 +453,23 @@ body {
     overflow: hidden;
     margin: 3em auto;
 }
+
 .b_contactenos{
-    font-size: 2em;
-    padding: 1px;
+    width: 100%;
+    font-size: 1.5em;
+    padding: 5px;
     margin-bottom: 1em;
     margin-top: 1em;
-    background-color: #694872;
+    background-color: #A0D8C8;
     color: white;
-    border-radius: 8px;
-    
+    border: solid white 2px;
+    border-radius: 8px; 
 }
 
-/* ---------------Footer----------------- */
-
-footer {
-    color: white;
-}
-.copy {
-    color: white;
-}
-.ul--footer {
-    display: flex;
-    justify-content: center;
-}   
-.li--footer {
-    margin-left: 3em;
-}
-.icono--footer {
-    font-size: 1.5em;
-}
-
-/*Nosotros formulario*/
+/*--------Nosotros formulario--------*/
 .formulario--nosotros{
     margin: 0 auto;
-    border: solid white;
-    border-radius: 10px;
+    border-radius: 30px;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -542,20 +500,38 @@ footer {
     padding: 1px;
     margin-bottom: 1em;
     margin-top: 1em;
-    color: #D85F75;
+    color: white;
     background-color: #A0D8C8 ;
+    border: solid white 2px;
     border-radius: 8px;
     width: 5em;
     height: 2em;
     
 }
+/* ---------------Footer----------------- */
 
+footer {
+    color: white;
+}
+.copy {
+    color: white;
+}
+.ul--footer {
+    display: flex;
+    justify-content: center;
+}   
+.li--footer {
+    margin-left: 3em;
+}
+.icono--footer {
+    font-size: 1.5em;
+}
 /* MEDIA QUERy*/
 
 
 @media (max-width: 768px){
 /*Comentario*/
-/*-----------HOME MAURI-----------*/
+/*-----------Home-----------*/
 
 .HOME--juegos ul{
     display: grid;
@@ -612,6 +588,7 @@ footer {
         width: 90vw;
     }
 }
+
 /* ------ Usuario/ Ranking media queries------- */
 @media (max-width: 1200px){
     .titulo--ranking{
@@ -636,6 +613,7 @@ footer {
     .caja2 {
         width: 90%;
         margin-left: 2em;
+        margin-bottom: 6em;
     }
     .caja3 {
         width: 90%;
@@ -654,6 +632,30 @@ footer {
         order: initial;
     }
 }
+
+@media(max-width:770px){
+    /* -------media queries Crea tus preguntass ----- */
+    .contenedor--form {
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+    .cajas--form {
+        margin-left: 2em;
+    }
+    .boton--crea{
+        width: 20%;
+    }
+    
+}
+@media(max-width:460px){
+    .preguntainput--crea {
+        width: 100%;
+    }
+    .respuesta--crea{
+        width: 100%;
+    }
+}
+
 
 
 

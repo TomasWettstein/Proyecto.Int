@@ -7,25 +7,22 @@
 
         <ul class="nav nav-pills nav-fill">
             <li class="nav-item col-lg-2">
-                <img class="d-block  w-50" src="img\Iconos y cosas varias\Logo mini.png" alt="logo">
+                <a href="juegos.php"><img class="d-block  w-50" src="img\Iconos y cosas varias\Logo mini.png" alt="logo"></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link rounded-pill " href="juegos.php" tabindex="-1" aria-disabled="true">Home </a>
+                <a class="nav-link rounded-pill " href="creaPreguntas.php"> Crea</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-pill" href="usuario.php">Perfil</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link rounded-pill " href="faq.php">F.A.Q</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link rounded-pill " href="registro.php">Registro</a>
+                <a class="nav-link rounded-pill" href="nosotros.php">Nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link rounded-pill" href="login.php">Iniciar Sesion</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link rounded-pill" href="contacto.php">Contacto</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link rounded-pill" href="usuario.php">Perfil</a>
+                <a class="nav-link rounded-pill" href="login.php">Inicia Sesion</a>
             </li>
     </div>
 

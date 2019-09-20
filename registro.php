@@ -32,7 +32,8 @@ include_once('head.php');
 
            <center><button  class="boton" type="submit"><p class = "p--boton"> Registrarse</p></button></center> 
          </form>
-         <center><button onclick="location.href='login.php'" class="b--login" type="submit"><p class="p--registrarse">Login</p></button></center> 
+         <p class="p--usuario"> Ya tenes usuario? </p>
+         <center><button onclick="location.href='login.php'" class="b--login" type="submit"><p class="p--registrarse">Ingresa</p></button></center> 
 
           
          </section>

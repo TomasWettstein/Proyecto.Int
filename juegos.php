@@ -15,7 +15,7 @@ require_once 'head.php'; ?>
         <article class="HOME--juegos">
             <ul>
                 <li>
-                    <a href="#"> <img src="img\Iconos y cosas varias\botonTemas.png" alt="Modo de juego: Temas"> </a>
+                    <a href="#"> <img src="img\Iconos y cosas varias\botonTemas.png" alt="Modo de juego: Temas" >  </a>
                 </li>
                 <li>
                     <a href="#"> <img src="img\Iconos y cosas varias\botonAhorcado.png" alt="Modo de juego: Ahorcado"> </a>

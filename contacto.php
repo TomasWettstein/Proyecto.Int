@@ -22,10 +22,10 @@ include_once('head.php');
                 </div>
                 <div class="form--nosotros"><label for="text"><p class="p--nosotros">Asunto</p></label>
                     <select class = "in--nosotros">
-                        <option value="1">asunto1</option>
-                        <option value="2">asunto2</option>
-                        <option value="3">asunto3</option>
-                        <option value="4">asunto4</option>
+                        <option value="1">Laboral</option>
+                        <option value="2">Error en el juego</option>
+                        <option value="3">Eventos</option>
+                        <option value="4">Otro</option>
                     </select>
                 </div>
                 <div class= "form--nosotros">

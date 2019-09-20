@@ -26,10 +26,10 @@ include_once('head.php');
                     </label>
                     <input class="in--login" type="password" id="password" placeholder="Intruduzca una contraseña">
                 </div>
-                <center><button class="boton--login">
-                        <h4>Login</h4>
-                    </button></center>
+                <a href="juegos.php" class="boton--login"> Ingresa </a>
             </form>
+            <p class="p--usuario"> ¿No estas registrado? </p>
+            <center><button onclick="location.href='registro.php'" class="b--login" type="submit"><p class="p--registrarse">Ingresa</p></button></center>
 
         </section>
         <?php
