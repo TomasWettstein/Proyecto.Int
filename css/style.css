@@ -188,10 +188,10 @@ body {
     margin: 2em 0;
 }
 .HOME--juegos ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10em;
+    display: inline-flex;
 }
+
+
 .HOME--juegos ul li{
     list-style-type: none;
     display: inline;
@@ -200,7 +200,7 @@ body {
     color: #2C263F;
 }
 .HOME--juegos ul li img{
-    width: 100%;
+    width: 70%;
     margin: 2em 0;
 }
 /*IDEA PARA EL FOOTER*/
@@ -558,9 +558,8 @@ footer {
 /*-----------HOME MAURI-----------*/
 
 .HOME--juegos ul{
-    display: grid;
-    grid-template-columns: auto;
-    column-gap: 10em;
+    display: inline-flex;
+    flex-direction: column;
 }
 .HOME--titulo h2{
     color: white;
