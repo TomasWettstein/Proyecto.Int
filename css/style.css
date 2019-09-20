@@ -50,8 +50,6 @@ body {
 }
 .ranking--usuario {
     margin-top: 4em;
-    /* margin-bottom: 2em; */
-    /* margin-right: 40px;  */
 }
 .nombres--ranking {
     font-size: 1.7em;
@@ -484,7 +482,6 @@ body {
 footer {
     color: white;
 }
-
 .copy {
     color: white;
 }
@@ -498,10 +495,6 @@ footer {
 .icono--footer {
     font-size: 1.5em;
 }
-
-
-
-
 
 /*Nosotros formulario*/
 .formulario--nosotros{
@@ -546,12 +539,6 @@ footer {
     
 }
 
-
-
-
-
-
-
 /* MEDIA QUERy*/
 
 
@@ -580,7 +567,7 @@ footer {
         width: 50%;
         margin: 2em 0;
     }
-    /*Media queries registro */
+    /*-----Media queries registro------- */
     .container{
         max-width: 95%;
         height: 100vh;
@@ -598,40 +585,61 @@ footer {
     .b--login{
         width: 45vw;
     }
-    
-    /*Media queries login */
-    .container{
-        max-width: 95%;
-        height: 100vh;
-        padding: 10px;
-    }
     .login--form{
         width: 90vw;
     }
     
-    /*media queries contacto */
-    .container{
-        max-width: 95%;
-        height: 100vh;
-        padding: 10px;
-    }
+    /*-------media queries contacto-------- */
     .caja--contacto{
         width: 85vw;
     }
     .p--caja{
         width: 80vw;
     }
-    
-    /*media queries nosotros*/
-    .container{
-        max-width: 95%;
-        height: 100vh;
-        padding: 10px;
-    }
+    /*----------media queries nosotros--------*/
     .formulario--nosotros{
         width: 90vw;
     }
+
+
+
+
+
+    @media 
+    /* --------- ranking media queries -------- */
+    .caja2 {
+        width: 95vw;
+        /* margin: 10px; */
+    }
+    .numeros {
+        margin-left: 5px;
+    }
+
+    /* ------ usuario media queries ------- */
+    .caja3 {
+        width: 95vw;
+        
+    }
 }
+
+/* @media (min-width: 760px) {
+    .caja2 {
+        margin-left: 0;
+    }
+    .numeros {
+        margin-left: 5em;
+    }
+    .caja3 {
+        margin-left: 0;
+        height: 450px;
+        padding-left: 3em;
+    }
+    .img--usuario {
+        margin-top: 40px;
+    }
+} */
+
+
 
 
 
