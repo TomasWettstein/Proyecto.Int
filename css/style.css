@@ -146,68 +146,31 @@ body {
     font-size: 1.2em;
     color: white;
 }
-
-.FAQ--3erInfo{
-    font-size: 1.7em;
-    background: #694872;
-    width: 60%;
-    border-radius: 30px;
-    margin: 0 auto;
-    margin-bottom: 0.5em;
-}
-.FAQ--4toInfo{
-    font-size: 1.7em;
-    background: #694872;
-    width: 60%;
-    border-radius: 30px;
-    margin: 0 auto;
-    margin-bottom: 0.5em;
-}
-.FAQ--5toinfo{
-    font-size: 1.7em;
-    background: #694872;
-    width: 60%;
-    border-radius: 30px;
-    margin: 0 auto;
-    margin-bottom: 0.5em;
-}
-.FAQ--du{
-    color:#D85F75;
-}
-.FAQ--bi{
-    color:#A0D8C8;
-}
-.FAQ--um{
-    color:#D88E4E;
-}
-.FAQ--reglas{
-    color:#D85F75;
-}
-.FAQ--del{
-    color: #A0D8C8;
-}
-.FAQ--juego{
-    color: #D88E4E;
-}
 .FAQ--tema{
     color: #D85F75;
+    font-size: 1.9em;
+    text-decoration: underline;
 }
 .FAQ--ahorcado{
     color: #A0D8C8;
+    font-size: 1.9em;
+    text-decoration: underline;
 }
 .FAQ--muerte{
     color: #D88E4E;
+    font-size: 1.9em;
+    text-decoration: underline;
 }
 .FAQ--Info{
     color: white;
     background: #694872;
     border-radius: 30px;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     padding: 0.5em;
+    font-size: 1.2em;
 }
 .FAQ--footer{
-    background: rgba(0, 0, 0, 0.4);
     padding: 0.5em;
     margin-top: 1em;
 }
@@ -219,7 +182,7 @@ body {
     color: white;
     font-size: 3em;
 }
-.HOME--titulo p img{
+.HOME--titulo img{
     width: 70%;
     margin: 2em 0;
 }
@@ -241,9 +204,15 @@ body {
 }
 /*IDEA PARA EL FOOTER*/
 .HOME--footer{
-    background: rgba(0, 0, 0, 0.4);
+    margin-top: 1em;
     padding: 0.5em;
 }
+
+/*---------- Index.php ------------*/
+#logo{
+    
+}
+
 
 /*---------- registro.php --------- */
 .sec-regis{
@@ -561,25 +530,20 @@ footer {
 
 .HOME--juegos ul{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 2em;
-
+    grid-template-columns: auto;
+    column-gap: 10em;
 }
 .HOME--titulo h2{
     color: white;
     font-size: 2em;
 }
+.HOME--juegos ul li img{
+    width: 70%;
+    margin: 2em 0;
+}
 
 /* -------------Media query FAQs----------------- */
-    .HOME--juegos ul{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
-    }
-    .HOME--juegos ul li img{
-        width: 50%;
-        margin: 2em 0;
-    }
+
 /*Media queries registro */
     .container{
         max-width: 95%;
@@ -626,7 +590,7 @@ footer {
 /*media queries nosotros*/
     .container{
         max-width: 95%;
-        height: 100vh;
+        height: 100%;
         padding: 10px;
     }
     .formulario--nosotros{

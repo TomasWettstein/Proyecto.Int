@@ -1,5 +1,6 @@
 <?php $titulo = "Home";
 require_once 'head.php'; ?>
+
 <body>
     <section class="container">
         <header class="HOME--encabezado">
@@ -8,7 +9,7 @@ require_once 'head.php'; ?>
 
         <article class = HOME--titulo>
             <h2>Pon a prueba tus conocimientos.</h2>
-            <p><img src="img\Iconos y cosas varias\Titulo Recto.png" alt="Dubium logo"></p>    
+            <img src="img\Iconos y cosas varias\Titulo Recto.png" alt="Dubium logo">    
         </article>
 
         <article class="HOME--juegos">
@@ -26,8 +27,9 @@ require_once 'head.php'; ?>
         </article>
     
     </section>
+
     <footer class = "HOME--footer">
             <?php require_once 'footer.php'; ?>
-        </footer>
+    </footer>
+
 </body>
-</html>

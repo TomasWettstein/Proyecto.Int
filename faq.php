@@ -16,7 +16,7 @@ require_once 'head.php'; ?>
                 <p class="p--dubium"> 
                     Dubium 
                 <p>
-                <p class="primera--info"> 
+                <p class="FAQ--Info"> 
                     Hola, somos el equipo de DUBIUM un juego que se trata de responder preguntas y derrotar a tus amigos en un duelo de conocimineto.
                </p>
             </div>
@@ -25,46 +25,47 @@ require_once 'head.php'; ?>
                 <p class="p-info">
                     Info del juego
                 </p>
-                <p class="segunda--info">
+                <p class="FAQ--Info">
                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quas.
                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ipsa.
                 </p>
             </div>
 
-            <article>
-                <h2 class="FAQ--3erInfo">
-                    <strong class="FAQ--tema">Temas</strong>
-                </h2>
+            <div class="Primer--div">
+                <p class="FAQ--tema">
+                    Temas
+                </p>
                 <p class="FAQ--Info">
                     Este modo de juego se basa en elegir entre las diferentes categorias que existen en DUBIUM y responder una determina cantidad de preguntas de dicha categoria previamente elegida. El puntaje se basa en la cantidad de preguntas respondidas.
                 </p>
-            </article>
+                </div>
 
-            <article>
-                <h2 class="FAQ--4toInfo">
-                    <strong class="FAQ--ahorcado">Ahorcado</strong>
-                </h2>
+            <div class="Primer--div">
+                <p class="FAQ--ahorcado">
+                    Ahorcado
+                    </p>
                 <p class="FAQ--Info">
                     Este modo de juego se basa en el clasico juego ahorcado. Se imprime una pregunta y la respuesta se ve representada con la forma del ahorcado.
                 </p>
-            </article>
+            </div>
 
-            <article>
-                <h2 class="FAQ--5toinfo">
-                    <strong class="FAQ--muerte">Muerte súbita</strong>
-                </h2>
+            <div class="Primer--div">
+                <p class="FAQ--muerte">
+                    Muerte súbita
+                </p>
                 <p class="FAQ--Info">
                     Este modo de juego a diferencia del modo Tema son preguntas al azar acerca de cualquier categoria, el modo de juego se termina cuando se responde mal una pregunta. El puntaje se basa en la cantidad de respuestas acertadas.
                 </p>
-            </article>
-
             </div>
 
-    </section>
+        </article>
 
+    </section>
+            
     <footer class="FAQ--footer">
-        <?php require_once 'footer.php'; ?>
+        <?php require_once 'footer.php';?>
     </footer>
+
 </body>
 
 </html>
