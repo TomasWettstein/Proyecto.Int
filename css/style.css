@@ -39,7 +39,10 @@ body {
     margin: 40px;
     background-color: #694872;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
+
 .titulo--ranking {
     font-size: 3em;
     color: #D88E4E;
@@ -208,7 +211,7 @@ body {
 
 /*---------- Index.php ------------*/
 #logo{
-    
+
 }
 
 
@@ -560,8 +563,7 @@ footer {
     .p--caja{
         width: 80vw;
     }
-
-/*media queries nosotros*
+/* --------------media queries nosotros ------*/
     .container{
         max-width: 95%;
         height: 100%;
@@ -570,44 +572,50 @@ footer {
     .formulario--nosotros{
         width: 90vw;
     }
-
-
-
-
-
-    @media 
-    /* --------- ranking media queries -------- */
+}
+/* ------ Usuario/ Ranking media queries------- */
+@media (max-width: 1200px){
+    .titulo--ranking{
+        margin-left: 0;
+    }
     .caja2 {
-        width: 95vw;
-        /* margin: 10px; */
+        margin-left: 0;
+        width: 50vw;
     }
-    .numeros {
-        margin-left: 5px;
-    }
-
-    /* ------ usuario media queries ------- */
-    .caja3 {
-        width: 95vw;
-        
+    .numeros{
+        margin-left: 4em;
     }
 }
 
-/* @media (min-width: 760px) {
-    .caja2 {
-        margin-left: 0;
-    }
+@media (max-width: 768px){
     .numeros {
-        margin-left: 5em;
+        margin-left: 4em;
+    }
+    .cajamadre {
+        flex-wrap: wrap-reverse;
+    }
+    .caja2 {
+        width: 90%;
+        margin-left: 2em;
     }
     .caja3 {
-        margin-left: 0;
-        height: 450px;
-        padding-left: 3em;
+        width: 90%;
+        margin-top: 2em;
+        margin-left: 2em;
+        margin-bottom: 2em;
+        height: 430px;
+        border: solid white 1px;
+        border-radius: 8px;
+        background-color: #694872;
     }
-    .img--usuario {
-        margin-top: 40px;
+    .img--usuario{
+        margin-top: 1em;
     }
-} */
+    .titulo--ranking {
+        order: initial;
+    }
+}
+
 
 
 

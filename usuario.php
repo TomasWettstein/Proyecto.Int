@@ -12,7 +12,7 @@ include_once('head.php');
         <h1 class="titulo--ranking"> Ranking </h1>
         <article class="cajamadre">
             <div class="caja2">
-                <ul type="none">
+                <ul type="none" class="caja-ranking">
                     <li class="ranking--usuario">
                         <p class="nombres--ranking user1"> Usuario <span class="numeros"> 1898 pts</span> </p>
                     </li>
@@ -25,7 +25,6 @@ include_once('head.php');
                     </li>
                 </ul>
             </div>
-
             <div class="caja3">
                 <img src="img/user.jpg" width="200px" height="200px" class="img--usuario">
                 <p class="nombre--usuario"> Chirimbolito </p>
