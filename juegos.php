@@ -9,19 +9,19 @@ require_once 'head.php'; ?>
 
         <article class = HOME--titulo>
             <h2>Pon a prueba tus conocimientos.</h2>
-            <img src="img\Iconos y cosas varias\Titulo Recto.png" alt="Dubium logo">    
+            <img src="img\Iconos-Cosas-Varias\Titulo Recto.png" alt="Dubium logo">    
         </article>
 
         <article class="HOME--juegos">
             <ul>
                 <li>
-                    <a href="#"> <img src="img\Iconos y cosas varias\botonTemas.png" alt="Modo de juego: Temas" >  </a>
+                    <a href="#"> <img src="img\Iconos-Cosas-Varias\botonTemas.png" alt="Modo de juego: Temas"> </a>
                 </li>
                 <li>
-                    <a href="#"> <img src="img\Iconos y cosas varias\botonAhorcado.png" alt="Modo de juego: Ahorcado"> </a>
+                    <a href="#"> <img src="img\Iconos-Cosas-Varias\botonAhorcado.png" alt="Modo de juego: Ahorcado"> </a>
                 </li>
                 <li>
-                    <a href="#"> <img src="img\Iconos y cosas varias\botonSubita.png" alt="Modo de juego: Muerte súbita"> </a>
+                    <a href="#"> <img src="img\Iconos-Cosas-Varias\botonSubita.png" alt="Modo de juego: Muerte súbita"> </a>
                 </li>
             </ul>
         </article>
