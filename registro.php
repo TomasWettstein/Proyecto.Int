@@ -35,10 +35,10 @@ include_once('head.php');
                 <input class="in--regis"  type="password" class="form-control" id= "password" placeholder="Repita la contraseña">
             </div>
 
-           <center><button  class="boton" type="submit"><p class = "p--boton"> Registrarse</p></button></center> 
+           <button  class="boton" type="submit"><p class = "p--boton"> Registrarse</p></button>
          </form>
          <p class="p--usuario"> Ya tenes usuario? </p>
-         <center><button onclick="location.href='login.php'" class="b--login" type="submit"><p class="p--registrarse">Ingresa</p></button></center> 
+         <button onclick="location.href='login.php'" class="b--login" type="submit"><p class="p--registrarse">Ingresa</p></button>
 
           
          </section>
