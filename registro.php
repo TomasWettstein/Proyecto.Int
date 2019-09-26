@@ -28,6 +28,7 @@ if($_POST) {
         </header>
         <section class="sec--regis">
             <p class = "p--registro">Registro</p>
+<<<<<<< HEAD
             <?php if (isset($errores)) : ?>
                         <ul>
                             <?php foreach ($errores as $value) : ?>
@@ -36,9 +37,17 @@ if($_POST) {
                         </ul>
                     <?php endif; ?>
         <form  action="" method="POST" class="form--regis">
+=======
+        <form  action="login.php" method="POST" class="form--regis" enctype="multipart/form-data">
+>>>>>>> 6096ef061c506c9b213f2183848588728e086a28
              <div class="form">
                  <label  for="text"><p class="sub--texto">Usuario</p></label>
                   <input class="in--regis" type="text" id="usuario" name="userName"  placeholder="Ingrese nombre de usuario" value="">
+            </div>
+            <div class="form">
+                 <label for="file"><p class="sub--texto"> Avatar </p></label>
+                 <input type="file" name="archivo" class="input--avatar">
+           
             </div>
             <div class="form">
                 <label  for="email"><p class="sub--texto">Email</p></label>
