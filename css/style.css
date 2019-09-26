@@ -325,6 +325,9 @@ body {
     font-size: 1.2em;
     
 }
+.input--avatar {
+    margin-left: 1em;
+}
 /* ---------Login------------- */
 .titulo--login {
     font-size: 3em;

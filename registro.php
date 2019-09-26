@@ -12,10 +12,15 @@ include_once('head.php');
         </header>
         <section class="sec--regis">
             <p class = "p--registro">Registro</p>
-        <form  action="login.php" method="POST" class="form--regis">
+        <form  action="login.php" method="POST" class="form--regis" enctype="multipart/form-data">
              <div class="form">
                  <label  for="text"><p class="sub--texto">Usuario</p></label>
                   <input class="in--regis" type="text" id="usuario"  placeholder="Ingrese nombre de usuario">
+            </div>
+            <div class="form">
+                 <label for="file"><p class="sub--texto"> Avatar </p></label>
+                 <input type="file" name="archivo" class="input--avatar">
+           
             </div>
             <div class="form">
                 <label  for="email"><p class="sub--texto">Email</p></label>

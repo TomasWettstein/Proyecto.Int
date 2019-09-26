@@ -31,8 +31,9 @@ include_once('head.php');
             <p class="p--usuario"> ¿No estas registrado? </p>
             <center><button onclick="location.href='registro.php'" class="b--login" type="submit"><p class="p--registrarse">Ingresa</p></button></center>
 
-        </section>
-        <?php
-        include_once("footer.php");
+    </section>
+    
+<?php
+include_once("footer.php");
 
-        ?>
+?>
