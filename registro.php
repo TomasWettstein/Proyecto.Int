@@ -4,13 +4,13 @@ require_once('controladores/funciones.php');
 
 $titulo = "Registro";
 include_once('head.php');
-if($_POST) {
+if($_POST && $_FILES) {
     $errores = validarRegistro($_POST);
     if (!$errores){
         $ext = pathinfo($_FILES['archivo']['name'], PATHINFO_EXTENSION);
-        move_uploaded_file($_FILES['archivo']['tmp_name'],'/avatars/' . $_POST['userName']. "." . $ext);
+        move_uploaded_file($_FILES['archivo']['tmp_name'],'avatars/' . $_POST['userName']. "." . $ext);
 
-        $registro = crearRegistro($_POST, $avatar);
+        $registro = crearRegistro($_POST);
         guardarUsuario($registro);
         header('location:login.php');
         exit;
@@ -28,7 +28,6 @@ if($_POST) {
         </header>
         <section class="sec--regis">
             <p class = "p--registro">Registro</p>
-<<<<<<< HEAD
             <?php if (isset($errores)) : ?>
                         <ul>
                             <?php foreach ($errores as $value) : ?>
@@ -36,10 +35,7 @@ if($_POST) {
                             <?php endforeach; ?>
                         </ul>
                     <?php endif; ?>
-        <form  action="" method="POST" class="form--regis">
-=======
-        <form  action="login.php" method="POST" class="form--regis" enctype="multipart/form-data">
->>>>>>> 6096ef061c506c9b213f2183848588728e086a28
+        <form  action="" method="POST" class="form--regis" enctype="multipart/form-data">
              <div class="form">
                  <label  for="text"><p class="sub--texto">Usuario</p></label>
                   <input class="in--regis" type="text" id="usuario" name="userName"  placeholder="Ingrese nombre de usuario" value="">

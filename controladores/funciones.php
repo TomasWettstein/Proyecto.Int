@@ -8,7 +8,9 @@ function validarRegistro($datos){
         $errores['userName'] = "El nombre de usuario no puede estar vacio";
     }
     $email = trim($datos['email']);
-    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+    if(empty($email)){
+        $errores['email'] = "El email no puede estar vacio";
+        } elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)){
         $errores['email'] = "Email invalido";
     }
 $password = trim($datos['password']);
@@ -23,19 +25,20 @@ $passwordRepeat = trim($datos['passwordRepeat']);
 if ($password != $passwordRepeat) {
     $errores['passwordRepeat'] = "Las contraseñas deben ser iguales";
 }
-if($_FILES['avatar']['error']!=0){
+if($_FILES['archivo']['error']!=0){
     $errores['file'] = 'Debe subir un archivo';
 }
 return $errores;
 
 }
+
 function nextId(){
     $usuarioJson = file_get_contents("usuario.json");
     $usuarios = json_decode($usuarioJson,true);
     if(!$usuarios){
         return 1;
     }else {
-        $ultimoUsuario = arraypop($usuarios['usuarios']);
+        $ultimoUsuario = array_pop($usuarios['usuarios']);
         $ultimoId = $ultimoUsuario['id'];
         $siguienteId = $ultimoId + 1;
         return $siguienteId;
