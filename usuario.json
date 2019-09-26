@@ -1,0 +1,11 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "userName": "tomas",
+            "email": "tomas_fw@hotmail.com",
+            "password": "$2y$10$QtGyyeqjI2xMXD2fGDlyQ.uRzYn4HRqRi6B64kaLAB.V6PQHg75Ay",
+            "perfil": 1
+        }
+    ]
+}
