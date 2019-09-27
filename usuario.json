@@ -83,6 +83,48 @@
             "email": "tomas_fw@hotmail.com",
             "password": "$2y$10$wAVsIZ8vUL0xXnFz64dEVet4DGco.cOWDsyTiN47Jb1aUtKIshgz.",
             "perfil": 1
+        },
+        {
+            "id": 13,
+            "userName": "Matias",
+            "email": "matias@hotmail.com",
+            "password": "$2y$10$MjGlMdnls90\/z9lrxw7WuedLnAeAxZjd7MddDqfvzkvlaPnn9KiVm",
+            "perfil": 1
+        },
+        {
+            "id": 14,
+            "userName": "Matias",
+            "email": "matias@hotmail.com",
+            "password": "$2y$10$imZ3EGpnF3LgL.yguKWEee\/qblipwLvu7vPD8DEEz5Y2qV\/g0\/HKq",
+            "perfil": 1
+        },
+        {
+            "id": 15,
+            "userName": "agustina",
+            "email": "Agus_maraz@hotmail.com",
+            "password": "$2y$10$EbZKNgva8Sk9QrOujGR9CeiAUAHA08qt0ybCZZeZZcDaQDESVanV6",
+            "perfil": 1
+        },
+        {
+            "id": 16,
+            "userName": "agustina",
+            "email": "Agus_maraz@hotmail.com",
+            "password": "$2y$10$cJiViSzeAE\/S\/vgqpeTpSuNC5JhCYjRYKkGFdOD0NooDvVi7uBOi2",
+            "perfil": 1
+        },
+        {
+            "id": 17,
+            "userName": "agustina",
+            "email": "Agus_maraz@hotmail.com",
+            "password": "$2y$10$pz5IT.97MKaej.s4gwvKjOGKjHwEPpMCRZGDyoOXl9MDyIVzgKYBu",
+            "perfil": 1
+        },
+        {
+            "id": 18,
+            "userName": "agustina",
+            "email": "Agus_maraz@hotmail.com",
+            "password": "$2y$10$JcndxYnfgs5K6SX\/taB7nOEYgf\/yfVtxrDgQeEIiarw8JqW62Pw36",
+            "perfil": 1
         }
     ]
 }

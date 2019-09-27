@@ -10,8 +10,8 @@ function validarRegistro($datos){
     $email = trim($datos['email']);
     if(empty($email)){
         $errores['email'] = "El email no puede estar vacio";
-        } elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        $errores['email'] = "Email invalido";
+        // } elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        // $errores['email'] = "Email invalido";
     }
 $password = trim($datos['password']);
 if (empty($password)) {
@@ -75,7 +75,7 @@ function validarLogin($datos){
     if (strlen($password)== 0) {
         $errores['password'] = 'La contraseña no puede estar vacia';
     }else {
-            $usuario = buscarPorEmail($datos['email']);
+            $usuario = buscarPorUser($datos['userNames']);
             if (!password_verify($datos['password'], $usuario['password'])) {
                 $errores['password'] = 'La contraseña es incorrecta';
             }
@@ -84,12 +84,12 @@ function validarLogin($datos){
 return $errores;
 }
 
-function buscarPorEmail($email){
+function buscarPorUser($nombre){
     $archivoJson = file_get_contents('usuario.json');
     $array = json_decode($archivoJson, true);
     $usuarios = $array['usuarios'];
     foreach ($usuarios as $value) {
-         if($value['email'] === $email);
+         if($value['userName'] === $nombre);
          return $usuarios; 
     }
     return null;
