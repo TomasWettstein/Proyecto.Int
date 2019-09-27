@@ -1,21 +1,22 @@
 <?php
 require_once('controladores/funciones.php');
-
 $titulo = "Registro";
 include_once('head.php');
 if ($_POST) {
     $errores = validarRegistro($_POST);
     if (!$errores) {
+        $registro = crearRegistro($_POST, $avatar);
+        guardarUsuario($registro);
+
         $ext = pathinfo($_FILES['archivo']['name'], PATHINFO_EXTENSION);
         move_uploaded_file($_FILES['archivo']['tmp_name'], '/avatars/' . $_POST['userName'] . "." . $ext);
 
-        $registro = crearRegistro($_POST, $avatar);
-        guardarUsuario($registro);
-        header('location:login.php');
+        header('Location: juegos.php');
         exit;
     }
 }
 ?>
+
 <body>
     <section class="container">
         <header>

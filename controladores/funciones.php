@@ -35,7 +35,7 @@ function nextId(){
     if(!$usuarios){
         return 1;
     }else {
-        $ultimoUsuario = arraypop($usuarios['usuarios']);
+        $ultimoUsuario = array_pop($usuarios['usuarios']);
         $ultimoId = $ultimoUsuario['id'];
         $siguienteId = $ultimoId + 1;
         return $siguienteId;
