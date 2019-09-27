@@ -314,7 +314,6 @@ body {
     font-size: 1.5em;
 }
 .b--login{
-   
     width: 10%;
     background-color: #694872;
     border: solid white 2px;
@@ -326,6 +325,15 @@ body {
 .input--avatar {
     margin-left: 1em;
 }
+/* .boton--ingresa {
+    width: 50%;
+    text-decoration: none;
+    border: solid white;
+    border-radius: 8px;
+    color: white;
+    background-color: #694872;
+    padding: 5px;
+} */
 /* ---------Login------------- */
 .errores {
      color: #DF8B8B;
