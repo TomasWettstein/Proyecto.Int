@@ -54,7 +54,7 @@ if ($_POST) {
 
 
             <p class="p--usuario"> ¿No estas registrado? </p>
-            <center><button onclick="location.href='registro.php'" type="submit" class="b--login"> Registrate </button></center>
+           <center> <button onclick="location.href='registro.php'" type="submit" class="b--login"> Registrate </button> </center>
 
         </section>
 

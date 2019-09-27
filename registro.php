@@ -1,21 +1,22 @@
 <?php
 require_once('controladores/funciones.php');
-
 $titulo = "Registro";
 include_once('head.php');
 if($_POST && $_FILES) {
     $errores = validarRegistro($_POST);
     if (!$errores) {
+        $registro = crearRegistro($_POST, $avatar);
+        guardarUsuario($registro);
+
         $ext = pathinfo($_FILES['archivo']['name'], PATHINFO_EXTENSION);
         move_uploaded_file($_FILES['archivo']['tmp_name'],'avatars/' . $_POST['userName']. "." . $ext);
 
-        $registro = crearRegistro($_POST);
-        guardarUsuario($registro);
-        header('location:login.php');
+        header('Location: juegos.php');
         exit;
     }
 }
 ?>
+
 <body>
     <section class="container">
         <header>
@@ -54,10 +55,13 @@ if($_POST && $_FILES) {
                 <label   for="password"><p class="sub--texto">Repetir contraseña</p></label>
                 <input class="in--regis" name="passwordRepeat" type="password" class="form-control" id= "passwordRepeat" placeholder="Repita la contraseña">
             </div>
-            <button type="submit"></button>
+            <button onclick="location.href='registro.php'" type="submit" class="boton--login"> Registrate </button>
 
 
         </section>
+
+        <p class="p--usuario"> Ya tenes cuenta? </p>
+       <a class="b--login" href="login.php"> Ingresa </a> 
 
         <?php
         include_once("footer.php");

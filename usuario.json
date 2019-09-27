@@ -4,7 +4,56 @@
             "id": 1,
             "userName": "jazmin",
             "email": "tomas_fw@hotmail.com",
-            "password": "$2y$10$XiLAsETZoZuIhTPkkSgSkO7Xrw3NgJiCDe\/rt1hIl.Qh1ugyiw\/hu",
+            "password": "$2y$10$QtGyyeqjI2xMXD2fGDlyQ.uRzYn4HRqRi6B64kaLAB.V6PQHg75Ay",
+            "perfil": 1
+        },
+        {
+            "id": 2,
+            "userName": "agustina",
+            "email": "Agus_maraz@hotmail.com",
+            "password": "$2y$10$plKrRbQMPbnJLs4Tvl8iMuu1j2LUfpOEcpTqvela230\/O5alXWnI2",
+            "perfil": 1
+        },
+        {
+            "id": 3,
+            "userName": "agustina",
+            "email": "Agus_maraz@hotmail.com",
+            "password": "$2y$10$y8HHG1GdXoyxpxyCtt\/gA.wr.bWY2L7JV7YwJTI1aBFnZ9upzM6m2",
+            "perfil": 1
+        },
+        {
+            "id": 4,
+            "userName": "adrian",
+            "email": "Agus_maraz@hotmail.com",
+            "password": "$2y$10$rW95rSmUaDvXnGvvrzTqTu\/eziiJ\/wL52bbW9vzLMR8KbrcqePsqu",
+            "perfil": 1
+        },
+        {
+            "id": 5,
+            "userName": "adrian",
+            "email": "Agus_maraz@hotmail.com",
+            "password": "$2y$10$Mq8I6VYLxqsBR9HjwMLeauE7m.ir012q8Zh3lWQ66PpZ.gY4BJhfa",
+            "perfil": 1
+        },
+        {
+            "id": 6,
+            "userName": "adrian",
+            "email": "Agus_maraz@hotmail.com",
+            "password": "$2y$10$jPUiT77.vFZonvbP6rVVquEEvQjI8hhX42J7Aoaj2aXhlwYPlXE3a",
+            "perfil": 1
+        },
+        {
+            "id": 7,
+            "userName": "adrian",
+            "email": "Agus_maraz@hotmail.com",
+            "password": "$2y$10$jD..BtbIyTSuX2y.AT0jiu.DLDwmq7q5wCVAfPcIMKVjWEqU0SaRu",
+            "perfil": 1
+        },
+        {
+            "id": 8,
+            "userName": "adrian",
+            "email": "Agus_maraz@hotmail.com",
+            "password": "$2y$10$kbKce9QbN6NbixExBfMYFeaI9OnSes4GG1Azp6P1RxHMdW7QlbJOS",
             "perfil": 1
         }
     ]
