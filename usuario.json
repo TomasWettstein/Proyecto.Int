@@ -55,6 +55,34 @@
             "email": "Agus_maraz@hotmail.com",
             "password": "$2y$10$kbKce9QbN6NbixExBfMYFeaI9OnSes4GG1Azp6P1RxHMdW7QlbJOS",
             "perfil": 1
+        },
+        {
+            "id": 9,
+            "userName": "tomas",
+            "email": "tomas_fw@hotmail.com",
+            "password": "$2y$10$zecPq..0fIkcUNApIf3Imeu2cAVZ7iliDbShhHgYAjWMIs1oo7rvq",
+            "perfil": 1
+        },
+        {
+            "id": 10,
+            "userName": "tomas",
+            "email": "tomas_fw@hotmail.com",
+            "password": "$2y$10$NvsXkZquBIyrofCKnhKHxOHvnIorHlk65Ht8W8JNYY2DyHd0s0hGK",
+            "perfil": 1
+        },
+        {
+            "id": 11,
+            "userName": "tomas",
+            "email": "tomas_fw@hotmail.com",
+            "password": "$2y$10$WvBXnU6Oe1D4YCs.RwvhqudHHTjos3fxMvEv7txQzXa4DEDDn07hO",
+            "perfil": 1
+        },
+        {
+            "id": 12,
+            "userName": "tomas",
+            "email": "tomas_fw@hotmail.com",
+            "password": "$2y$10$wAVsIZ8vUL0xXnFz64dEVet4DGco.cOWDsyTiN47Jb1aUtKIshgz.",
+            "perfil": 1
         }
     ]
 }

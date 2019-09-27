@@ -11,7 +11,7 @@ if($_POST && $_FILES) {
         $ext = pathinfo($_FILES['archivo']['name'], PATHINFO_EXTENSION);
         move_uploaded_file($_FILES['archivo']['tmp_name'],'avatars/' . $_POST['userName']. "." . $ext);
 
-        header('Location: juegos.php');
+        header('Location: login.php');
         exit;
     }
 }
@@ -55,13 +55,13 @@ if($_POST && $_FILES) {
                 <label   for="password"><p class="sub--texto">Repetir contraseña</p></label>
                 <input class="in--regis" name="passwordRepeat" type="password" class="form-control" id= "passwordRepeat" placeholder="Repita la contraseña">
             </div>
-            <button onclick="location.href='registro.php'" type="submit" class="boton--login"> Registrate </button>
+            <button type="submit" class="boton--login"> Registrate </button>
 
 
         </section>
 
         <p class="p--usuario"> Ya tenes cuenta? </p>
-       <a class="b--login" href="login.php"> Ingresa </a> 
+       <a class = "b--ingresa" href="login.php">Ingresa</a>
 
         <?php
         include_once("footer.php");
