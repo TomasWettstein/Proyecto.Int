@@ -76,7 +76,6 @@ function validarLogin($datos){
         $errores['password'] = 'La contraseña no puede estar vacia';
     }else {
             $usuario = buscarPorEmail($datos['email']);
-            
             if (!password_verify($datos['password'], $usuario['password'])) {
                 $errores['password'] = 'La contraseña es incorrecta';
             }
@@ -91,7 +90,7 @@ function buscarPorEmail($email){
     $usuarios = $array['usuarios'];
     foreach ($usuarios as $value) {
          if($value['email'] === $email);
-         return $usuarios;
+         return $usuarios; 
     }
     return null;
 }

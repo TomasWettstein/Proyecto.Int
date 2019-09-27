@@ -561,6 +561,7 @@ footer {
 .ul--footer {
     display: flex;
     justify-content: center;
+    margin-top: 2em;
 }   
 .li--footer {
     margin-left: 3em;

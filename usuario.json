@@ -55,6 +55,13 @@
             "email": "Agus_maraz@hotmail.com",
             "password": "$2y$10$kbKce9QbN6NbixExBfMYFeaI9OnSes4GG1Azp6P1RxHMdW7QlbJOS",
             "perfil": 1
+        },
+        {
+            "id": 9,
+            "userName": "agustina",
+            "email": "Agus_maraz@hotmail.com",
+            "password": "$2y$10$9PohiA21rcCD5VCJ2wuAfeYmX4Rzwv9WV7KUr8TE0Qfw9QpmkKu5u",
+            "perfil": 1
         }
     ]
 }
