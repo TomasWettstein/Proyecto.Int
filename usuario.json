@@ -2,16 +2,9 @@
     "usuarios": [
         {
             "id": 1,
-            "userName": "tomas",
+            "userName": "jazmin",
             "email": "tomas_fw@hotmail.com",
-            "password": "$2y$10$QtGyyeqjI2xMXD2fGDlyQ.uRzYn4HRqRi6B64kaLAB.V6PQHg75Ay",
-            "perfil": 1
-        },
-        {
-            "id": 2,
-            "userName": "tomas",
-            "email": "tomas_fw@hotmail.com",
-            "password": "$2y$10$3gKFIpXiFik8ZphCfVkxge\/GqEKLF0LRnkLLYjnD6W9IIRkC6QA7a",
+            "password": "$2y$10$XiLAsETZoZuIhTPkkSgSkO7Xrw3NgJiCDe\/rt1hIl.Qh1ugyiw\/hu",
             "perfil": 1
         }
     ]
