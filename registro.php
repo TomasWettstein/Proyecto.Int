@@ -1,4 +1,3 @@
-
 <?php
 require_once('controladores/funciones.php');
 
@@ -6,7 +5,7 @@ $titulo = "Registro";
 include_once('head.php');
 if($_POST && $_FILES) {
     $errores = validarRegistro($_POST);
-    if (!$errores){
+    if (!$errores) {
         $ext = pathinfo($_FILES['archivo']['name'], PATHINFO_EXTENSION);
         move_uploaded_file($_FILES['archivo']['tmp_name'],'avatars/' . $_POST['userName']. "." . $ext);
 
@@ -17,8 +16,6 @@ if($_POST && $_FILES) {
     }
 }
 ?>
-
-
 <body>
     <section class="container">
         <header>
@@ -57,19 +54,15 @@ if($_POST && $_FILES) {
                 <label   for="password"><p class="sub--texto">Repetir contraseña</p></label>
                 <input class="in--regis" name="passwordRepeat" type="password" class="form-control" id= "passwordRepeat" placeholder="Repita la contraseña">
             </div>
+            <button type="submit"></button>
 
-           <center><button  class="boton" type="submit"><p class = "p--boton"> Registrarse</p></button></center> 
-         </form>
-         <p class="p--usuario"> Ya tenes usuario? </p>
-         <center><button onclick="location.href='login.php'" class="b--login" type="submit"><p class="p--registrarse">Ingresa</p></button></center> 
 
-          
-         </section>
+        </section>
 
-         <?php 
-         include_once ("footer.php");
+        <?php
+        include_once("footer.php");
 
-         ?>
+        ?>
 
 </body>
 
