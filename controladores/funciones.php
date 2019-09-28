@@ -1,99 +1,116 @@
 <?php
 session_start();
 //Funcion para validar registro
-function validarRegistro($datos){
+function validarRegistro($datos)
+{
     $errores = [];
     $userName = trim($datos['userName']);
     if (empty($userName)) {
         $errores['userName'] = "El nombre de usuario no puede estar vacio";
     }
     $email = trim($datos['email']);
-    if(empty($email)){
+    if (empty($email)) {
         $errores['email'] = "El email no puede estar vacio";
-        // } elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        // $errores['email'] = "Email invalido";
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errores['email'] = "Email invalido";
+    } elseif (loguearUsuario('email')){
+        $errores['email'] = "El email ya esta registrado";
     }
-$password = trim($datos['password']);
-if (empty($password)) {
-    $errores['password'] = "La contraseña no puede estar vacia.";
-} elseif (!is_numeric($password) && !is_string($password)) {
-    $errores['password'] = "La contraseña deve tener letras y numeros";
-} elseif (strlen($password) < 6) {
-    $errores['password'] = "El password como mínimo debe tener 6 caracteres...";
+    $password = trim($datos['password']);
+    if (empty($password)) {
+        $errores['password'] = "La contraseña no puede estar vacia.";
+    } elseif (!is_numeric($password) && !is_string($password)) {
+        $errores['password'] = "La contraseña deve tener letras y numeros";
+    } elseif (strlen($password) < 6) {
+        $errores['password'] = "El password como mínimo debe tener 6 caracteres...";
+    }
+    $passwordRepeat = trim($datos['passwordRepeat']);
+    if ($password != $passwordRepeat) {
+        $errores['passwordRepeat'] = "Las contraseñas deben ser iguales";
+    }
+    if ($_FILES['archivo']['error'] != 0) {
+        $errores['file'] = 'Debe subir un archivo';
+    }
+    return $errores;
 }
-$passwordRepeat = trim($datos['passwordRepeat']);
-if ($password != $passwordRepeat) {
-    $errores['passwordRepeat'] = "Las contraseñas deben ser iguales";
-}
-if($_FILES['archivo']['error']!=0){
-    $errores['file'] = 'Debe subir un archivo';
-}
-return $errores;
 
-}
-
-function nextId(){
+function nextId()
+{
     $usuarioJson = file_get_contents("usuario.json");
-    $usuarios = json_decode($usuarioJson,true);
-    if(!$usuarios){
+    $usuarios = json_decode($usuarioJson, true);
+    if (!$usuarios) {
         return 1;
-    }else {
+    } else {
         $ultimoUsuario = array_pop($usuarios['usuarios']);
         $ultimoId = $ultimoUsuario['id'];
         $siguienteId = $ultimoId + 1;
         return $siguienteId;
     }
-
 }
-function crearRegistro($datos){
+function crearRegistro($datos)
+{
     $usuario = [
         'id' => nextId(),
         'userName' => $datos['userName'],
         'email' => $datos['email'],
-        'password' => password_hash($datos['password'],PASSWORD_DEFAULT),
+        'password' => password_hash($datos['password'], PASSWORD_DEFAULT),
         'perfil' => 1
     ];
     return $usuario;
-
 }
-function guardarUsuario($usuario){
+function guardarUsuario($usuario)
+{
     $usuarioJson = file_get_contents("usuario.json");
-    $usuarios = json_decode($usuarioJson,true);
+    $usuarios = json_decode($usuarioJson, true);
     $usuarios['usuarios'][] = $usuario;
-    $usuarioJson = json_encode($usuarios,JSON_PRETTY_PRINT);
+    $usuarioJson = json_encode($usuarios, JSON_PRETTY_PRINT);
     file_put_contents('usuario.json', $usuarioJson);
 }
 
 
-function validarLogin($datos){
+function validarLogin($datos)
+{
     $errores = [];
+    $email = trim($datos['email']);
     $userName = trim($datos['userName']);
+    $password = trim($datos['password']);
+
+    if (strlen($email) == 0) {
+        $errores['email'] = "El email no puede estar vacio";
+    }
     if (empty($userName)) {
         $errores['userName'] = 'El usuario no puede estar vacio';
     }
-    $password = trim($datos['password']);
-    if (strlen($password)== 0) {
+    if (strlen($password) == 0) {
         $errores['password'] = 'La contraseña no puede estar vacia';
-    }else {
-            $usuario = buscarPorUser($datos['userNames']);
-            if (!password_verify($datos['password'], $usuario['password'])) {
-                $errores['password'] = 'La contraseña es incorrecta';
-            }
+    } else {
+        $usuario = buscarPorEmail($datos['email']);
+
+        if (!password_verify($datos['password'], $usuario['password'])) {
+            $errores['password'] = 'La contraseña es incorrecta';
         }
-    
-return $errores;
+    }
+
+    return $errores;
 }
 
-function buscarPorUser($nombre){
+function buscarPorEmail($email) {
     $archivoJson = file_get_contents('usuario.json');
     $array = json_decode($archivoJson, true);
     $usuarios = $array['usuarios'];
     foreach ($usuarios as $value) {
-         if($value['userName'] === $nombre);
-         return $usuarios; 
+        if ($value['email'] === $email) {
+            return $value;
+        }
     }
     return null;
 }
 
+function loguearUsuario(){
+    return isset($_SESSION['email']);
+}
 
+if(isset($_SESSION)){
+    $usuario = buscarPorEmail($_SESSION['email']);
+}
 ?>
