@@ -48,6 +48,13 @@
             "email": "lucia@dh.com",
             "password": "$2y$10$Kn2PZdBkshAsETP85Y6LD.PIVPs6cC6Nq0J.YSvFrZJYpcnog22g.",
             "perfil": 1
+        },
+        {
+            "id": 8,
+            "userName": "tito",
+            "email": "tito@dh.com",
+            "password": "$2y$10$LeWSokd7C1wkx33bvF9uj.LGd9IPJjk.L2CliEVG2WIDvO7ug2esm",
+            "perfil": 1
         }
     ]
 }

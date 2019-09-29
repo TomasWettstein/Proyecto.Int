@@ -20,7 +20,7 @@
                 <a class="nav-link rounded-pill" href="nosotros.php">Nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link rounded-pill" href="login.php">Inicia Sesion</a>
+                <a class="nav-link rounded-pill" href="login.php">Inicia Sesión</a>
             </li>
     </div>
 

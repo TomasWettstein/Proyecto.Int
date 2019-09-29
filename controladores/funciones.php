@@ -115,11 +115,9 @@ function existeUsuario($email){
 
 
 function loguearUsuario($email){
-    $_SESSION['email'] = $email;
+    $_SESSION['usuario'] = buscarPorEmail($email);
 }
 
-if (isset($_SESSION)){
-    $usuario = buscarPorEmail($_SESSION['email']);
-}
+
 
 ?>
