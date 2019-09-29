@@ -113,4 +113,4 @@ function loguearUsuario(){
 if(isset($_SESSION)){
     $usuario = buscarPorEmail($_SESSION['email']);
 }
-?>
+?> 
