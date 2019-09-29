@@ -1,6 +1,7 @@
 <?php
 $titulo = "Usuario";
 require_once('controladores/funciones.php');
+$usuario = $_SESSION['usuario'];
 include_once('head.php');
 ?>
 
