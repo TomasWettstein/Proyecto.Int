@@ -83,6 +83,20 @@
             "email": "tomas_fw@hotmail.com",
             "password": "$2y$10$wAVsIZ8vUL0xXnFz64dEVet4DGco.cOWDsyTiN47Jb1aUtKIshgz.",
             "perfil": 1
+        },
+        {
+            "id": 13,
+            "userName": "tomas",
+            "email": "tomas_fw@hotmail.com",
+            "password": "$2y$10$XnrHv5SusQgwgpVoljHQsuv\/sEYDG3zM.obeTyZZuffAF0LCg1Uwm",
+            "perfil": 1
+        },
+        {
+            "id": 14,
+            "userName": "tomas",
+            "email": "tomas_fw@hotmail.com",
+            "password": "$2y$10$\/r0fH3m8XTbn36R.uE.G1OSSkaDZmA8ksG1FT20eWF6LkwvorTnBq",
+            "perfil": 1
         }
     ]
 }
