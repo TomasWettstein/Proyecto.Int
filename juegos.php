@@ -1,5 +1,7 @@
-<?php $titulo = "Home";
-require_once 'head.php'; ?>
+<?php
+ $titulo = "Home";
+include_once('head.php')
+;?>
 
 <body>
     <section class="container">

@@ -2,86 +2,44 @@
     "usuarios": [
         {
             "id": 1,
-            "userName": "jazmin",
-            "email": "tomas_fw@hotmail.com",
-            "password": "$2y$10$QtGyyeqjI2xMXD2fGDlyQ.uRzYn4HRqRi6B64kaLAB.V6PQHg75Ay",
+            "userName": "agustina",
+            "email": "Agus_maraz@hotmail.com",
+            "password": "$2y$10$BvdZeFzWD95zThrD8tGfX.SJYPnNcC8j34y73oO4GuLZlGX5JW462",
             "perfil": 1
         },
         {
             "id": 2,
-            "userName": "agustina",
-            "email": "Agus_maraz@hotmail.com",
-            "password": "$2y$10$plKrRbQMPbnJLs4Tvl8iMuu1j2LUfpOEcpTqvela230\/O5alXWnI2",
+            "userName": "Nico",
+            "email": "nico@dh.com",
+            "password": "$2y$10$iMh0dwbrdAk9wlpZXqsxn.0OuokCx1MBBB1g88qzjKFiXebYcY2I.",
             "perfil": 1
         },
         {
             "id": 3,
-            "userName": "agustina",
-            "email": "Agus_maraz@hotmail.com",
-            "password": "$2y$10$y8HHG1GdXoyxpxyCtt\/gA.wr.bWY2L7JV7YwJTI1aBFnZ9upzM6m2",
+            "userName": "Nico",
+            "email": "nico@dh.com",
+            "password": "$2y$10$HYuR35plRCExxFnq5Tl5dOSSE7Q.0PzDek\/RROI8vrBvtROzntXxu",
             "perfil": 1
         },
         {
             "id": 4,
-            "userName": "adrian",
+            "userName": "Marito",
             "email": "Agus_maraz@hotmail.com",
-            "password": "$2y$10$rW95rSmUaDvXnGvvrzTqTu\/eziiJ\/wL52bbW9vzLMR8KbrcqePsqu",
+            "password": "$2y$10$CVBunSZXo6JLVICbBRMXwueuYMgREn1ti0T.z3SFCSe.2IJW1HlJe",
             "perfil": 1
         },
         {
             "id": 5,
-            "userName": "adrian",
+            "userName": "Marito",
             "email": "Agus_maraz@hotmail.com",
-            "password": "$2y$10$Mq8I6VYLxqsBR9HjwMLeauE7m.ir012q8Zh3lWQ66PpZ.gY4BJhfa",
+            "password": "$2y$10$m5lJrQ3DJax0e8ZcMKu79OMzyGCgrkn7XL04pZZ.D1WeSpdOgRRGW",
             "perfil": 1
         },
         {
             "id": 6,
             "userName": "adrian",
             "email": "Agus_maraz@hotmail.com",
-            "password": "$2y$10$jPUiT77.vFZonvbP6rVVquEEvQjI8hhX42J7Aoaj2aXhlwYPlXE3a",
-            "perfil": 1
-        },
-        {
-            "id": 7,
-            "userName": "adrian",
-            "email": "Agus_maraz@hotmail.com",
-            "password": "$2y$10$jD..BtbIyTSuX2y.AT0jiu.DLDwmq7q5wCVAfPcIMKVjWEqU0SaRu",
-            "perfil": 1
-        },
-        {
-            "id": 8,
-            "userName": "adrian",
-            "email": "Agus_maraz@hotmail.com",
-            "password": "$2y$10$kbKce9QbN6NbixExBfMYFeaI9OnSes4GG1Azp6P1RxHMdW7QlbJOS",
-            "perfil": 1
-        },
-        {
-            "id": 9,
-            "userName": "tomas",
-            "email": "tomas_fw@hotmail.com",
-            "password": "$2y$10$zecPq..0fIkcUNApIf3Imeu2cAVZ7iliDbShhHgYAjWMIs1oo7rvq",
-            "perfil": 1
-        },
-        {
-            "id": 10,
-            "userName": "tomas",
-            "email": "tomas_fw@hotmail.com",
-            "password": "$2y$10$NvsXkZquBIyrofCKnhKHxOHvnIorHlk65Ht8W8JNYY2DyHd0s0hGK",
-            "perfil": 1
-        },
-        {
-            "id": 11,
-            "userName": "tomas",
-            "email": "tomas_fw@hotmail.com",
-            "password": "$2y$10$WvBXnU6Oe1D4YCs.RwvhqudHHTjos3fxMvEv7txQzXa4DEDDn07hO",
-            "perfil": 1
-        },
-        {
-            "id": 12,
-            "userName": "tomas",
-            "email": "tomas_fw@hotmail.com",
-            "password": "$2y$10$wAVsIZ8vUL0xXnFz64dEVet4DGco.cOWDsyTiN47Jb1aUtKIshgz.",
+            "password": "$2y$10$F4DtozhnU\/tAEaE67QK2FO1uc0LMLqo7hKiRu.zEduQPnSZPPcNIO",
             "perfil": 1
         },
         {

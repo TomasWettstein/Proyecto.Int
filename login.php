@@ -1,7 +1,6 @@
 <?php
 $titulo = "Login";
 require_once('controladores/funciones.php');
-include_once('head.php');
 if ($_POST) {
     $errores = validarLogin($_POST);
     if (!$errores) {
@@ -9,8 +8,9 @@ if ($_POST) {
         exit;
     }
 }
-?>
+include_once('head.php');
 
+?>
 <body>
     <section class="container">
         <header>
@@ -19,8 +19,6 @@ if ($_POST) {
             ?>
         </header>
         <p class="titulo--login"> Inicia Sesión </p>
-
-
 
         <section class="login">
             <form action="" method="POST" class="login--form">
@@ -36,7 +34,17 @@ if ($_POST) {
                         </ul>
                     <?php endif ?>
                 </div>
-
+                <div class="form--caja">
+                    <label for="text">
+                        <h2 class="texto--login">Email</h2>
+                    </label>
+                    <input class="in--login" name="email" type="text" id="usuario" placeholder="Ingrese su email">
+                    <?php if (isset($errores['email'])) : ?>
+                        <ul class="errores" type="none">
+                            <li> <?= $errores['email'] ?> </li>
+                        </ul>
+                    <?php endif; ?>
+                </div>
                 <div class="form--caja">
                     <label class="texto" for="Password">
                         <h2 class="texto--login">Contraseña</h2>
@@ -51,10 +59,8 @@ if ($_POST) {
 
                 <button type="submit" class="boton--login"> Ingresa </button>
             </form>
-
-
             <p class="p--usuario"> ¿No estas registrado? </p>
-           <center> <button onclick="location.href='registro.php'" type="submit" class="b--registrarse"> Registrate </button> </center>
+            <center> <button onclick="location.href='registro.php'" type="submit" class="b--registrarse"> Registrate </button> </center>
 
         </section>
 
