@@ -13,7 +13,7 @@ function validarRegistro($datos)
         $errores['email'] = "El email no puede estar vacio";
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errores['email'] = "Email invalido";
-    } elseif (loguearUsuario('email')){
+    } elseif (existeUsuario('email')){
         $errores['email'] = "El email ya esta registrado";
     }
     $password = trim($datos['password']);
@@ -77,7 +77,10 @@ function validarLogin($datos)
 
     if (strlen($email) == 0) {
         $errores['email'] = "El email no puede estar vacio";
+    } elseif (!existeUsuario($datos['email'])){
+        $errores['email'] = "El usuario no se encuentra registrado";
     }
+
     if (empty($userName)) {
         $errores['userName'] = 'El usuario no puede estar vacio';
     }
@@ -106,11 +109,21 @@ function buscarPorEmail($email) {
     return null;
 }
 
-function loguearUsuario(){
-    return isset($_SESSION['email']);
+function existeUsuario($email){
+    return buscarPorEmail($email) !== null;
 }
 
-if(isset($_SESSION)){
+
+function loguearUsuario($email){
+    $_SESSION['email'] = $email;
+}
+
+if (isset($_SESSION)){
     $usuario = buscarPorEmail($_SESSION['email']);
 }
+<<<<<<< HEAD
 ?> 
+=======
+
+?>
+>>>>>>> e0915c43401d88e2870bc47be12398a17d6bdc19

@@ -43,6 +43,7 @@
             "perfil": 1
         },
         {
+<<<<<<< HEAD
             "id": 13,
             "userName": "tomas",
             "email": "tomas_fw@hotmail.com",
@@ -54,6 +55,12 @@
             "userName": "tomas",
             "email": "tomas_fw@hotmail.com",
             "password": "$2y$10$\/r0fH3m8XTbn36R.uE.G1OSSkaDZmA8ksG1FT20eWF6LkwvorTnBq",
+=======
+            "id": 7,
+            "userName": "lucia",
+            "email": "lucia@dh.com",
+            "password": "$2y$10$Kn2PZdBkshAsETP85Y6LD.PIVPs6cC6Nq0J.YSvFrZJYpcnog22g.",
+>>>>>>> e0915c43401d88e2870bc47be12398a17d6bdc19
             "perfil": 1
         }
     ]
