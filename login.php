@@ -4,6 +4,7 @@ require_once('controladores/funciones.php');
 if ($_POST) {
     $errores = validarLogin($_POST);
     if (!$errores) {
+        loguearUsuario($_POST['email']);
         header('Location: juegos.php');
         exit;
     }

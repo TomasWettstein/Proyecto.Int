@@ -41,6 +41,13 @@
             "email": "Agus_maraz@hotmail.com",
             "password": "$2y$10$F4DtozhnU\/tAEaE67QK2FO1uc0LMLqo7hKiRu.zEduQPnSZPPcNIO",
             "perfil": 1
+        },
+        {
+            "id": 7,
+            "userName": "lucia",
+            "email": "lucia@dh.com",
+            "password": "$2y$10$Kn2PZdBkshAsETP85Y6LD.PIVPs6cC6Nq0J.YSvFrZJYpcnog22g.",
+            "perfil": 1
         }
     ]
 }
