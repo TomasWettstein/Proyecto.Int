@@ -55,6 +55,13 @@
             "email": "tito@dh.com",
             "password": "$2y$10$LeWSokd7C1wkx33bvF9uj.LGd9IPJjk.L2CliEVG2WIDvO7ug2esm",
             "perfil": 1
+        },
+        {
+            "id": 9,
+            "userName": "Julian",
+            "email": "juli@dh.com",
+            "password": "$2y$10$gOOpctOeSCIuuq2rpftL6e95l4U3hBHr26avmSNZ13oKq2dS3AzOG",
+            "perfil": 1
         }
     ]
 }

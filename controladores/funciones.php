@@ -109,6 +109,7 @@ function buscarPorEmail($email) {
     return null;
 }
 
+
 function existeUsuario($email){
     return buscarPorEmail($email) !== null;
 }
@@ -116,6 +117,7 @@ function existeUsuario($email){
 
 function loguearUsuario($email){
     $_SESSION['usuario'] = buscarPorEmail($email);
+    
 }
 
 
