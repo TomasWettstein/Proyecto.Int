@@ -2,65 +2,9 @@
     "usuarios": [
         {
             "id": 1,
-            "userName": "agustina",
-            "email": "Agus_maraz@hotmail.com",
-            "password": "$2y$10$BvdZeFzWD95zThrD8tGfX.SJYPnNcC8j34y73oO4GuLZlGX5JW462",
-            "perfil": 1
-        },
-        {
-            "id": 2,
-            "userName": "Nico",
-            "email": "nico@dh.com",
-            "password": "$2y$10$iMh0dwbrdAk9wlpZXqsxn.0OuokCx1MBBB1g88qzjKFiXebYcY2I.",
-            "perfil": 1
-        },
-        {
-            "id": 3,
-            "userName": "Nico",
-            "email": "nico@dh.com",
-            "password": "$2y$10$HYuR35plRCExxFnq5Tl5dOSSE7Q.0PzDek\/RROI8vrBvtROzntXxu",
-            "perfil": 1
-        },
-        {
-            "id": 4,
-            "userName": "Marito",
-            "email": "Agus_maraz@hotmail.com",
-            "password": "$2y$10$CVBunSZXo6JLVICbBRMXwueuYMgREn1ti0T.z3SFCSe.2IJW1HlJe",
-            "perfil": 1
-        },
-        {
-            "id": 5,
-            "userName": "Marito",
-            "email": "Agus_maraz@hotmail.com",
-            "password": "$2y$10$m5lJrQ3DJax0e8ZcMKu79OMzyGCgrkn7XL04pZZ.D1WeSpdOgRRGW",
-            "perfil": 1
-        },
-        {
-            "id": 6,
-            "userName": "adrian",
-            "email": "Agus_maraz@hotmail.com",
-            "password": "$2y$10$F4DtozhnU\/tAEaE67QK2FO1uc0LMLqo7hKiRu.zEduQPnSZPPcNIO",
-            "perfil": 1
-        },
-        {
-            "id": 13,
-            "userName": "tomas",
-            "email": "tomas_fw@hotmail.com",
-            "password": "$2y$10$XnrHv5SusQgwgpVoljHQsuv\/sEYDG3zM.obeTyZZuffAF0LCg1Uwm",
-            "perfil": 1
-        },
-        {
-            "id": 7,
-            "userName": "lucia",
-            "email": "lucia@dh.com",
-            "password": "$2y$10$Kn2PZdBkshAsETP85Y6LD.PIVPs6cC6Nq0J.YSvFrZJYpcnog22g.",
-            "perfil": 1
-        },
-        {
-            "id": 8,
-            "userName": "tito",
-            "email": "tito@dh.com",
-            "password": "$2y$10$LeWSokd7C1wkx33bvF9uj.LGd9IPJjk.L2CliEVG2WIDvO7ug2esm",
+            "userName": "nico",
+            "email": "beelord@gmail.com",
+            "password": "$2y$10$RtVmMOFIFFttnqAbgJDHbuFiyMNgQTbRc0O2VpmcHhMG52fRTsDfG",
             "perfil": 1
         },
         {

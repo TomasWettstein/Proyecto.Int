@@ -109,6 +109,7 @@ function buscarPorEmail($email) {
     return null;
 }
 
+
 function existeUsuario($email){
     return buscarPorEmail($email) !== null;
 }
