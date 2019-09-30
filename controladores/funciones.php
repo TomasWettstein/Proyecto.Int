@@ -115,9 +115,23 @@ function existeUsuario($email){
 
 
 function loguearUsuario($email){
-    $_SESSION['usuario'] = buscarPorEmail($email);
+    $_SESSION = buscarPorEmail($email);
 }
 
 
+// SESSION Y COOKIES MAURI
+// GRACIAS AGUS POR HACER LA MITAD DE MI TRABAJO <3
 
-?>
+
+function crearCookies($datoPost){
+
+    if(isset($datoPost['recordarme'])){
+        setcookie('userName', $datoPost['userName'], time() + 60);
+        setcookie('email', $datoPost['email'], time() + 60);
+        setcookie('password', $datoPost['password'], time() + 60);
+    }   
+}
+
+function logout(){
+    session_destroy();
+}
