@@ -2,12 +2,12 @@
 $titulo = "Usuario";
 require_once('controladores/funciones.php');
 
-if(isset($_SESSION['usuario'])){
-
+if (isset($_SESSION['usuario'])) {
     $usuario = $_SESSION['usuario'];
 }
-//session_destroy();
+// session_destroy();
 include_once('head.php');
+
 ?>
 
 <body>
@@ -35,7 +35,7 @@ include_once('head.php');
             </div>
             <div class="caja2--usuario">
                 <img src="img/user.jpg" width="200px" height="200px" class="img--usuario">
-                <p class="nombre--usuario"> <?= (isset($_SESSION['userName'])) ? $_SESSION['userName']  : "Inicie sessión." ; ?> </p>
+                <p class="nombre--usuario"> <?= $usuario['userName'] ;?> </p>
                 <p class="puntos--usuario"> 87</p>
                 <p class="puesto--usuario"> Puesto 6</p>
             </div>
