@@ -6,7 +6,7 @@ if(isset($_SESSION['usuario'])){
 
     $usuario = $_SESSION['usuario'];
 }
-//session_destroy();
+
 include_once('head.php');
 ?>
 
@@ -14,7 +14,7 @@ include_once('head.php');
     <section class="container">
         <header>
             <?php
-            include_once('nav.php')
+            include_once('nav.php');
             ?>
         </header>
         <h1 class="titulo--ranking"> Ranking </h1>
@@ -35,7 +35,7 @@ include_once('head.php');
             </div>
             <div class="caja2--usuario">
                 <img src="img/user.jpg" width="200px" height="200px" class="img--usuario">
-                <p class="nombre--usuario"> <?= (isset($_SESSION['userName'])) ? $_SESSION['userName']  : "Inicie sessión." ; ?> </p>
+                <p class="nombre--usuario"> <?= (isset($_SESSION['userName'])) ? $_SESSION['userName']  : "Usuario" ; ?> </p>
                 <p class="puntos--usuario"> 87</p>
                 <p class="puesto--usuario"> Puesto 6</p>
             </div>

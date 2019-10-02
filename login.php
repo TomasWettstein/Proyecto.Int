@@ -59,8 +59,8 @@ include_once('head.php');
                 </div>
 
                 <button type="submit" class="boton--login"> Ingresa </button>
-                <label for="">Recordarme</label>
-               <center> <input type="checkbox" name="recordarme" id="recordarme"> </center>
+                <label for="" id = "recordarme">Recordarme</label>
+                <center> <input type="checkbox" name="recordarme" id="recordarme"> </center>
             </form>
             <p class="p--usuario"> ¿No estas registrado? </p>
             <center> <button onclick="location.href='registro.php'" type="submit" class="b--registrarse"> Registrate </button> </center>

@@ -176,6 +176,11 @@ body {
 .HOME--titulo{
     margin-top: 2em;
 }
+#bienvenido{
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+}
 .HOME--titulo h2{
     color: white;
     font-size: 3em;

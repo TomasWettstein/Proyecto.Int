@@ -136,3 +136,4 @@ function crearCookies($datoPost){
 function logout(){
     session_destroy();
 }
+
