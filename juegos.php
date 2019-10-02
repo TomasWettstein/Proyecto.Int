@@ -10,8 +10,13 @@ include_once('head.php')
         </header>
 
         <article class = HOME--titulo>
-            <h2>Pon a prueba tus conocimientos.</h2>
+
+        <?php if(isset($_SESSION['userName'])):?>
+        <p id="bienvenido">Bienvenido <?= $_SESSION['userName'] ;?>.</p>
+        <?php endif;?>
+
             <img src="img\Iconos-Cosas-Varias\Titulo Recto.png" alt="Dubium logo">    
+            <h2>Pon a prueba tus conocimientos.</h2>
         </article>
 
         <article class="HOME--juegos">

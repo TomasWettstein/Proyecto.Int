@@ -1,3 +1,6 @@
+<?php require_once 'controladores/funciones.php';
+?>
+
 <nav class="rounded-pill navbar">
     <button class="navbar-toggler bg-info btn-lg d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
         Menú
@@ -19,9 +22,19 @@
             <li class="nav-item">
                 <a class="nav-link rounded-pill" href="nosotros.php">Nosotros</a>
             </li>
+
+                <?php if(isset($_SESSION['userName'])):?>
+             
             <li class="nav-item">
+            <a id = "logout" href="logout.php" class="nav-link rounded-pill">Logout</a>
+            </li>
+
+                <?php else:?>
+
+                <li class="nav-item">
                 <a class="nav-link rounded-pill" href="login.php">Inicia Sesión</a>
             </li>
+            <?php endif; ?>
     </div>
 
     </ul>
