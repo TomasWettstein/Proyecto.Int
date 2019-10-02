@@ -121,7 +121,7 @@ function loguearUsuario($email){
 
 
 // SESSION Y COOKIES MAURI
-// GRACIAS AGUS POR HACER LA MITAD DE MI TRABAJO <3
+// GRACIAS AGUS POR HACER LA  gb4e  gb   aMITAD DE MI TRABAJO <3
 
 
 function crearCookies($datoPost){

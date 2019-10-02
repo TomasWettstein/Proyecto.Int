@@ -1,7 +1,6 @@
 <?php
 $titulo = "Usuario";
 require_once('controladores/funciones.php');
-
 if (isset($_SESSION['usuario'])) {
     $usuario = $_SESSION['usuario'];
 }
