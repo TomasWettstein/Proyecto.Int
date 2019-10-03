@@ -8,7 +8,8 @@ if($_POST) {
         guardarUsuario($registro);
         $ext = pathinfo($_FILES['archivo']['name'], PATHINFO_EXTENSION);
         move_uploaded_file($_FILES['archivo']['tmp_name'],'avatars/' . $_POST['userName']. "." . $ext);
-        header('Location: login.php');
+        loguearUsuario($_POST['email']);
+        header('Location: juegos.php');
         exit;
     }
 }
