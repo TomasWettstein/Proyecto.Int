@@ -9,7 +9,8 @@ if($_POST) {
         $registro = crearRegistro($_POST);
         guardarUsuario($registro);
         move_uploaded_file($_FILES['archivo']['tmp_name'],'avatars/' . $_POST['userName']. "." . $ext);
-        header('Location: login.php');
+        loguearUsuario($_POST['email']);
+        header('Location: juegos.php');
         exit;
     }
 }
