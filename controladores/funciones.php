@@ -47,17 +47,18 @@ function nextId()
         return $siguienteId;
     }
 }
-function crearRegistro($datos)
-{
+function crearRegistro($datos){
     $usuario = [
         'id' => nextId(),
         'userName' => $datos['userName'],
         'email' => $datos['email'],
         'password' => password_hash($datos['password'], PASSWORD_DEFAULT),
-        'perfil' => 1
+        'perfil' => 1,
+        'avatar' => $datos['avatar']
     ];
     return $usuario;
 }
+
 function guardarUsuario($usuario)
 {
     $usuarioJson = file_get_contents("usuario.json");
@@ -72,17 +73,12 @@ function validarLogin($datos)
 {
     $errores = [];
     $email = trim($datos['email']);
-    $userName = trim($datos['userName']);
     $password = trim($datos['password']);
 
     if (strlen($email) == 0) {
         $errores['email'] = "El email no puede estar vacio";
     } elseif (!existeUsuario($datos['email'])){
         $errores['email'] = "El usuario no se encuentra registrado";
-    }
-
-    if (empty($userName)) {
-        $errores['userName'] = 'El usuario no puede estar vacio';
     }
     if (strlen($password) == 0) {
         $errores['password'] = 'La contraseña no puede estar vacia';

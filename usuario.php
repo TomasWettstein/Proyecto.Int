@@ -32,8 +32,8 @@ include_once('head.php');
                 </ul>
             </div>
             <div class="caja2--usuario">
-                <img src="img/user.jpg" width="200px" height="200px" class="img--usuario">
-                <p class="nombre--usuario"> <?= (isset($_SESSION['userName'])) ? $_SESSION['userName']  : "Usuario" ; ?> </p>
+             <img class="img--usuario" width="230px" height="230px" src="<?= (isset($_SESSION['avatar'])) ? $_SESSION['avatar'] : "avatars/user.jpg" ; ?>">
+            <p class="nombre--usuario"> <?= (isset($_SESSION['userName'])) ? $_SESSION['userName']  : "Usuario" ; ?> </p>
                 <p class="puntos--usuario"> 87</p>
                 <p class="puesto--usuario"> Puesto 6</p>
             </div>

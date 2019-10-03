@@ -4,14 +4,16 @@ $titulo = "Registro";
 if($_POST) {
     $errores = validarRegistro($_POST);
     if (!$errores) {
-        $registro = crearRegistro($_POST, $avatar);
-        guardarUsuario($registro);
         $ext = pathinfo($_FILES['archivo']['name'], PATHINFO_EXTENSION);
+        $_POST['avatar'] = 'avatars/' . $_POST['userName']. "." . $ext;       
+        $registro = crearRegistro($_POST);
+        guardarUsuario($registro);
         move_uploaded_file($_FILES['archivo']['tmp_name'],'avatars/' . $_POST['userName']. "." . $ext);
         header('Location: login.php');
         exit;
     }
 }
+
 include_once('head.php');
 ?>
 

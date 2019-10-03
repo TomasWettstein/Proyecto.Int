@@ -1,18 +1,20 @@
 {
     "usuarios": [
         {
-            "id": 1,
-            "userName": "nico",
-            "email": "beelord@gmail.com",
-            "password": "$2y$10$RtVmMOFIFFttnqAbgJDHbuFiyMNgQTbRc0O2VpmcHhMG52fRTsDfG",
-            "perfil": 1
+            "id": 3,
+            "userName": "Tito",
+            "email": "tito@dh.com",
+            "password": "$2y$10$kguhdzOJHpYe0pj8f1zjGe8B8cYKVuhsMPQo2BpAG.eWYtkMopcKi",
+            "perfil": 1,
+            "avatar": "avatars\/Tito.png"
         },
         {
-            "id": 2,
-            "userName": "Mauri",
-            "email": "mauricioborawski@hotmail.com",
-            "password": "$2y$10$54XK6r9ys1Tiib2YdJ5VreejgmJF2mm2djp..tlCztnstqryS2r4i",
-            "perfil": 1
+            "id": 6,
+            "userName": "Nico",
+            "email": "nico@dh.com",
+            "password": "$2y$10$9YH6fibznoNFDWS9YPqLBu5LFmK4INOOQ\/B700Y9nuBGv2Ty4uhme",
+            "perfil": 1,
+            "avatar": "avatars\/Nico.jpeg"
         }
     ]
 }

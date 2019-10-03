@@ -12,6 +12,7 @@ if ($_POST) {
 }
 include_once('head.php');
 ?>
+
 <body>
     <section class="container">
         <header>
@@ -23,23 +24,12 @@ include_once('head.php');
 
         <section class="login">
             <form action="" method="POST" class="login--form">
-                <div class="form--caja">
-
-                    <label for="text">
-                        <h2 class="texto--login">Usuario</h2>
-                    </label>
-                    <input class="in--login" name="userName" type="text" id="usuario" placeholder="Ingrese nombre de usuario" value = "<?= isset($_COOKIE['userName']) ? $_COOKIE['userName'] : "" ; ?>">
-                    <?php if (isset($errores['userName'])) : ?>
-                        <ul class="errores" type="none">
-                            <li> <?= $errores['userName'] ?> </li>
-                        </ul>
-                    <?php endif ?>
-                </div>
+               
                 <div class="form--caja">
                     <label for="text">
                         <h2 class="texto--login">Email</h2>
                     </label>
-                    <input class="in--login" name="email" type="text" id="usuario" placeholder="Ingrese su email" value = "<?= isset($_COOKIE['email']) ? $_COOKIE['email'] : "" ; ?>">
+                    <input class="in--login" name="email" type="text" id="usuario" placeholder="Ingrese su email" value="<?= isset($_COOKIE['email']) ? $_COOKIE['email'] : ""; ?>">
                     <?php if (isset($errores['email'])) : ?>
                         <ul class="errores" type="none">
                             <li> <?= $errores['email'] ?> </li>
@@ -50,17 +40,18 @@ include_once('head.php');
                     <label class="texto" for="Password">
                         <h2 class="texto--login">Contraseña</h2>
                     </label>
-                    <input class="in--login" name="password" type="password" id="password" placeholder="Intruduzca una contraseña" value = "<?= isset($_COOKIE['password']) ? $_COOKIE['password'] : "" ; ?>">
+                    <input class="in--login" name="password" type="password" id="password" placeholder="Intruduzca una contraseña" value="<?= isset($_COOKIE['password']) ? $_COOKIE['password'] : ""; ?>">
                     <?php if (isset($errores['password'])) : ?>
                         <ul class="errores" type="none">
                             <li> <?= $errores['password'] ?> </li>
                         </ul>
                     <?php endif ?>
                 </div>
-
                 <button type="submit" class="boton--login"> Ingresa </button>
-                <label for="" id = "recordarme">Recordarme</label>
-                <center> <input type="checkbox" name="recordarme" id="recordarme"> </center>
+                <div class="form--caja">
+                   <span> <label for="" id="recordarme" class="label--recordarme">Recordarme</label>
+                    <input type="checkbox" name="recordarme" id="recordarme" class="input--recordarme"> </span>
+                </div>
             </form>
             <p class="p--usuario"> ¿No estas registrado? </p>
             <center> <button onclick="location.href='registro.php'" type="submit" class="b--registrarse"> Registrate </button> </center>
