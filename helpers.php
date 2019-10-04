@@ -4,6 +4,8 @@ function old ($dato){
         return $_POST[$dato];
     }
 }
+// var_dump($_POST);
+// exit;
 
 
 

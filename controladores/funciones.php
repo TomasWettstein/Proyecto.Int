@@ -1,8 +1,7 @@
 <?php
 session_start();
 //Funcion para validar registro
-function validarRegistro($datos)
-{
+function validarRegistro($datos){
     $errores = [];
     $userName = trim($datos['userName']);
     if (empty($userName)) {
@@ -133,3 +132,4 @@ function logout(){
     session_destroy();
 }
 
+?>

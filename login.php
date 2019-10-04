@@ -1,5 +1,6 @@
 <?php
 $titulo = "Login";
+require_once('helpers.php');
 require_once('controladores/funciones.php');
 if ($_POST) {
     $errores = validarLogin($_POST);
@@ -29,7 +30,7 @@ include_once('head.php');
                     <label for="text">
                         <h2 class="texto--login">Email</h2>
                     </label>
-                    <input class="in--login" name="email" type="text" id="usuario" placeholder="Ingrese su email" value="<?= isset($_COOKIE['email']) ? $_COOKIE['email'] : ""; ?>">
+                    <input class="in--login" name="email" type="text" id="usuario" placeholder="Ingrese su email" value="<?= isset($_COOKIE['email']) ? $_COOKIE['email'] : "";?>">
                     <?php if (isset($errores['email'])) : ?>
                         <ul class="errores" type="none">
                             <li> <?= $errores['email'] ?> </li>
@@ -40,8 +41,8 @@ include_once('head.php');
                     <label class="texto" for="Password">
                         <h2 class="texto--login">Contraseña</h2>
                     </label>
-                    <input class="in--login" name="password" type="password" id="password" placeholder="Intruduzca una contraseña" value="<?= isset($_COOKIE['password']) ? $_COOKIE['password'] : ""; ?>">
-                    <?php if (isset($errores['password'])) : ?>
+                    <input class="in--login" name="password" type="password" id="password" placeholder="Intruduzca una contraseña" value="<?= isset($_COOKIE['password']) ? $_COOKIE['password'] : "";?>">
+                    <?php if (isset($errores['password'])) : ?>     
                         <ul class="errores" type="none">
                             <li> <?= $errores['password'] ?> </li>
                         </ul>

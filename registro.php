@@ -1,4 +1,5 @@
 <?php
+require_once('helpers.php');
 require_once('controladores/funciones.php');
 $titulo = "Registro";
 if($_POST) {
@@ -31,7 +32,7 @@ include_once('head.php');
         <form  action="" method="POST" class="form--regis" enctype="multipart/form-data">
              <div class="form">
                  <label  for="text"><p class="sub--texto">Usuario</p></label>
-                  <input class="in--regis" type="text" id="usuario" name="userName"  placeholder="Ingrese nombre de usuario" value="">
+                  <input class="in--regis" type="text" id="usuario" name="userName"  placeholder="Ingrese nombre de usuario" value="<?= isset($errores['userName']) ? '' : old('userName');?>">
                   <?php if (isset($errores['userName'])) : ?>
                         <ul class="errores" type="none">
                             <li> <?= $errores['userName'] ?> </li>
@@ -50,7 +51,7 @@ include_once('head.php');
             </div>
             <div class="form">
                 <label  for="email"><p class="sub--texto">Email</p></label>
-                <input class="in--regis" name="email"  type="email"  id="email" placeholder= "Introducir Email" value="">
+                <input class="in--regis" name="email"  type="email"  id="email" placeholder= "Introducir Email" value="<?= isset($errores['email']) ? '' : old('email');?>">
                 <?php if (isset($errores['email'])) : ?>
                         <ul class="errores" type="none">
                             <li> <?= $errores['email'] ?> </li>
