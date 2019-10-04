@@ -1,6 +1,6 @@
 <?php
 session_start();
-//Funcion para validar registro
+//Funcion para validar registro----------
 function validarRegistro($datos){
     $errores = [];
     $userName = trim($datos['userName']);
@@ -32,7 +32,7 @@ function validarRegistro($datos){
     }
     return $errores;
 }
-
+// Funcion para agregarle un ID a cada usuario-----------
 function nextId()
 {
     $usuarioJson = file_get_contents("usuario.json");
@@ -46,6 +46,7 @@ function nextId()
         return $siguienteId;
     }
 }
+// Funcion para crear un usuario-------------
 function crearRegistro($datos){
     $usuario = [
         'id' => nextId(),
@@ -57,7 +58,7 @@ function crearRegistro($datos){
     ];
     return $usuario;
 }
-
+// Funcion para guardarlo en formato json---------
 function guardarUsuario($usuario)
 {
     $usuarioJson = file_get_contents("usuario.json");
@@ -67,7 +68,7 @@ function guardarUsuario($usuario)
     file_put_contents('usuario.json', $usuarioJson);
 }
 
-
+// Funcion para validar el login-------------------
 function validarLogin($datos)
 {
     $errores = [];
@@ -88,10 +89,9 @@ function validarLogin($datos)
             $errores['password'] = 'La contraseña es incorrecta';
         }
     }
-
     return $errores;
 }
-
+// Funcion para buscar si existe el usuario en el json ------------
 function buscarPorEmail($email) {
     $archivoJson = file_get_contents('usuario.json');
     $array = json_decode($archivoJson, true);
@@ -103,22 +103,15 @@ function buscarPorEmail($email) {
     }
     return null;
 }
-
-
+// Funcion para verificar cuando se registra si ya existe el email ------------
 function existeUsuario($email){
     return buscarPorEmail($email) !== null;
 }
-
-
+// Funcion para loguear al usuario ------------
 function loguearUsuario($email){
     $_SESSION = buscarPorEmail($email);
 }
-
-
-// SESSION Y COOKIES MAURI
-// GRACIAS AGUS POR HACER LA  gb4e  gb   aMITAD DE MI TRABAJO <3
-
-
+// Crear cookies------------
 function crearCookies($datoPost){
 
     if(isset($datoPost['recordarme'])){
@@ -127,7 +120,7 @@ function crearCookies($datoPost){
         setcookie('password', $datoPost['password'], time() + 60);
     }   
 }
-
+// Funcion para cerrar sesion------------
 function logout(){
     session_destroy();
 }
