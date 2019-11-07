@@ -1,12 +1,15 @@
 <?php
+session_start();
 $titulo = "Login";
 require_once('helpers.php');
-require_once('controladores/funciones.php');
+require_once('loader.php');
 if ($_POST) {
-    $errores = validarLogin($_POST);
+    $usuario = new Usuario($_POST['userName'], $_POST['email'], $_POST['password'], $_POST['passwordRepeat'],$_FILES);
+    $errores = $validarUsuario->validarLogin($usuario, $usuarioJson);
     if (!$errores) {
-        loguearUsuario($_POST['email']);
-        crearCookies($_POST);
+        $login->loguearUsuario($_POST['email']);
+        // crearCookies($_POST);
+        // var_dump($_SESSION);exit;
         header('Location: juegos.php');
         exit;
     }

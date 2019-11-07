@@ -66,7 +66,7 @@ body {
     color: #D88E4E;
 }
 .numeros--ranking {
-    margin-left: 9em;
+    margin-left: 7em;
     color: white;
 }
 /* ---------------Usuario----------------- */
@@ -423,7 +423,7 @@ body {
 }
 .contenedor--form {
     display: flex;
-    margin: 4em auto;
+    margin: 3em auto;
     justify-content: center;
     border-radius: 30px;
     padding: 1em;
@@ -471,13 +471,37 @@ body {
     padding: 0.5em;
     border-radius: 15px;
     background-color: #A0D8C8;
-    margin-bottom: 10em;
+    margin-bottom: 2em;
     
 }
 .boton--crea:hover {
     background-color: #D85F75;
     color: white;
 }
+.subtitulo--crea {
+    margin-bottom: 0.80em;
+    color:#D88E4E;
+    font-size: 3em;
+}
+.crud {
+    background-color: #694872;
+    margin-bottom: 2em;
+}
+.p-crud {
+    color: #D85F75 ;
+}
+.r-crud {
+    color:#A0D8C8 ;
+}
+.i-crud {
+    color: #D88E4E;
+}.in-crud {
+    color: #DF8B8B;
+}
+.e-crud {
+    color: #2C263F;
+}
+
 /*----------------CONTACTO----------------*/ 
 .sec--contacto{
     display: flex;
@@ -579,7 +603,7 @@ footer {
     color: white;
 }
 .ul--footer {
-    margin-top: 2em;
+    margin-top: 5em;
     display: flex;
     justify-content: center;
     margin-top: 2em;
@@ -590,8 +614,17 @@ footer {
 .icono--footer {
     font-size: 1.5em;
 }
+/* ----------- ADMIN ---------- */
+.crud-admin {
+    margin-top: 5em;
+}
+.e-crud-admin {
+    color: #A0D8C8;
+}
+.usuarios-admin {
+    color: black;
+}
 /* MEDIA QUERy*/
-
 
 @media (max-width: 768px){
     /*-----------Home-----------*/

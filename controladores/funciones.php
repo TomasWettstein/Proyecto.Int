@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 //Funcion para validar registro----------
 function validarRegistro($datos){
     $errores = [];
@@ -120,9 +120,9 @@ function crearCookies($datoPost){
         setcookie('password', $datoPost['password'], time() + 60);
     }   
 }
-// Funcion para cerrar sesion------------
-function logout(){
-    session_destroy();
-}
+// Funcion para cerrar sesion------------ 
+// function logout(){
+//     session_destroy();
+// }
 
 ?>

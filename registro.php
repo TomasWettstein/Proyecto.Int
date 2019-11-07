@@ -1,21 +1,27 @@
 <?php
+session_start();
+require_once('loader.php');
 require_once('helpers.php');
-require_once('controladores/funciones.php');
 $titulo = "Registro";
 if($_POST) {
-    $errores = validarRegistro($_POST);
+    $usuario = new Usuario($_POST['userName'], $_POST['email'], $_POST['password'], $_POST['passwordRepeat'],$_FILES);
+    $errores = $validarUsuario->validarRegistro($usuario, $usuarioJson);
     if (!$errores) {
+        $buscarUsuario = $usuarioJson->buscar($usuario->getEmail()); // traemos el email de usuario y usamos el metodo buscar (que compara emails) de usuarioJson para ver si existe y que lo guarde en usuarioEncontrado
+       
         $ext = pathinfo($_FILES['archivo']['name'], PATHINFO_EXTENSION);
-        $_POST['avatar'] = 'avatars/' . $_POST['userName']. "." . $ext;       
-        $registro = crearRegistro($_POST);
-        guardarUsuario($registro);
+        $usuario->avatar = 'avatars/' . $_POST['userName']. "." . $ext;   
+
+        $registro = $crearRegistro->crearRegistro($usuario);
+        $usuarioJson ->guardar($registro);
+        
         move_uploaded_file($_FILES['archivo']['tmp_name'],'avatars/' . $_POST['userName']. "." . $ext);
-        loguearUsuario($_POST['email']);
+        $login->loguearUsuario($_POST['email']);
+        // loguearUsuario($_POST['email']);
         header('Location: juegos.php');
         exit;
     }
 }
-
 include_once('head.php');
 ?>
 

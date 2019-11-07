@@ -1,4 +1,5 @@
 <?php
+session_start();
 $titulo = "Nosotros";
 include_once('head.php');
 ?>

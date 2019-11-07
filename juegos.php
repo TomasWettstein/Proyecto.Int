@@ -1,24 +1,20 @@
 <?php
- $titulo = "Home";
-include_once('head.php')
-;?>
+session_start();
+$titulo = "Home";
+include_once('head.php');; ?>
 
 <body>
     <section class="container">
         <header class="HOME--encabezado">
-            <?php require_once 'nav.php';?>
+            <?php require_once 'nav.php'; ?>
         </header>
-
-        <article class = HOME--titulo>
-
-        <?php if(isset($_SESSION['userName'])):?>
-        <p id="bienvenido">Bienvenido <?= $_SESSION['userName'] ;?>.</p>
-        <?php endif;?>
-
-            <img src="img\Iconos-Cosas-Varias\Titulo Recto.png" alt="Dubium logo">    
+        <article class=HOME--titulo>
+            <?php if (isset($_SESSION['usuario']['userName'])) : ?>
+                <p id="bienvenido">Bienvenido <?= $_SESSION['usuario']['userName']; ?>.</p>
+            <?php endif; ?>
+            <img src="img\Iconos-Cosas-Varias\Titulo Recto.png" alt="Dubium logo">
             <h2>Pon a prueba tus conocimientos.</h2>
         </article>
-
         <article class="HOME--juegos">
             <ul>
                 <li>
@@ -32,11 +28,11 @@ include_once('head.php')
                 </li>
             </ul>
         </article>
-    
+
     </section>
 
-    <footer class = "HOME--footer">
-            <?php require_once 'footer.php'; ?>
+    <footer class="HOME--footer">
+        <?php require_once 'footer.php'; ?>
     </footer>
 
 </body>

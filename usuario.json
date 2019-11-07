@@ -1,20 +1,40 @@
 {
     "usuarios": [
         {
-            "id": 3,
-            "userName": "Tito",
-            "email": "tito@dh.com",
-            "password": "$2y$10$kguhdzOJHpYe0pj8f1zjGe8B8cYKVuhsMPQo2BpAG.eWYtkMopcKi",
-            "perfil": 1,
-            "avatar": "avatars\/Tito.png"
+            "id": 2,
+            "userName": "Agustina",
+            "email": "Agus_maraz@hotmail.com",
+            "password": "$2y$10$u3nyVvMLj\/bYoZTAzloC6.SE.ZS2aXDe2AI8xHLJO\/Ama\/cM4uakW",
+            "perfil": 0,
+            "avatar": "avatars\/Agustina.jpg",
+            "puntaje": 0
         },
         {
-            "id": 6,
+            "id": 3,
+            "userName": "Admin",
+            "email": "admin@dh.com",
+            "password": "$2y$10$lhFxmvUdF93PZcoS7V8fRe5Qlp22xhVavOlwgPbJyOJXcnANzhzQu",
+            "perfil": 1,
+            "avatar": "avatars\/Admin.jpg",
+            "puntaje": 0
+        },
+        {
+            "id": 4,
+            "userName": "lu",
+            "email": "lu@dh.com",
+            "password": "$2y$10$Kj.ZjubGNBdw7MZSlaNnQe6.Vu3MiCubxjtQl3\/eQnGne4aX6u6.q",
+            "perfil": 0,
+            "avatar": "avatars\/lu.jpg",
+            "puntaje": 0
+        },
+        {
+            "id": 5,
             "userName": "Nico",
             "email": "nico@dh.com",
-            "password": "$2y$10$9YH6fibznoNFDWS9YPqLBu5LFmK4INOOQ\/B700Y9nuBGv2Ty4uhme",
-            "perfil": 1,
-            "avatar": "avatars\/Nico.jpeg"
+            "password": "$2y$10$5eyKpzNaPwxijJtqly.KtuSN0VgUYYbEhZmIGu1VP8SOYr3Fd\/Smi",
+            "perfil": 0,
+            "avatar": "avatars\/Nico.jpeg",
+            "puntaje": 0
         }
     ]
 }
