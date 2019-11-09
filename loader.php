@@ -7,7 +7,7 @@ require_once("clases/validador.php");
 require_once("clases/CrearRegistro.php");
 require_once("clases/loguear.php");
 require_once("clases/mostrar-admin.php");
-
+require_once("clases/pregunta.php");
 
 $usuarios = new Usuarios();
 $usuarioJson = new BaseJson();

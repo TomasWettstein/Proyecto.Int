@@ -59,5 +59,18 @@ class Validador{
         }
         return $errores;
     }
+    function validarPregunta ($pregunta){
+        $errores = [];
+        $pregunta = trim($pregunta->getPregunta());
+        if(empty($pregunta)){
+            $errores['pregunta'] = "No puede dejar el campo vacio...";
+        }
+        return $errores;
+        
+
+    }
+
+
+
 }
 

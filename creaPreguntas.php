@@ -2,6 +2,7 @@
 session_start();
 $titulo = "Crea tus preguntas";
 include_once('head.php');
+include_once('loader.php');
 
 ?>
 
@@ -21,26 +22,16 @@ include_once('head.php');
                 </div>
                 <div class="cajas--form">
                     <h3 class="subtitulos--crea2"> Escribi la respuesta: </h3>
-                    <input type="text" name="respuesta" placeholder="Escribi una respuesta" class="respuesta--crea">
+                    <input type="text" name="respuesta1" placeholder="Escribi una respuesta" class="respuesta--crea">
                     <br>
-                    <input type="text" name="respuesta" placeholder="Escribi la respuesta correcta" class="respuesta--crea">
+                    <input type="text" name="respuestaCorrecta" placeholder="Escribi la respuesta correcta" class="respuesta--crea">
                     <br>
-                    <input type="text" name="respuesta" placeholder="Escribi una respuesta" class="respuesta--crea">
+                    <input type="text" name="respuesta2" placeholder="Escribi una respuesta" class="respuesta--crea">
                 </div>
                 <div class="cajas--form">
                     <h3 class="subtitulos--crea3">Selecciona el tema:</h3>
                     <label for="tema" class="tematica--crea">
                         <p> Muerte subita</p>
-                    </label>
-                    <input type="radio" name="#">
-                    <br>
-                    <label for="tema" class="tematica--crea">
-                        <p> Lorem, ipsum</p>
-                    </label>
-                    <input type="radio" name="#">
-                    <br>
-                    <label for="tema" class="tematica--crea">
-                        <p>Lorem, ipsum</p>
                     </label>
                     <input type="radio" name="#">
                 </div>
