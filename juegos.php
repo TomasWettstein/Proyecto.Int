@@ -1,7 +1,8 @@
 <?php
 session_start();
 $titulo = "Home";
-include_once('head.php');; ?>
+include_once('head.php');
+require_once('loader.php');?>
 
 <body>
     <section class="container">
@@ -9,8 +10,8 @@ include_once('head.php');; ?>
             <?php require_once 'nav.php'; ?>
         </header>
         <article class=HOME--titulo>
-            <?php if (isset($_SESSION['usuario']['userName'])) : ?>
-                <p id="bienvenido">Bienvenido <?= $_SESSION['usuario']['userName']; ?>.</p>
+            <?php if (isset($_SESSION['usuario'])) : ?>
+                <p id="bienvenido">Bienvenido <?= $_SESSION['usuario']; ?>.</p>
             <?php endif; ?>
             <img src="img\Iconos-Cosas-Varias\Titulo Recto.png" alt="Dubium logo">
             <h2>Pon a prueba tus conocimientos.</h2>
