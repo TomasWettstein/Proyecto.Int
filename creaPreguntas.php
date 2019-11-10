@@ -6,7 +6,12 @@ require_once('loader.php');
 
 if($_POST){
     $pregunta = new Pregunta($_POST['pregunta']);
+    $errores = $validarPregunta->validarPregunta($pregunta);
+    if(!$errores){
+
+$pregunta = new Pregunta($_POST['pregunta']);
     BaseDato :: registrarPregunta($pregunta);
+    }
 }
 ?>
 
@@ -23,6 +28,11 @@ if($_POST){
                 <div class="cajas--form">
                     <h3 class="subtitulos--crea1"> Escribi tu pregunta: </h3>
                     <input type="text" name="pregunta" class="preguntainput--crea">
+                    <?php if(isset($errores['pregunta'])): ?>
+                    <ul class = "errores" type = "none">
+                    <li> <?= $errores['pregunta'] ?> </li>
+                    </ul>
+                    <?php endif ?>
                 </div>
                 <div class="cajas--form">
                     <h3 class="subtitulos--crea2"> Escribi la respuesta: </h3>

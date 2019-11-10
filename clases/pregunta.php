@@ -1,15 +1,17 @@
 <?php
 
-class Pregunta{
+class Pregunta {
     public $pregunta;
 
-    public function __construct($nombre_pregunta){
-        $this-> pregunta = $nombre_pregunta;
+
+    public function __construct($pregunta)
+    {
+        $this-> pregunta = $pregunta;
+    } 
+    public function setPregunta($pregunta){
+        $this->pregunta = $pregunta;
     }
-
-    //Getter
-
     public function getPregunta(){
-        return $this-> pregunta;
+        return $this->pregunta;
     }
 }

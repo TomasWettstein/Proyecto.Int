@@ -14,6 +14,7 @@ $usuarios = new Usuarios();
 $usuarioJson = new BaseJson();
 $crearRegistro = new Registro($usuarioJson);
 $validarUsuario = new Validador();
+$validarPregunta = new validador();
 $login = new Login();
 $bd = BaseDato :: conectar();
 ?>
