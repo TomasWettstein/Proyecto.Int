@@ -1,4 +1,6 @@
-<?php if ($_SESSION['usuario']['perfil'] === 1) : ?>
+<?php 
+    $_SESSION['perfil'] = 0;
+if ($_SESSION['perfil'] === 1) : ?>
     <nav class="rounded-pill navbar">
         <button class="navbar-toggler bg-info btn-lg d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
             Menú
@@ -14,7 +16,7 @@
                 <li class="nav-item">
                     <a class="nav-link rounded-pill" href="creaPreguntas.php"> Crea</a>
                 </li>
-                <?php if (isset($_SESSION['usuario']['userName'])) : ?>
+                <?php if (isset($_SESSION['usuario'])) : ?>
                     <li class="nav-item">
                         <a id="logout" href="logout.php" class="nav-link rounded-pill">Logout</a>
                     </li>
@@ -49,7 +51,7 @@
                     <a class="nav-link rounded-pill" href="nosotros.php">Nosotros</a>
                 </li>
 
-                <?php if (isset($_SESSION['usuario']['userName'])) : ?>
+                <?php if (isset($_SESSION['usuario'])) : ?>
 
                     <li class="nav-item">
                         <a id="logout" href="logout.php" class="nav-link rounded-pill">Logout</a>

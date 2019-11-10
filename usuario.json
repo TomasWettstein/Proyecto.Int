@@ -35,6 +35,15 @@
             "perfil": 0,
             "avatar": "avatars\/Nico.jpeg",
             "puntaje": 0
+        },
+        {
+            "id": 6,
+            "userName": "Kokauzne",
+            "email": "mauricioborawski@hotmail.com",
+            "password": "$2y$10$pqjjJDLEVBLaUC8RGhCpB.zBur8EGLME\/cp134uptyWh8s3X88Dn2",
+            "perfil": 0,
+            "avatar": "avatars\/Kokauzne.jpg",
+            "puntaje": 0
         }
     ]
 }

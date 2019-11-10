@@ -2,21 +2,24 @@
 session_start();
 require_once('loader.php');
 require_once('helpers.php');
+$BaseDato = BaseDato :: conectar();
 $titulo = "Registro";
 if($_POST) {
-    $usuario = new Usuario($_POST['userName'], $_POST['email'], $_POST['password'], $_POST['passwordRepeat'],$_FILES);
-    $errores = $validarUsuario->validarRegistro($usuario, $usuarioJson);
+    $usuario = new Usuario($_POST['userName'], $_POST['email'], $_POST['password'], $_FILES);
+    $errores = $validarUsuario->validarRegistro($usuario, $_POST['passwordRepeat']);
+    
     if (!$errores) {
-        $buscarUsuario = $usuarioJson->buscar($usuario->getEmail()); // traemos el email de usuario y usamos el metodo buscar (que compara emails) de usuarioJson para ver si existe y que lo guarde en usuarioEncontrado
+        //$buscarUsuario = $usuarioJson->buscar($usuario->getEmail()); // traemos el email de usuario y usamos el metodo buscar (que compara emails) de usuarioJson para ver si existe y que lo guarde en usuarioEncontrado
        
         $ext = pathinfo($_FILES['archivo']['name'], PATHINFO_EXTENSION);
-        $usuario->avatar = 'avatars/' . $_POST['userName']. "." . $ext;   
+        $usuario->avatar = 'avatars/' . $_POST['userName']. "." . $ext;
 
-        $registro = $crearRegistro->crearRegistro($usuario);
-        $usuarioJson ->guardar($registro);
-        
+        BaseDato :: registarUsuario($usuario);
+
         move_uploaded_file($_FILES['archivo']['tmp_name'],'avatars/' . $_POST['userName']. "." . $ext);
-        $login->loguearUsuario($_POST['email']);
+
+        Login :: loguearUsuario($usuario);
+
         // loguearUsuario($_POST['email']);
         header('Location: juegos.php');
         exit;

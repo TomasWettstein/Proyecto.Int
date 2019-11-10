@@ -2,8 +2,12 @@
 session_start();
 $titulo = "Crea tus preguntas";
 include_once('head.php');
-include_once('loader.php');
+require_once('loader.php');
 
+if($_POST){
+    $pregunta = new Pregunta($_POST['pregunta']);
+    BaseDato :: registrarPregunta($pregunta);
+}
 ?>
 
 <body>
@@ -15,7 +19,7 @@ include_once('loader.php');
         </header>
         <article>
             <p class="titulo--crea"> Creá tus propias preguntas! </p>
-            <form action="#" method="post" class="contenedor--form">
+            <form action="" method="post" class="contenedor--form">
                 <div class="cajas--form">
                     <h3 class="subtitulos--crea1"> Escribi tu pregunta: </h3>
                     <input type="text" name="pregunta" class="preguntainput--crea">
@@ -35,8 +39,9 @@ include_once('loader.php');
                     </label>
                     <input type="radio" name="#">
                 </div>
+                <input type="submit" value="Guardar">
             </form>
-            <button class="boton--crea"> Guardar </button>
+            <button class="boton--crea" type="submit"> Guardar </button>
         </article>
         <p class="subtitulo--crea"> Mis preguntas</p>
 

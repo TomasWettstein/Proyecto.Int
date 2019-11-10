@@ -36,10 +36,10 @@ include_once('head.php');
                 </ul>
             </div>
             <div class="caja2--usuario">
-             <img class="img--usuario" width="230px" height="230px" src="<?= (isset($_SESSION['usuario']['avatar'])) ? $_SESSION['usuario']['avatar'] : "avatars/user.jpg" ; ?>">
-            <p class="nombre--usuario"> <?= (isset($_SESSION['usuario']['userName'])) ? $_SESSION['usuario']['userName']  : "Usuario" ; ?> </p>
+             <img class="img--usuario" width="230px" height="230px" src="<?= (isset($_SESSION['avatar'])) ? $_SESSION['avatar'] : "avatars/user.jpg" ; ?>">
+            <p class="nombre--usuario"> <?= (isset($_SESSION['usuario'])) ? $_SESSION['usuario'] : "Usuario" ; ?> </p>
  ?>
-                <p class="puntos--usuario"> <?= $_SESSION['usuario']['puntaje'] ?? 0 ?> </p>
+                <p class="puntos--usuario"> <?= $_SESSION['puntos'] ?? 0 ?> </p>
                 <p class="puesto--usuario"> Puesto 6</p>
             </div>
         </article>
