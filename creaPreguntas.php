@@ -3,14 +3,18 @@ session_start();
 $titulo = "Crea tus preguntas";
 include_once('head.php');
 require_once('loader.php');
-
 if($_POST){
     $pregunta = new Pregunta($_POST['pregunta']);
     $errores = $validarPregunta->validarPregunta($pregunta);
+    
     if(!$errores){
-
-$pregunta = new Pregunta($_POST['pregunta']);
-    BaseDato :: registrarPregunta($pregunta);
+        $respuestasIncorrectas = new respuestaIncorrecta($_POST['respuesta1'], $_POST['respuesta2']);
+        $respuestaCorrecta = new respuestaCorrecta($_POST['respuestaCorrecta']);
+        BaseDato :: registrarPregunta($pregunta);
+        BaseDato :: registrarRespuestaCorrecta($respuestaCorrecta);
+        BaseDato :: registrarRespuestaIncorrecta($respuestasIncorrectas);
+        $mensajeGracias = "<h2>Muchas gracias por colaborar con Dubium :)</h2>";
+        var_dump($pregunta);
     }
 }
 ?>
@@ -24,6 +28,11 @@ $pregunta = new Pregunta($_POST['pregunta']);
         </header>
         <article>
             <p class="titulo--crea"> Creá tus propias preguntas! </p>
+            <div class="mensajeGracias">
+            <?php if(isset($mensajeGracias)) :?>
+            <?= $mensajeGracias;?>
+            <?php endif;?>
+            </div>
             <form action="" method="post" class="contenedor--form">
                 <div class="cajas--form">
                     <h3 class="subtitulos--crea1"> Escribi tu pregunta: </h3>

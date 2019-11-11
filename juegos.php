@@ -2,7 +2,8 @@
 session_start();
 $titulo = "Home";
 include_once('head.php');
-require_once('loader.php');?>
+require_once('loader.php');
+?>
 
 <body>
     <section class="container">

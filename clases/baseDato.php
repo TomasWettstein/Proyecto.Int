@@ -9,7 +9,7 @@ abstract class BaseDato {
     public static function conectar(){
         $host = "localhost";
         $port = "3306";
-        $dbname = "Dubium";
+        $dbname = "dubium";
         $charset = "utf8mb4";
         $user_name = "root";
         $user_pas = "Avast159";
@@ -57,6 +57,7 @@ abstract class BaseDato {
     }
 
     public static function registrarPregunta($pregunta){
+
         $pregunta = $pregunta-> getPregunta();
 
         $db = BaseDato :: conectar();
@@ -68,6 +69,43 @@ abstract class BaseDato {
         $registrar-> bindValue(':pregunta', $pregunta, PDO::PARAM_STR);
 
         $registrar-> execute();
+    }
+
+    public static function registrarRespuestaCorrecta($respuestaCorrecta){
+        $respuesta = $respuestaCorrecta-> getRespuestaCorrecta();
+
+        $db = BaseDato :: conectar();
+
+        $sql = "INSERT INTO respuestacorrecta (respuestacorrecta) VALUES (:respuesta)";
+
+        $registrar = $db-> prepare($sql);
+
+        $registrar-> bindValue(':respuesta', $respuesta, PDO::PARAM_STR);
+
+        $registrar-> execute();
+    }
+
+    public static function registrarRespuestaIncorrecta($respuesta){
+        $answe = $respuesta->  getRespuestaIncorrecta1();
+        $answ2 = $respuesta-> getRespuestaIncorrecta2();
+
+        $db = BaseDato :: conectar();
+        
+        $sql = "INSERT INTO respuestaincorrecta (respuestaincorrecta) VALUES (:respuesta)";
+
+        $sql2 = "INSERT INTO respuestaincorrecta (respuestaincorrecta) VALUES (:respuesta2)";
+        
+        $registrar = $db-> prepare($sql);
+        
+        $registrar-> bindValue(':respuesta', $answe, PDO::PARAM_STR);
+
+        $registrar-> execute();
+
+        $registrar2 = $db->prepare($sql2);
+
+        $registrar2-> bindValue(':respuesta2', $answ2, PDO::PARAM_STR);
+
+        $registrar2-> execute();
     }
 }
 

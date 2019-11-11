@@ -421,6 +421,9 @@ body {
     color:#D88E4E;
     font-size: 3em;
 }
+.mensajeGracias{
+    color:white;
+}
 .contenedor--form {
     display: flex;
     margin: 3em auto;

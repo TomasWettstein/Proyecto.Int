@@ -8,6 +8,8 @@ require_once("clases/CrearRegistro.php");
 require_once("clases/loguear.php");
 require_once("clases/mostrar-admin.php");
 require_once('clases/pregunta.php');
+require_once('clases\respuestaIncorrecta.php');
+require_once('clases\respuestaCorrecta.php');
 
 
 $usuarios = new Usuarios();
