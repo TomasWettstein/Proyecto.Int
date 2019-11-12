@@ -6,17 +6,17 @@ require_once('loader.php');
 if($_POST){
     $pregunta = new Pregunta($_POST['pregunta']);
     $errores = $validarPregunta->validarPregunta($pregunta);
-    
     if(!$errores){
         $respuestasIncorrectas = new respuestaIncorrecta($_POST['respuesta1'], $_POST['respuesta2']);
         $respuestaCorrecta = new respuestaCorrecta($_POST['respuestaCorrecta']);
-        BaseDato :: registrarPregunta($pregunta);
         BaseDato :: registrarRespuestaCorrecta($respuestaCorrecta);
+        BaseDato :: registrarPregunta($pregunta, $_SESSION['id'], $respuestaCorrecta);
         BaseDato :: registrarRespuestaIncorrecta($respuestasIncorrectas);
         $mensajeGracias = "<h2>Muchas gracias por colaborar con Dubium :)</h2>";
-        var_dump($pregunta);
     }
 }
+
+
 ?>
 
 <body>
@@ -76,29 +76,21 @@ if($_POST){
                 </tr>
             </thead>
             <tbody>
+            <?php if(isset($_SESSION['id'])) :?>
+            <?php $id = $_SESSION['id']; 
+                $consultaPregunta = BaseDato :: consultar('*', 'pregunta, respuestacorrecta', "pregunta.respuestacorrecta_id = respuestacorrecta.id and usuario_id = '$id'");
+                ?>
+                <?php foreach($consultaPregunta as $key => $value) :?>
                 <tr>
-                    <th scope="row"> Cual es la capital de Brasil?</th>
-                    <td>Mark</td>
+                    <th scope="row"><?=$value['pregunta'];?></th>
+                    <td><?= $value['respuestacorrecta'];?></td>
                     <td>Otto</td>
                     <td>@mdo</td>
-                    <td><button class="btn btn-primary" type="submit"><i class="fas fa-edit"></i></button>
-                    <button class="btn btn-primary" type="submit"><i class="fas fa-trash"></i></button></td>
-                </tr>
-                <tr>
-                    <th scope="row">Por que los conejos saltan?</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td><button class="btn btn-primary" type="submit"><i class="fas fa-edit"></i></button>
-                    <button class="btn btn-primary" type="submit"><i class="fas fa-trash"></i></button></td>
-                </tr>
-                <tr>
-                    <th scope="row"> El huevo o la gallina?</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td><button class="btn btn-primary" type="submit"><i class="fas fa-edit"></i></button>
-                    <button class="btn btn-primary" type="submit"><i class="fas fa-trash"></i></button></td>
+                    <?php $pregunta=$value['id'];?>
+                    <td> <a href="editar.php?pregunta=<?= $pregunta;?>"><i class="fas fa-edit"></i></a>
+                    <a href="eliminar.php"><i class="fas fa-trash"></i></a></td>
+                    <?php endforeach;?>
+                    <?php endif;?>
                 </tr>
             </tbody>
         </table>

@@ -7,9 +7,9 @@ abstract class BaseDato {
     abstract public function verificar($email);
 
     public static function conectar(){
-        $host = "127.0.0.1";
-        $port = "8889";
-        $dbname = "Dubium";
+        $host = "localhost";
+        $port = "3306";
+        $dbname = "dubium_mauri";
         $charset = "utf8mb4";
         $user_name = "root";
         $user_pas = "root";
@@ -56,13 +56,35 @@ abstract class BaseDato {
         $ingresar-> execute();
     }
 
-    public static function registrarPregunta($pregunta){
+    public static function solucion(){
+        $db = BaseDato :: conectar();
+
+        $sql1 = "SET FOREIGN_KEY_CHECKS=0";
+
+        $solucion = $db-> prepare($sql1);
+
+        $solucion-> execute();
+        
+    }
+
+    public static function registrarPregunta($pregunta, $usuario_id, $answeRight){
+
+        $respuesta = $answeRight-> getRespuestaCorrecta();
+
+        $usuario = $usuario_id;
 
         $pregunta = $pregunta-> getPregunta();
 
         $db = BaseDato :: conectar();
 
-        $sql = "INSERT INTO pregunta (pregunta, usuario_id, respuestacorrecta_id, respuestaincorrecta_id) VALUES (:pregunta, 0,0,0)";
+        $sql1 = "SET FOREIGN_KEY_CHECKS=0";
+
+        $solucion = $db-> prepare($sql1);
+
+        $solucion-> execute();
+
+        $sql = "INSERT INTO pregunta (pregunta, usuario_id, respuestacorrecta_id, respuestaincorrecta_id) 
+        VALUES (:pregunta, '$usuario', (select id from respuestacorrecta where respuestacorrecta = '$respuesta') ,0)";
 
         $registrar = $db-> prepare($sql);
 
@@ -106,6 +128,58 @@ abstract class BaseDato {
         $registrar2-> bindValue(':respuesta2', $answ2, PDO::PARAM_STR);
 
         $registrar2-> execute();
+    }
+
+    public static function eliminar($pregunta, $respuesta){
+        $dato = $pregunta;
+        
+        $dato2 = $respuesta;
+
+        $sql = "delete from pregunta where pregunta = :dato";
+        
+        $eliminar = $db-> prepare($sql);
+
+        $eliminar-> bindValue(':dato', $dato, PDO::PARAM_STR);
+
+        $eliminar-> execute();
+
+        $sql2 = "delete from respuestacorrecta where respuestacorrecta.id = :dato2";
+
+        $eliminar2 = $db-> prepare($sql2);
+
+        $eliminar2-> bindValue(':dato', $dato2, PDO::PARAM_STR);
+
+        $eliminar2-> execute();
+    }
+
+    public static function editarPregunta($dato, $id){
+        $db = BaseDato :: conectar();
+
+        $sql = "UPDATE pregunta SET pregunta = :dato where id = :id";
+
+        $actualizar = $db-> prepare($sql);
+
+        $actualizar-> bindValue(':dato', $dato, PDO::PARAM_STR);
+
+        $actualizar-> bindValue(':id', $id, PDO::PARAM_STR);
+
+        $actualizar-> execute();
+
+    }
+
+    public static function editarRespuesta($dato, $id){
+        $db = BaseDato :: conectar();
+
+        $sql = "UPDATE respuestacorrecta SET respuestacorrecta = :dato where id = :id";
+
+        $actualizar = $db-> prepare($sql);
+
+        $actualizar-> bindValue(':dato', $dato, PDO::PARAM_STR);
+
+        $actualizar-> bindValue(':id', $id, PDO::PARAM_STR);
+
+        $actualizar-> execute();
+
     }
 }
 
