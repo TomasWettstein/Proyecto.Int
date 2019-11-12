@@ -151,6 +151,36 @@ abstract class BaseDato {
 
         $eliminar2-> execute();
     }
+
+    public static function editarPregunta($dato, $id){
+        $db = BaseDato :: conectar();
+
+        $sql = "UPDATE pregunta SET pregunta = :dato where id = :id";
+
+        $actualizar = $db-> prepare($sql);
+
+        $actualizar-> bindValue(':dato', $dato, PDO::PARAM_STR);
+
+        $actualizar-> bindValue(':id', $id, PDO::PARAM_STR);
+
+        $actualizar-> execute();
+
+    }
+
+    public static function editarRespuesta($dato, $id){
+        $db = BaseDato :: conectar();
+
+        $sql = "UPDATE respuestacorrecta SET respuestacorrecta = :dato where id = :id";
+
+        $actualizar = $db-> prepare($sql);
+
+        $actualizar-> bindValue(':dato', $dato, PDO::PARAM_STR);
+
+        $actualizar-> bindValue(':id', $id, PDO::PARAM_STR);
+
+        $actualizar-> execute();
+
+    }
 }
 
 ?>
