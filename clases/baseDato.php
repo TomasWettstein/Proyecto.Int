@@ -7,9 +7,9 @@ abstract class BaseDato {
     abstract public function verificar($email);
 
     public static function conectar(){
-        $host = "localhost";
-        $port = "3306";
-        $dbname = "dubium_mauri";
+        $host = "127.0.0.01";
+        $port = "8889";
+        $dbname = "Dubium";
         $charset = "utf8mb4";
         $user_name = "root";
         $user_pas = "root";
