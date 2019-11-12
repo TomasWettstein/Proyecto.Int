@@ -4,8 +4,6 @@ $titulo = "Usuarios";
 include_once('head.php');
 require_once('loader.php');
 $users = $usuarios->mostrar();
-
-
 ?>
 
 <body>
