@@ -1,38 +1,39 @@
 <?php require_once('loader.php');
 include_once('head.php');
 session_start();
-
-if($_SESSION){
-$user = $_SESSION['id'];
-$consulta = BaseDato :: consultar('pregunta, respuestacorrecta', 'pregunta, respuestacorrecta', "usuario_id = '$user' and respuestacorrecta.id = pregunta.respuestacorrecta_id");
-if($_POST){
-    BaseDato :: eliminar($_POST['pregunta'], $_POST['respuesta']);
+$datoGet = $_GET['pregunta'];
+$pregunta = BaseDato :: consultar("pregunta, respuesta_id", "preguntas", "preguntas.id = '$datoGet'");
+foreach($pregunta as $key => $value){
+    $preguntaID = $value['respuesta_id'];
+    $respuestas = BaseDato :: consultar("correcta, falsa1, falsa2", "respuestas", "id = '$preguntaID'");
 }
+
+if(isset($_POST['si'])){
+    BaseDato :: eliminarPregunta($datoGet);
+    BaseDato :: eliminarRespuesta($preguntaID);
+    header('Location: creaPreguntas.php');
 }
 ?>
 
 <body>
     <?php include_once('nav.php');?>
-    <form action="crearPreguntas.php">
-    <label for="">Por favor seleccione la pregunta que desea eliminar.</label>
+    <?php foreach($pregunta as $key => $value):?>
+    <h1>Seguro que deseas eliminar la siguiente pregunta:
+    <br><?= $value['pregunta'];?></h1>
+    <?php endforeach;?>
     <br>
-        <select name="" id="">
-        <option value="">Seleccione una pregunta...</option>
-            <?php foreach($consulta as $key => $value):?>
-                <option value="<?= $value['pregunta'];?>"><?= $value['pregunta'];?></option>
-            <?php endforeach;?>
-        </select>
-                <br>
-        <label for="">Indique la respuesta que le corresponde a la pregunta.</label>
+    <?php foreach($respuestas as $key => $value):?>
+    <h2>Con las siguientes respuestas:
+    <br> <?= " Respuesta correcta: ".$value['correcta']. ", respuesta falsa 1: " . $value['falsa1']. ", respuesta falsa 2: ". $value['falsa2'] ;?></h2>
+    <?php endforeach;?>
+    <form action="" method="POST">
+        <label for="">Si</label>
+        <input type="radio" name="si" id="">
         <br>
-        <select name="" id="">
-        <option value="">Seleccione una respuesta...</option>
-        <?php foreach($consulta as $key => $value):?>
-                <option value="<?= $value['respuestacorrecta'];?>"><?= $value['respuestacorrecta'];?></option>
-            <?php endforeach;?>        
-        </select>
+        <label for="">No</label>
+        <input type="radio" name="no" id="">
         <br>
-        <input type="submit" value="Eliminar">
+        <input type="submit" value="Borrar">
     </form>
 </body>
 </html>

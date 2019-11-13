@@ -52,7 +52,7 @@ class Validador{
         $BaseDato = BaseDato :: conectar();
         $user = $usuario-> getEmail();
         //$pass = $_POST['password'];
-        $consulta = BaseDato :: consultar("*", "usuario", "email = '$user'");
+        $consulta = BaseDato :: consultar("*", "usuarios", "email = '$user'");
 
         $errores = [];
         $email = trim($usuario->getEmail());

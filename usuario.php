@@ -3,8 +3,8 @@ session_start();
 $titulo = "Usuario";
 // require_once('controladores/funciones.php');
 
-if (isset($_SESSION['usuario'])) {
-    $usuario = $_SESSION['usuario'];
+if (isset($_SESSION['nombre'])) {
+    $usuario = $_SESSION['nombre'];
 }
 // var_dump($_SESSION['usuario']['perfil']);
 // exit;
@@ -37,7 +37,7 @@ include_once('head.php');
             </div>
             <div class="caja2--usuario">
              <img class="img--usuario" width="230px" height="230px" src="<?= (isset($_SESSION['avatar'])) ? $_SESSION['avatar'] : "avatars/user.jpg" ; ?>">
-            <p class="nombre--usuario"> <?= (isset($_SESSION['usuario'])) ? $_SESSION['usuario'] : "Usuario" ; ?> </p>
+            <p class="nombre--usuario"> <?= (isset($_SESSION['nombre'])) ? $_SESSION['nombre'] : "Usuario" ; ?> </p>
  ?>
                 <p class="puntos--usuario"> <?= $_SESSION['puntos'] ?? 0 ?> </p>
                 <p class="puesto--usuario"> Puesto 6</p>

@@ -16,7 +16,7 @@ if ($_SESSION['perfil'] === 1) : ?>
                 <li class="nav-item">
                     <a class="nav-link rounded-pill" href="creaPreguntas.php"> Crea</a>
                 </li>
-                <?php if (isset($_SESSION['usuario'])) : ?>
+                <?php if (isset($_SESSION['nombre'])) : ?>
                     <li class="nav-item">
                         <a id="logout" href="logout.php" class="nav-link rounded-pill">Logout</a>
                     </li>
@@ -51,7 +51,7 @@ if ($_SESSION['perfil'] === 1) : ?>
                     <a class="nav-link rounded-pill" href="nosotros.php">Nosotros</a>
                 </li>
 
-                <?php if (isset($_SESSION['usuario'])) : ?>
+                <?php if (isset($_SESSION['nombre'])) : ?>
 
                     <li class="nav-item">
                         <a id="logout" href="logout.php" class="nav-link rounded-pill">Logout</a>
