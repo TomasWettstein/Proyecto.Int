@@ -11,8 +11,8 @@ require_once('loader.php');
             <?php require_once 'nav.php'; ?>
         </header>
         <article class=HOME--titulo>
-            <?php if (isset($_SESSION['usuario'])) : ?>
-                <p id="bienvenido">Bienvenido <?= $_SESSION['usuario']; ?>.</p>
+            <?php if (isset($_SESSION['nombre'])) : ?>
+                <p id="bienvenido">Bienvenido <?= $_SESSION['nombre']; ?>.</p>
             <?php endif; ?>
             <img src="img\Iconos-Cosas-Varias\Titulo Recto.png" alt="Dubium logo">
             <h2>Pon a prueba tus conocimientos.</h2>
