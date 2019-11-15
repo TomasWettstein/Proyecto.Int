@@ -694,13 +694,22 @@ footer {
 }
 /* ----------- ADMIN ---------- */
 .crud-admin {
-    margin-top: 5em;
+    margin-top: 1em;
 }
 .e-crud-admin {
     color: #A0D8C8;
 }
 .usuarios-admin {
     color: black;
+}
+.titulo-admin {
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    background-color: #694872;
+    border-radius: 30px;
+    width: 50%;
+    padding: 10px;
 }
 /* MEDIA QUERy*/
 
