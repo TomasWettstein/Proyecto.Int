@@ -1,4 +1,5 @@
 <?php 
+if(isset($_SESSION)):
 if ($_SESSION['perfil'] === "1") : ?>
     <nav class="rounded-pill navbar">
         <button class="navbar-toggler bg-info btn-lg d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
@@ -24,6 +25,7 @@ if ($_SESSION['perfil'] === "1") : ?>
                         <a class="nav-link rounded-pill" href="login.php">Inicia Sesión</a>
                     </li>
                <?php endif; ?>
+                <?php endif;?>
         </div>
         </ul>
     </nav>
