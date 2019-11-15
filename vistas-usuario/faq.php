@@ -1,14 +1,14 @@
 <?php 
 session_start();
 $titulo = "F.a.Q";
-include_once('head.php'); 
+include_once('../partials/head.php'); 
 ?>
 
 <body>
     <section class="container">
         <header>
             <?php
-            include_once 'nav.php';
+            include_once '../partials/nav.php';
             ?>
         </header>
         <p class="titulo--frecuentes">Preguntas Frecuentes</p>
@@ -66,7 +66,7 @@ include_once('head.php');
     </section>
             
     <footer class="FAQ--footer">
-        <?php require_once 'footer.php';?>
+        <?php require_once '../partials/footer.php';?>
     </footer>
 
 </body>

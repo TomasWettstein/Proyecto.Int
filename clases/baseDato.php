@@ -7,12 +7,12 @@ abstract class BaseDato {
     abstract public function verificar($email);
 
     public static function conectar(){
-        $host = "localhost";
-        $port = "3306";
+        $host = "127.0.0.01";
+        $port = "8889";
         $dbname = "juego_db";
         $charset = "utf8mb4";
         $user_name = "root";
-        $user_pas = "Avast159";
+        $user_pas = "root";
         $dsn = "mysql:host=$host;dbname=$dbname;port=$port;charset=$charset";
 
         $db = new PDO($dsn,$user_name,$user_pas);

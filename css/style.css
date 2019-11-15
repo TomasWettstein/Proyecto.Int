@@ -470,11 +470,14 @@ body {
 }
 .boton--crea {
     font-size: 1em;
-    width: 10%;
+    width: 15%;
     padding: 0.5em;
     border-radius: 15px;
-    background-color: #A0D8C8;
-    margin-bottom: 2em;
+    background-color: #DF8B8B;
+    margin-bottom: 1em;
+    color: white;
+    border: solid #DF8B8B;
+    font-size: 20px;
     
 }
 .boton--crea:hover {
@@ -597,6 +600,78 @@ body {
     height: 2em;
     
 }
+/* -------- Editar pregunta--------- */
+.titulo-editar {
+    color: white;
+    background-color: #D85F75;
+    width: 60%;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 30px;
+}
+.pregunta-elegida {
+    color: white;
+    background-color: #694872;
+    width: 40%;
+    margin: 40px auto;
+    padding: 18px;
+    border-radius: 30px;
+}
+.form-editar {
+    color: white;
+    background-color: #694872;
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 30px;
+}
+.div-form-editar {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.div-button-editar {
+    margin-top: 20px;
+    color: white;
+    background-color: #DF8B8B;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid #DF8B8B;
+}
+.input-editar {
+    border-radius: 8px;
+}
+.button-volver {
+    font-size: 30px;
+    color: white;
+}
+.cajita-button {
+    width: 20%;
+}
+.button.title {
+    display: flex;
+}
+
+/* ----------Eliminar-------- */
+.pregunta-eliminar {
+    color: white;
+    background-color: #694872;
+    width: 40%;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 30px;
+}
+.eliminar-preguntas {
+    color: #DF8B8B;
+}
+.button-eliminar {
+    margin-top: 20px;
+    color: white;
+    background-color: #DF8B8B;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid #DF8B8B;
+}
+
 /* ---------------Footer----------------- */
 
 footer {

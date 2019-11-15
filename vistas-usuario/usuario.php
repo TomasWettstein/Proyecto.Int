@@ -1,14 +1,11 @@
 <?php
 session_start();
 $titulo = "Usuario";
-// require_once('controladores/funciones.php');
 
 if (isset($_SESSION['nombre'])) {
     $usuario = $_SESSION['nombre'];
 }
-// var_dump($_SESSION['usuario']['perfil']);
-// exit;
-include_once('head.php');
+include_once('../partials/head.php');
 
 ?>
 
@@ -16,7 +13,7 @@ include_once('head.php');
     <section class="container">
         <header>
             <?php
-            include_once('nav.php');
+            include_once('../partials/nav.php');
             ?>
         </header>
         <h1 class="titulo--ranking"> Ranking </h1>
@@ -36,7 +33,7 @@ include_once('head.php');
                 </ul>
             </div>
             <div class="caja2--usuario">
-             <img class="img--usuario" width="230px" height="230px" src="<?= (isset($_SESSION['avatar'])) ? $_SESSION['avatar'] : "avatars/user.jpg" ; ?>">
+             <img class="img--usuario" width="230px" height="230px" src="<?= (isset($_SESSION['avatar'])) ? $_SESSION['avatar'] : "../avatars/user.jpg" ; ?>">
             <p class="nombre--usuario"> <?= (isset($_SESSION['nombre'])) ? $_SESSION['nombre'] : "Usuario" ; ?> </p>
  ?>
                 <p class="puntos--usuario"> <?= $_SESSION['puntos'] ?? 0 ?> </p>
@@ -44,5 +41,5 @@ include_once('head.php');
             </div>
         </article>
         <?php
-        include_once('footer.php');
+        include_once('../partials/footer.php');
         ?>

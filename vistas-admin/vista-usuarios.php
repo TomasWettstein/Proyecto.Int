@@ -3,7 +3,11 @@ session_start();
 $titulo = "Usuarios";
 include_once('head.php');
 require_once('loader.php');
+<<<<<<< HEAD:vista-usuarios.php
 $usuarios = BaseDato :: consultar("*", "usuarios");
+=======
+$users = $usuarios->mostrar();
+>>>>>>> 05a69c5f04263d03af3c2ca1d9cc15c017f61a28:vistas-admin/vista-usuarios.php
 ?>
 <?php include_once('nav.php');?>
 <body>
