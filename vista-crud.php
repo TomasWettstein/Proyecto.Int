@@ -1,7 +1,9 @@
 <?php
 session_start();
+require_once('loader.php');
 $titulo = "Crud-usuarios";
 include_once('head.php');
+$preguntas = BaseDato :: consultar("*", "preguntas, respuestas", "respuesta_id = respuestas.id");
 ?>
 <body>
 <section class="container">
@@ -18,34 +20,22 @@ include_once('head.php');
                     <th scope="col" class="r-crud">Respuesta correcta</th>
                     <th scope="col" class="i-crud">Respuesta incorrecta</th>
                     <th scope="col" class="in-crud">Respuesta incorrecta</th>
+                    <th scope="col" class="in-crud">Usuario</th>
                     <th scope="col" class="e-crud-admin">Editar</th>
                 </tr>
             </thead>
             <tbody>
+            <?php foreach($preguntas as $key => $value):?>
                 <tr>
-                    <th scope="row"> Cual es la capital de Brasil?</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row"><?= $value['pregunta'];?></th>
+                    <td><?=$value['correcta']?></td>
+                    <td><?=$value['falsa1'];?></td>
+                    <td><?= $value['falsa2'];?></td>
+                    <td><?= $value['usuario_id'];?></td>
                     <td><button class="btn btn-primary" type="submit"><i class="fas fa-edit"></i></button>
                     <button class="btn btn-primary" type="submit"><i class="fas fa-trash"></i></button></td>
                 </tr>
-                <tr>
-                    <th scope="row">Por que los conejos saltan?</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td><button class="btn btn-primary" type="submit"><i class="fas fa-edit"></i></button>
-                    <button class="btn btn-primary" type="submit"><i class="fas fa-trash"></i></button></td>
-                </tr>
-                <tr>
-                    <th scope="row"> El huevo o la gallina?</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td><button class="btn btn-primary" type="submit"><i class="fas fa-edit"></i></button>
-                    <button class="btn btn-primary" type="submit"><i class="fas fa-trash"></i></button></td>
-                </tr>
+                <?php endforeach;?>
             </tbody>
         </table>
 </article>

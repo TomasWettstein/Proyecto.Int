@@ -3,53 +3,35 @@ session_start();
 $titulo = "Usuarios";
 include_once('head.php');
 require_once('loader.php');
-$users = $usuarios->mostrar();
-
-
+$usuarios = BaseDato :: consultar("*", "usuarios");
 ?>
-
+<?php include_once('nav.php');?>
 <body>
-    <section class="container">
-        <?php
-        include_once('nav.php');
-        ?>
-    </section>
-
-    <div class="card col-5 offset-md-4 mt-5" style="width: 18rem;">
-    <!-- <img src="..." class="card-img-top" alt="..."> -->
-    <div class="card-body">
-    <ul class="usuarios-admin">
-        <?php foreach ($users as $value) : ?>
-            <li class="list-group-item"> <?= $value['userName']; ?></li>
-        <? endforeach; ?>
-    </ul>
-    </div>
-    <div class="card-body">
-    <ul class="usuarios-admin">
-        <?php foreach ($users as $value) : ?>
-            <li class="list-group-item"> <?= $value['email']; ?></li>
-        <? endforeach; ?>
-    </ul>
-    </div>
-    </div>
-<!-- 
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item"> A </li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-        </div>
-    </div> -->
-
-
-
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Usuario</th>
+      <th scope="col">Email</th>
+      <th scope="col">Perfil</th>
+      <th scope="col">Avatar</th>
+      <th scope="col">Administrar</th>
+    </tr>
+  </thead>
+  <tbody>
+  <?php foreach ($usuarios as $key => $value):?>
+    <tr>
+      <td><?= $value['id'];?></td>
+      <td><?= $value['nombre'];?></td>
+      <td><?= $value['email'];?></td>
+      <td><?= $value['perfil'];?></td>
+      <td><?= $value['avatar'];?></td>
+      <td> 
+      <a href="editar.php?pregunta=<?= $value['id'];?>"><i class="fas fa-edit"></i></a>
+      <a href="eliminar.php?pregunta=<?= $value['id'];?>"><i class="fas fa-trash"></i></a>
+      </td>
+    </tr>
+    <?php  endforeach;?>
+  </tbody>
+</table>
 </body>

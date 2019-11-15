@@ -11,8 +11,6 @@ require_once('clases/pregunta.php');
 require_once('clases\respuestaIncorrecta.php');
 require_once('clases\respuestaCorrecta.php');
 
-
-$usuarios = new Usuarios();
 $usuarioJson = new BaseJson();
 $crearRegistro = new Registro($usuarioJson);
 $validarUsuario = new Validador();
