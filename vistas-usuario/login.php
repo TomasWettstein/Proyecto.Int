@@ -1,8 +1,8 @@
 <?php
 session_start();
 $titulo = "Login";
-require_once('helpers.php');
-require_once('loader.php');
+require_once('../helpers.php');
+require_once('../loader.php');
 
 if ($_POST) {
     $usuario = new Usuario($_POST['userName'] = null, $_POST['email'], $_POST['password'], $_FILES);
@@ -15,14 +15,14 @@ if ($_POST) {
         exit;
     }
 }
-include_once('head.php');
+include_once('../partials/head.php');
 ?>
 
 <body>
     <section class="container">
         <header>
             <?php
-            include_once('nav.php');
+            include_once('../partials/nav.php');
             ?>
         </header>
         <p class="titulo--login"> Inicia Sesión </p>
@@ -64,6 +64,6 @@ include_once('head.php');
         </section>
 
         <?php
-        include_once("footer.php");
+        include_once("../partials/footer.php");
 
         ?>

@@ -53,11 +53,11 @@ if ($_SESSION['perfil'] === "1") : ?>
                 <?php if (isset($_SESSION['nombre'])) : ?>
 
                     <li class="nav-item">
-                        <a id="logout" href="logout.php" class="nav-link rounded-pill">Logout</a>
+                        <a id="logout" href="../vistas-usuario/logout.php" class="nav-link rounded-pill">Logout</a>
                     </li>
                 <?php else : ?>
                     <li class="nav-item">
-                        <a class="nav-link rounded-pill" href="login.php">Inicia Sesión</a>
+                        <a class="nav-link rounded-pill" href="../vistas-usuario/login.php">Inicia Sesión</a>
                     </li>
                 <?php endif; ?>
         </div>
