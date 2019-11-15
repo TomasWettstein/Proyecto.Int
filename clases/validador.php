@@ -27,8 +27,7 @@ class Validador{
                 $errores['email'] = "El email ya esta registrado";
             }
         }
-       
-        
+
         $password = trim($usuario->getPassword());
         if (empty($password)) {
             $errores['password'] = "La contraseña no puede estar vacia.";

@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once('loader.php');
-require_once('helpers.php');
+require_once('../loader.php');
+require_once('../helpers.php');
 $BaseDato = BaseDato :: conectar();
 $titulo = "Registro";
 if($_POST) {
@@ -12,11 +12,11 @@ if($_POST) {
         //$buscarUsuario = $usuarioJson->buscar($usuario->getEmail()); // traemos el email de usuario y usamos el metodo buscar (que compara emails) de usuarioJson para ver si existe y que lo guarde en usuarioEncontrado
        
         $ext = pathinfo($_FILES['archivo']['name'], PATHINFO_EXTENSION);
-        $usuario->avatar = 'avatars/' . $_POST['userName']. "." . $ext;
+        $usuario->avatar = '../avatars/' . $_POST['userName']. "." . $ext;
 
         BaseDato :: registarUsuario($usuario);
 
-        move_uploaded_file($_FILES['archivo']['tmp_name'],'avatars/' . $_POST['userName']. "." . $ext);
+        move_uploaded_file($_FILES['archivo']['tmp_name'],'../avatars/' . $_POST['userName']. "." . $ext);
 
         Login :: loguearUsuario($usuario);
 
@@ -25,14 +25,14 @@ if($_POST) {
         exit;
     }
 }
-include_once('head.php');
+include_once('../partials/head.php');
 ?>
 
 <body>
     <section class="container">
         <header>
             <?php
-            include_once('nav.php');
+            include_once('../partials/nav.php');
             ?>
         </header>
         <section class="sec--regis">
@@ -94,7 +94,7 @@ include_once('head.php');
        <a class = "b--ingresa" href="login.php">Ingresa</a>
 
         <?php
-        include_once("footer.php");
+        include_once("../partials/footer.php");
 
         ?>
 

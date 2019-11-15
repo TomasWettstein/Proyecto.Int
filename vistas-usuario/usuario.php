@@ -35,8 +35,8 @@ include_once('../partials/head.php');
             </div>
             <div class="caja2--usuario">
                 <img class="img--usuario" width="230px" height="230px" src="<?= (isset($_SESSION['avatar'])) ? $_SESSION['avatar'] : "../avatars/user.jpg"; ?>">
+            
                 <p class="nombre--usuario"> <?= (isset($_SESSION['nombre'])) ? $_SESSION['nombre'] : "Usuario"; ?> </p>
-                ?>
                 <p class="puntos--usuario"> <?= $_SESSION['puntos'] ?? 0 ?> </p>
                 <p class="puesto--usuario"> Puesto 6</p>
             </div>

@@ -1,59 +1,55 @@
 <?php
 $titulo = "Contacto";
-include_once('head.php');
+include_once('../partials/head.php');
+session_start();
 ?>
-
 <body>
 
     <body>
         <section class="container">
             <header>
                 <?php
-                include_once('nav.php');
+                include_once('../partials/nav.php');
                 ?>
             </header>
-            <form class = "formulario--nosotros" action="#" method="POST">
+            <form class="formulario--nosotros" action="#" method="POST">
                 <div class="form--nosotros">
-                    <label for="text"><p class = "p--nosotros">Nombre</p></label>
-                    <input class = "in--nosotros" type="text" id="usuario" placeholder="Ingrese su nombre">
+                    <label for="text">
+                        <p class="p--nosotros">Nombre</p>
+                    </label>
+                    <input class="in--nosotros" type="text" id="usuario" placeholder="Ingrese su nombre">
                 </div>
-                <div class="form--nosotros"><label for="email"><p class="p--nosotros">Email</p></label>
-                    <input class = "in--nosotros" type="email" id="email" placeholder="Introducir Email">
+                <div class="form--nosotros"><label for="email">
+                        <p class="p--nosotros">Email</p>
+                    </label>
+                    <input class="in--nosotros" type="email" id="email" placeholder="Introducir Email">
                 </div>
-                <div class="form--nosotros"><label for="text"><p class="p--nosotros">Asunto</p></label>
-                    <select class = "in--nosotros">
+                <div class="form--nosotros"><label for="text">
+                        <p class="p--nosotros">Asunto</p>
+                    </label>
+                    <select class="in--nosotros">
                         <option value="1">Laboral</option>
                         <option value="2">Error en el juego</option>
                         <option value="3">Eventos</option>
                         <option value="4">Otro</option>
                     </select>
                 </div>
-                <div class= "form--nosotros">
+                <div class="form--nosotros">
                     <label for="Password">
-                        <p class = "p--nosotros">Dejanos tu mensaje</p>
+                        <p class="p--nosotros">Dejanos tu mensaje</p>
                     </label>
                     <textarea rows="4" cols="50">
 </textarea>
 
                 </div>
 
-                <center><button class = "b_nosotros" type="submit">
+                <center><button class="b_nosotros" type="submit">
                         <p>Enviar</p>
                     </button></center>
             </form>
 
-
-
-
-
-
-
-
-
-
-
             <?php
-            include_once("footer.php");
+            include_once("../partials/footer.php");
             ?>
 
     </body>

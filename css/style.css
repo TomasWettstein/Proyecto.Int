@@ -470,14 +470,15 @@ body {
 }
 .boton--crea {
     font-size: 1em;
-    width: 15%;
+    width: 50%;
+    height: 15%;
     padding: 0.5em;
     border-radius: 15px;
     background-color: #DF8B8B;
-    margin-bottom: 1em;
     color: white;
     border: solid #DF8B8B;
     font-size: 20px;
+    margin-top: 15px ;
     
 }
 .boton--crea:hover {
