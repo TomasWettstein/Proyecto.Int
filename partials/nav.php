@@ -1,6 +1,9 @@
-<?php 
-if(isset($_SESSION)):
-if ($_SESSION['perfil'] === "1") : ?>
+
+<?php if ($_SESSION) : ?>
+
+<?php if($_SESSION['perfil']=== "1")  :?>
+
+
     <nav class="rounded-pill navbar">
         <button class="navbar-toggler bg-info btn-lg d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
             Menú
@@ -22,10 +25,9 @@ if ($_SESSION['perfil'] === "1") : ?>
                     </li>
                 <?php else : ?>
                     <li class="nav-item">
-                        <a class="nav-link rounded-pill" href="login.php">Inicia Sesión</a>
+                        <a class="nav-link rounded-pill" href="../vistas-usuario/login.php">Inicia Sesión</a>
                     </li>
                <?php endif; ?>
-                <?php endif;?>
         </div>
         </ul>
     </nav>
@@ -67,3 +69,5 @@ if ($_SESSION['perfil'] === "1") : ?>
         </ul>
     </nav>
 <?php endif; ?>
+<?php endif; ?>
+
