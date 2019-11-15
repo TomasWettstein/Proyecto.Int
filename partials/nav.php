@@ -36,7 +36,7 @@ if ($_SESSION['perfil'] === 1) : ?>
         <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
             <ul class="nav nav-pills nav-fill">
                 <li class="nav-item col-lg-2">
-                    <a href="juegos.php"><img class="d-lg-block w-50 d-none" src="img\Iconos-Cosas-Varias\Logo mini.png" alt="logo"></a>
+                    <a href="juegos.php"><img class="d-lg-block w-50 d-none" src="../img\Iconos-Cosas-Varias\Logo mini.png" alt="logo"></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link rounded-pill " href="creaPreguntas.php"> Crea</a>

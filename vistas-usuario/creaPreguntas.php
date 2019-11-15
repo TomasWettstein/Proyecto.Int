@@ -1,8 +1,8 @@
 <?php
 session_start();
 $titulo = "Crea tus preguntas";
-include_once('head.php');
-require_once('loader.php');
+include_once('../partials/head.php');
+require_once('../loader.php');
 if($_POST){
     $pregunta = new Pregunta($_POST['pregunta']);
     $errores = $validarPregunta->validarPregunta($pregunta);
@@ -23,7 +23,7 @@ if($_POST){
     <section class="container">
         <header>
             <?php
-            include_once('nav.php');
+            include_once('../partials/nav.php');
             ?>
         </header>
         <article>
@@ -58,9 +58,8 @@ if($_POST){
                     </label>
                     <input type="radio" name="#">
                 </div>
-                <input type="submit" value="Guardar">
             </form>
-            <button class="boton--crea" type="submit"> Guardar </button>
+            <input type="submit" value="Guardar" class="boton--crea">
         </article>
         <p class="subtitulo--crea"> Mis preguntas</p>
 
@@ -98,6 +97,6 @@ if($_POST){
 
     </section>
     <?php
-    include_once('footer.php');
+    include_once('../partials/footer.php');
     ?>
 </body>

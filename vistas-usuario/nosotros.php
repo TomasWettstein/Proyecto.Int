@@ -1,7 +1,7 @@
 <?php
 session_start();
 $titulo = "Nosotros";
-include_once('head.php');
+include_once('../partials/head.php');
 ?>
 
 
@@ -10,7 +10,7 @@ include_once('head.php');
         <section class="container">
             <header>
                 <?php
-                include_once('nav.php');
+                include_once('../partials/nav.php');
                 ?>
             </header>
             <section class="sec--contacto">
@@ -18,7 +18,7 @@ include_once('head.php');
                     Nosotros
                 </p>
                 <div class="caja--contacto">
-                   <center> <img src="img/Iconos-Cosas-Varias/Titulo recto.png" width="200px" class="img--contacto"></center>
+                   <center> <img src="../img/Iconos-Cosas-Varias/Titulo recto.png" width="200px" class="img--contacto"></center>
                     <p class="p--caja">
                        <br> Es un juego creado por un grupo de estudiantes de Digital House.<br>
                         Lo forman: Agustina quien es Scrum master junto con Mauricio y Tomas que son parte del Scrum Team.
@@ -34,7 +34,7 @@ include_once('head.php');
             </section>
             
             <?php
-            include_once("footer.php");
+            include_once("../partials/footer.php");
             ?>
 
     </body>

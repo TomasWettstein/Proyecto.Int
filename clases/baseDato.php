@@ -7,8 +7,8 @@ abstract class BaseDato {
     abstract public function verificar($email);
 
     public static function conectar(){
-        $host = "localhost";
-        $port = "3306";
+        $host = "127.0.0.01";
+        $port = "8889";
         $dbname = "juego_db";
         $charset = "utf8mb4";
         $user_name = "root";
